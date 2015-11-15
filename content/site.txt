@@ -2,7 +2,7 @@ Title: Kirby Starterkit
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Bastian Allgeier GmbH 
 
 ----
 
