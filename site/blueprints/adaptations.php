@@ -1,8 +1,10 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Projects
-pages:
-  template: project
+title: Adaptations
+pages: 
+  template: adaptation
+  limit: 50
+  num: zero
 files: false
 fields:
   title:
