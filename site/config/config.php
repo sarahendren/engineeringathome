@@ -31,9 +31,10 @@ of the system, please check out http://getkirby.com/docs/advanced/options
 
 c::set('routes', array(
   array(
-    'pattern' => '/',
-    'action' => function () {
-      return go('/panel');
+    'pattern' => 'logout',
+    'action'  => function() {
+      if($user = site()->user()) $user->logout();
+      go('login');
     }
   )
 ));
