@@ -4,3 +4,4 @@
 /thumbs/*
 /node_modules
 /content
+/.sass-cache
