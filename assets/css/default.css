@@ -5795,6 +5795,12 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+body {
+  margin: 48px 0; }
+
+#content-checklist td, #content-checklist th {
+  padding: .5em; }
+
 img {
   max-width: 100%; }
 
