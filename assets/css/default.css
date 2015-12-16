@@ -5796,10 +5796,23 @@ button.close {
   .hidden-print {
     display: none !important; } }
 body {
-  margin: 48px 0; }
+  margin: 98px 0; }
 
+#content-checklist table {
+  width: 100%; }
+#content-checklist thead {
+  background: #fff; }
 #content-checklist td, #content-checklist th {
   padding: .5em; }
+#content-checklist tr {
+  border-bottom: 1px solid gray; }
+#content-checklist table.images td, #content-checklist table.images th {
+  width: 14%;
+  vertical-align: top !important; }
+  #content-checklist table.images td img, #content-checklist table.images th img {
+    padding: 5px; }
+#content-checklist .navbar-fixed-top {
+  top: 48px; }
 
 img {
   max-width: 100%; }
