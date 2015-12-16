@@ -13,7 +13,9 @@ files:
       options:
         studio: "Studio"
         closeup: "Closeup"
-        inuse: "In-Use"
+        inuse: "In Use"
+        insitu: "In Situ"
+        sequence: "Sequence"
         diagram: "Diagram"
     photoedits:
       label: Photo Edit Comments (Private)
