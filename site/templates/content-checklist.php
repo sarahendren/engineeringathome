@@ -1,7 +1,7 @@
 <?php snippet('header') ?>
 
  	<main class="main" role="main">
-
+ 	<h2>Content</h2>
 		<table>
 			<tr>
 				<th>Thumb</th>
@@ -26,7 +26,27 @@
 			<?php endforeach ?>
 
 		</table>
-
+		<hr>
+		<h2>Images</h2>
+		<table>
+			<tr>
+				<th>Type</th>
+				<th>Thumb</th>
+				<th>Filename</th>
+				<th>Photo Edit Comments</th>
+				<th>Caption</th>
+			</tr>
+		<?php foreach(page('adaptations')->children() as $adaptation): ?>
+			<?php foreach($adaptation->images()->sortBy('sort', 'asc') as $image): ?>
+			<tr>
+				<td><?php echo $image->kind() ?></td>
+				<td><img src="<?php echo $image->resize(100,100)->url() ?>" ></td>
+				<td><?php echo $image->filename() ?></td>
+				<td><?php echo $image->photoedits() ?></td>
+			</tr>
+			<?php endforeach ?>
+		<?php endforeach ?>
+		</table>
  	</main>
 
 <?php snippet('footer') ?>

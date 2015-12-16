@@ -5,15 +5,19 @@ pages: false
 files:
   sortable: true
   fields:
-    type:
-      label: Image Type
+    kind:
+      label: Image Kind
       type: radio
       columns: 3
       default: studio
       options:
         studio: "Studio"
+        closeup: "Closeup"
         inuse: "In-Use"
         diagram: "Diagram"
+    photoedits:
+      label: Photo Edit Comments (Private)
+      type: textarea
     caption:
       label: Caption
       type: textarea
