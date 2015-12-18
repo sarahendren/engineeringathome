@@ -21,6 +21,17 @@ $brand-info:            #5bc0de !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$pink: 					#FF8C92;
+$yellow: 				#F6f07A;
+$mustard:				#c8b12d;
+$lime: 					#bcd43d;
+$sky: 					#159fba;
+$teal: 					#007a89;
+$blue: 					#16445c;
+$moss: 					#4f6046;
+$brown: 				#343534;
+$red: 					#c02528;
+$crimson: 				#862e26;
 
 //== Scaffolding
 //
@@ -44,7 +55,7 @@ $link-hover-decoration: underline !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  acumin-pro-extra-condensed, sans-serif !default;
-$font-family-serif:       Century Schoolbook, Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:       "Century Schoolbook", Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-serif !default;
@@ -107,9 +118,9 @@ $padding-xs-horizontal:     5px !default;
 $line-height-large:         1.3333333 !default; // extra decimals for Win 8.1 Chrome
 $line-height-small:         1.5 !default;
 
-$border-radius-base:        4px !default;
-$border-radius-large:       6px !default;
-$border-radius-small:       3px !default;
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;
 
 //** Global color for active items (e.g., navs or dropdowns).
 $component-active-color:    #fff !default;
@@ -332,7 +343,7 @@ $grid-columns:              12 !default;
 $grid-gutter-width:         30px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
-$grid-float-breakpoint:     $screen-sm-min !default;
+$grid-float-breakpoint:     $screen-xs-min !default;
 //** Point at which the navbar begins collapsing.
 $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 
@@ -369,28 +380,28 @@ $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
 $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2) !default;
 $navbar-collapse-max-height:       340px !default;
 
-$navbar-default-color:             #777 !default;
-$navbar-default-bg:                #f8f8f8 !default;
-$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-color:             #fff !default;
+$navbar-default-bg:                $mustard !default;
+$navbar-default-border:            transparent !default;
 
 // Navbar links
-$navbar-default-link-color:                #777 !default;
-$navbar-default-link-hover-color:          #333 !default;
-$navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         #555 !default;
-$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-color:                #fff !default;
+$navbar-default-link-hover-color:          #fff !default;
+$navbar-default-link-hover-bg:             darken($navbar-default-bg, 10%) !default;
+$navbar-default-link-active-color:         #fff !default;
+$navbar-default-link-active-bg:            transparent !default;
 $navbar-default-link-disabled-color:       #ccc !default;
 $navbar-default-link-disabled-bg:          transparent !default;
 
 // Navbar brand label
-$navbar-default-brand-color:               $navbar-default-link-color !default;
-$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
-$navbar-default-brand-hover-bg:            transparent !default;
+$navbar-default-brand-color:               #fff !default;
+$navbar-default-brand-hover-color:         #fff !default;
+$navbar-default-brand-hover-bg:            darken($navbar-default-bg, 10%) !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
-$navbar-default-toggle-icon-bar-bg:        #888 !default;
-$navbar-default-toggle-border-color:       #ddd !default;
+$navbar-default-toggle-hover-bg:           darken($navbar-default-bg, 10%) !default;
+$navbar-default-toggle-icon-bar-bg:        #fff !default;
+$navbar-default-toggle-border-color:       #fff !default;
 
 
 //=== Inverted navbar

@@ -6,7 +6,7 @@
 
     <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": true}'>
     <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-    <div class="gallery-cell"><img data-flickity-lazyload="<?php echo $image->resize(800,800)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
+    <div class="gallery-cell"><img src="<?php echo $image->resize(800,800)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
     <?php endforeach ?>
     </div>
 

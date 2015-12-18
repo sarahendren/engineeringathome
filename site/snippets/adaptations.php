@@ -1,5 +1,3 @@
-<h2>Latest adaptations</h2>
-
 <ul class="list-inline">
   <?php foreach(page('adaptations')->children() as $adaptation): ?>
   <li>

@@ -1,0 +1,16 @@
+.navbar {
+	font-family: $font-family-sans-serif;
+	font-size: $font-size-h3;
+	text-transform: lowercase;
+	border: none;
+	// @media (min-width: $grid-float-breakpoint) {
+	// 	ul li:after {
+	// 		content: "…";
+	// 		color: #fff;
+	// 		padding-left: $navbar-padding-horizontal;
+	// 	}
+	// }
+	li:hover .dropdown-menu {
+		display: block;
+	}
+}

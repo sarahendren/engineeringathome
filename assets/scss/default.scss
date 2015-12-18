@@ -16,9 +16,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .wf-loading {
-	h1, h2, h3, h4, h5, h6 {
 	visibility: hidden;
-	}
 }
 
 .gallery-cell {
@@ -31,6 +29,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-gallery {
 	margin-bottom: 40px;
+	background: #000;
 }
 
 blockquote {
