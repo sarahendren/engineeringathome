@@ -124,12 +124,13 @@ class Footnotes {
 
 
   private function bibliography() {
-    $list  = '<div class="footnotes" id="footnotes">';
-    $list .= '<div class="footnotedivider"></div>';
-    $list .= '<ol>';
+    $list  = '<section class="block" id="footnotes">';
+    $list .= '<hr>';
+    $list .= '<h2>Footnotes</h2>';
+    $list .= '<ol class="content">';
     $list .= $this->entries;
     $list .= '</ol>';
-    $list .= '</div>';
+    $list .= '</section>';
     return $list;
   }
 

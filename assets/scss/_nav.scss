@@ -14,3 +14,10 @@
 		display: block;
 	}
 }
+@media (min-width: $screen-md-min) {
+	.navbar {
+		position: absolute;
+		right: 20px;
+		max-width: 600px;
+	}
+}
