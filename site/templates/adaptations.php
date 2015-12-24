@@ -2,11 +2,10 @@
 
   <main class="main" role="main">
 
-    <div class="text">
-      <h1><?php echo $page->title()->html() ?></h1>
-      <?php echo $page->text()->kirbytext() ?>
-    </div>
-
+    <h1><?php echo $page->title()->html() ?></h1>
+    <div class="row">
+	    <div class="lead col-md-6 col-md-offset-3"><?php echo $page->text()->kirbytext() ?></div>
+	</div>
     <hr>
 
     <?php snippet('adaptations') ?>

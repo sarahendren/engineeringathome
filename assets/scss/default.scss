@@ -24,17 +24,39 @@ h1 strong {
 	visibility: hidden;
 }
 
-.gallery-cell {
-	width: 100%;
+.main-gallery {
 	img {
-		display: block;
-		margin: auto;
+		height: auto;
+	}
+	.gallery-cell {
+		width: 100%;
+		img {
+			display: block;
+			margin: auto;
+		}
+		/* fade in image when loaded */
+		.gallery-cell-image {
+		  transition: opacity 0.4s;
+		  opacity: 0;
+		}
+
+		.gallery-cell-image.flickity-lazyloaded,
+		.gallery-cell-image.flickity-lazyerror {
+		  opacity: 1;
+		}
+	}
+	.diagram {
+		background: $pink;
+	}
+	.flickity-page-dots {
+		position: relative;
+			bottom: 0;
+		margin: 10px auto 20px auto;
 	}
 }
 
-.main-gallery {
-	margin-bottom: 40px;
-	background: #000;
+.navbar a.active {
+	background: darken($mustard, 10%);
 }
 
 blockquote {
@@ -47,6 +69,37 @@ blockquote {
 
 .flickity-page-dots {
 	position: relative!important;
+}
+
+button {
+	outline: none;
+}
+
+.thumbnail {
+	border: none;
+	text-align: center;
+	color: #000;
+	&:hover {
+		color: #fff;
+	}
+	h2 {
+		margin-top: 11px;
+	}
+	.img-circle {
+		border:10px solid $body-bg;
+	}
+	&:hover img.img-circle {
+		border:none;
+	}
+}
+
+.grid {
+	margin: 0!important;
+	padding: 0!important;
+}
+
+.list-group, .list-group button {
+	background-color: #B3A999;
 }
 
 @media (min-width: $screen-md-min) {
