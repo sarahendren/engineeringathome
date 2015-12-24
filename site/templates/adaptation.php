@@ -4,21 +4,18 @@
 
     <h1><?php echo $page->title()->html() ?></h1>
 
-    <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": true}'>
-    <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-    <div class="gallery-cell"><img src="<?php echo $image->resize(800,800)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
-    <?php endforeach ?>
+    <div class="row">
+      <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": 3}'>
+        <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+        <div class="gallery-cell <?php echo $image->kind() ?>"><img data-flickity-lazyload="<?php echo $image->resize(1170, 780)->url() ?>" width="<?php echo $image->resize(1170, 780)->width() ?>" height="<?php echo $image->resize(1170, 780)->height() ?>" alt="<?php echo $page->title()->html() ?>"></div>
+        <?php endforeach ?>
+      </div>
     </div>
-
-
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
+    <div class="row">
+      <div class="text col-md-6 col-md-offset-3">
+        <?php echo $page->text()->kirbytext() ?>
+      </div>
     </div>
-
-    <ul class="meta cf">
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
-
   </main>
 
 <?php snippet('footer') ?>
