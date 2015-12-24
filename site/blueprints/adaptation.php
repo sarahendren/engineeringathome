@@ -29,7 +29,7 @@ fields:
     type:  text
   text:
     label: Text
-    type:  textarea
+    type:  markdown
   verbs:
     label: Verbs
     type:  tags
