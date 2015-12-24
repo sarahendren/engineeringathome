@@ -8,10 +8,10 @@
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo $site->description()->html() ?>">
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
-  <script>document.documentElement.className += ' wf-loading';</script>
-  <?php echo css('assets/css/default.css') ?>
-  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+<!--  <script>document.documentElement.className += ' wf-loading';</script>-->
+  <?php echo css('/assets/css/default.css') ?>
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body id="<?php echo $page->slug() ?>">
 <div class="container">
@@ -106,10 +106,10 @@
 		<?php endforeach ?>
 		</table>
  	</main>
-<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.1/css/fluidbox.min.css" media="all" rel="stylesheet" />
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fluidbox/2.0.1/js/jquery.fluidbox.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/floatthead/1.3.2/jquery.floatThead.min.js"></script>
+<link type="text/css" href="/node_modules/fluidbox/dist/css/fluidbox.min.css" media="all" rel="stylesheet" />
+<script type="text/javascript" src="/assets/jquery.ba-throttle-debounce.min.js"></script>
+<script src="/node_modules/fluidbox/dist/js/jquery.fluidbox.min.js"></script>
+<script src="/node_modules/floatthead/lib/jquery.floatThead.min.js"></script>
 <script>
 	var $table = $('table');
 	$table.floatThead({
