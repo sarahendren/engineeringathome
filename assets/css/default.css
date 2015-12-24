@@ -1083,10 +1083,10 @@ textarea {
   line-height: inherit; }
 
 a {
-  color: #b3b3b3;
+  color: #007a89;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #8c8c8c;
+    color: #fff;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -3084,7 +3084,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-link {
-  color: #b3b3b3;
+  color: #007a89;
   font-weight: normal;
   border-radius: 0; }
   .btn-link, .btn-link:active, .btn-link.active, .btn-link[disabled], fieldset[disabled] .btn-link {
@@ -3094,7 +3094,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #8c8c8c;
+    color: #fff;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
@@ -3579,7 +3579,7 @@ tbody.collapse.in {
         cursor: not-allowed; }
   .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
     background-color: #eeeeee;
-    border-color: #b3b3b3; }
+    border-color: #007a89; }
   .nav .nav-divider {
     height: 1px;
     margin: 10px 0;
@@ -4093,7 +4093,7 @@ tbody.collapse.in {
       padding: 6px 12px;
       line-height: 1.42857;
       text-decoration: none;
-      color: #b3b3b3;
+      color: #007a89;
       background-color: #fff;
       border: 1px solid #ddd;
       margin-left: -1px; }
@@ -4110,7 +4110,7 @@ tbody.collapse.in {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 3;
-    color: #8c8c8c;
+    color: #fff;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -4272,7 +4272,7 @@ a.label:hover, a.label:focus {
     top: 0;
     padding: 1px 5px; }
   .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-    color: #b3b3b3;
+    color: #007a89;
     background-color: #fff; }
   .list-group-item > .badge {
     float: right; }
@@ -5888,6 +5888,9 @@ button {
     border: 10px solid #B3A999; }
   .thumbnail:hover img.img-circle {
     border: none; }
+
+.text a:link, .text a:visited {
+  text-decoration: underline; }
 
 .grid {
   margin: 0 !important;

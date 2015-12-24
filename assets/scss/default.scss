@@ -93,6 +93,12 @@ button {
 	}
 }
 
+.text {
+	a:link, a:visited {
+		text-decoration: underline;
+	}
+}
+
 .grid {
 	margin: 0!important;
 	padding: 0!important;
