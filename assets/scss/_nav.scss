@@ -10,14 +10,14 @@
 	// 		padding-left: $navbar-padding-horizontal;
 	// 	}
 	// }
-	li:hover .dropdown-menu {
-		display: block;
-	}
 }
 @media (min-width: $screen-md-min) {
 	.navbar {
 		position: absolute;
 		right: 20px;
 		max-width: 600px;
+		.container {
+			max-width: 100%;
+		}
 	}
 }
