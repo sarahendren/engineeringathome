@@ -10,8 +10,6 @@
 
   </footer>
  </div>
-	<script src="/node_modules/flickity/dist/flickity.pkgd.min.js"></script>
-	<link rel="stylesheet" href="/node_modules/flickity/dist/flickity.min.css">
 		<script>
 		  (function(d) {
 		    var config = {

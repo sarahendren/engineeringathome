@@ -8,6 +8,13 @@ module.exports = function(grunt) {
         }
       }
     },
+    uglify: {
+      dist: {
+        files: {
+          'assets/js/app.min.js': ['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/flickity/dist/flickity.pkgd.min.js']
+        }
+      }
+    },
     php: {
         dist: {
             options: {
@@ -28,6 +35,7 @@ module.exports = function(grunt) {
     }
   });
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-php');
   grunt.registerTask('default',['php:watch', 'watch']);

@@ -9,8 +9,7 @@
   <meta name="keywords" content="<?php echo $site->keywords()->html() ?>">
   <script>document.documentElement.className += ' wf-loading';</script>
   <?php echo css('/assets/css/default.css') ?>
-  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/assets/app.min.js"></script>
 </head>
 <body id="<?php echo $page->slug() ?>">
 <header>
