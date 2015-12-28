@@ -16,6 +16,16 @@
         <?php echo $page->text()->kirbytext() ?>
       </div>
     </div>
+    <div class="row">
+      <?php $Options = array('startURI' => '/adaptations', 'searchField' => 'Verbs');
+      $relpages = relatedpages($Options); ?>
+      <ul>
+        <?php foreach($relpages->shuffle()->limit(3) as $relpage): ?>
+          <li><a href="<?php echo $relpage->url() ?>"><?php echo $relpage->title() ?></a></li>
+        <?php endforeach ?>
+      </ul>
+
+    </div>
   </main>
 
 <?php snippet('footer') ?>
