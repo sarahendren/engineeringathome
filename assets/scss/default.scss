@@ -28,7 +28,6 @@ h1 strong {
 .wf-loading {
 	visibility: hidden;
 }
-
 .main-gallery {
 	figure {
 												height: 342px;
@@ -39,6 +38,7 @@ h1 strong {
 	}
 	.gallery-cell {
 		width: 100%;
+		background: #000;
 		img {
 			display: block;
 			margin: auto;
@@ -65,7 +65,17 @@ h1 strong {
 	.flickity-page-dots {
 		position: relative;
 			bottom: 0;
-		margin: 10px auto 20px auto;
+		margin: 20px auto;
+	}
+	.flickity-prev-next-button {
+		top: auto;
+		bottom: -35px;
+		@media (min-width: $screen-sm-min) {
+			& {
+				top: 50%;
+				bottom: auto;
+			}
+		}
 	}
 }
 
@@ -79,10 +89,6 @@ blockquote {
 	text-transform: lowercase;
 	padding-left: 25%;
 	font-size: 2em;
-}
-
-.flickity-page-dots {
-	position: relative!important;
 }
 
 button {
