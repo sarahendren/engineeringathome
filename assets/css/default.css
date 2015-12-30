@@ -5980,7 +5980,7 @@ h1 strong {
       height: 836px; } }
 .main-gallery .gallery-cell {
   width: 100%;
-  background: #000;
+  background: #B3a999;
   /* fade in image when loaded */ }
   .main-gallery .gallery-cell img {
     display: block;
@@ -6002,6 +6002,8 @@ h1 strong {
   position: relative;
   bottom: 0;
   margin: 20px auto; }
+  .main-gallery .flickity-page-dots .dot {
+    background: #B3a999; }
 .main-gallery .flickity-prev-next-button {
   top: auto;
   bottom: -35px; }
@@ -6009,6 +6011,8 @@ h1 strong {
     .main-gallery .flickity-prev-next-button {
       top: 50%;
       bottom: auto; } }
+  .main-gallery .flickity-prev-next-button .arrow {
+    fill: #B3a999; }
 
 .navbar a.active {
   background: #9e8c24; }
