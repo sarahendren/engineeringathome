@@ -21,7 +21,6 @@
 	  <?php endforeach ?>
 	</div>
 </div>
-<script src="/node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 <script type="text/javascript">
 function getHashFilter() {
   // get filter=filterName
