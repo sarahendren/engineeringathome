@@ -5809,7 +5809,122 @@ button.close {
     .navbar .container {
       max-width: 100%; } }
 body#adaptations {
-  background: #B3a999; }
+  background: #4f6046; }
+  body#adaptations hr {
+    border-color: #2b3426 !important;
+    border-width: 2px; }
+  body#adaptations h1 {
+    color: #F6f07A;
+    border: 2px solid #F6f07A;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      body#adaptations h1 {
+        float: left;
+        width: 33.33333%; } }
+    @media (min-width: 768px) {
+      body#adaptations h1 {
+        margin-left: 33.33333%; } }
+  body#adaptations .lead {
+    padding-top: 2em;
+    color: #F6f07A;
+    text-align: center; }
+  @media (min-width: 992px) {
+    body#adaptations .container header {
+      margin-top: 100px; } }
+
+.grid {
+  margin: 0 !important;
+  padding: 0 !important; }
+
+button {
+  outline: none; }
+
+.thumbnail {
+  border: none;
+  text-align: center;
+  color: #000; }
+  .thumbnail:hover {
+    color: #F6f07A; }
+  .thumbnail h2 {
+    margin-top: 11px; }
+  .thumbnail .img-circle {
+    border: 10px solid #4f6046; }
+  .thumbnail:hover img.img-circle {
+    border: none;
+    box-shadow: 0 0 50px #F6f07A; }
+
+.list-group, .list-group button {
+  background-color: #4f6046;
+  border-color: #43513b;
+  color: #000; }
+.list-group .badge {
+  background: #43513b !important;
+  color: #121610 !important;
+  padding: 1px 7px 5px 7px; }
+.list-group button:hover {
+  box-shadow: 0 0 50px #F6f07A; }
+.list-group button:hover, .list-group button:active, .list-group button.active {
+  background: #F6f07A !important;
+  border-color: #F6f07A !important;
+  z-index: 5;
+  color: #4f6046 !important; }
+  .list-group button:hover .badge, .list-group button:active .badge, .list-group button.active .badge {
+    background: #f9f5aa !important;
+    color: #4f6046 !important; }
+
+body.longform {
+  background: #a6e8f5;
+  color: #16445c; }
+  body.longform .navbar {
+    margin-bottom: 0; }
+  body.longform header.image {
+    background-color: #16445c; }
+  body.longform .header-content {
+    background-color: #fff;
+    padding-bottom: .5em;
+    box-shadow: 10px 10px 0 #159fba;
+    margin-top: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    body.longform .header-content h1 {
+      color: #159fba; }
+    @media (min-width: 768px) {
+      body.longform .header-content {
+        float: left;
+        width: 58.33333%; } }
+    @media (min-width: 992px) {
+      body.longform .header-content {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      body.longform .header-content {
+        float: left;
+        width: 41.66667%; } }
+    @media (min-width: 1200px) {
+      body.longform .header-content {
+        margin-left: 8.33333%; } }
+    @media (min-width: 768px) {
+      body.longform .header-content {
+        margin-top: -8%; } }
+  body.longform h2 {
+    color: #159fba; }
 
 #content-checklist table {
   width: 100%; }
@@ -6024,31 +6139,8 @@ blockquote {
   padding-left: 25%;
   font-size: 2em; }
 
-button {
-  outline: none; }
-
-.thumbnail {
-  border: none;
-  text-align: center;
-  color: #000; }
-  .thumbnail:hover {
-    color: #fff; }
-  .thumbnail h2 {
-    margin-top: 11px; }
-  .thumbnail .img-circle {
-    border: 10px solid #fff; }
-  .thumbnail:hover img.img-circle {
-    border: none; }
-
 .text a:link, .text a:visited {
   text-decoration: underline; }
-
-.grid {
-  margin: 0 !important;
-  padding: 0 !important; }
-
-.list-group, .list-group button {
-  background-color: #B3A999; }
 
 @media (min-width: 992px) {
   .text header {
@@ -6059,7 +6151,7 @@ button {
   @media (min-width: 992px) and (min-width: 992px) {
     .text header {
       float: left;
-      width: 83.33333%; } }
+      width: 75%; } }
   @media (min-width: 992px) and (min-width: 992px) {
     .text header {
       margin-left: 16.66667%; } }
@@ -6076,6 +6168,9 @@ button {
     .text h2 {
       float: left;
       width: 16.66667%; } }
+  @media (min-width: 992px) and (min-width: 1200px) {
+    .text h2 {
+      margin-left: 8.33333%; } }
 @media (min-width: 992px) {
   .text section.block {
     margin-left: -15px;
@@ -6097,7 +6192,7 @@ button {
   @media (min-width: 992px) and (min-width: 992px) {
     .text .content {
       float: left;
-      width: 75%; } }
+      width: 66.66667%; } }
   @media (min-width: 992px) and (min-width: 1200px) {
     .text .content {
       float: left;

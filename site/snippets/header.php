@@ -11,8 +11,7 @@
   <?php echo css('/assets/css/default.css') ?>
   <script src="/assets/js/app.min.js"></script>
 </head>
-<body id="<?php if($page->template() != $page->slug()): ?><?php echo $page->template() ?> <?php endif ?><?php echo $page->slug() ?>">
+<body id="<?php echo $page->slug() ?>" <?php if($page->template() != $page->slug()): ?>class="<?php echo $page->template() ?>"<?php endif ?>>
 <header>
   <?php snippet('menu') ?>
 </header>
-<div class="container">

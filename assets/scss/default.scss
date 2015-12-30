@@ -2,6 +2,7 @@
 
 @import "nav";
 @import "adaptations";
+@import "longform";
 
 @import "dev";
 
@@ -97,47 +98,16 @@ blockquote {
 	font-size: 2em;
 }
 
-button {
-	outline: none;
-}
-
-.thumbnail {
-	border: none;
-	text-align: center;
-	color: #000;
-	&:hover {
-		color: #fff;
-	}
-	h2 {
-		margin-top: 11px;
-	}
-	.img-circle {
-		border:10px solid $body-bg;
-	}
-	&:hover img.img-circle {
-		border:none;
-	}
-}
-
 .text {
 	a:link, a:visited {
 		text-decoration: underline;
 	}
 }
 
-.grid {
-	margin: 0!important;
-	padding: 0!important;
-}
-
-.list-group, .list-group button {
-	background-color: #B3A999;
-}
-
 @media (min-width: $screen-md-min) {
 	.text {
 		header {
-			@include make-md-column(10);
+			@include make-md-column(9);
 			@include make-md-column-offset(2);
 		}
 		h2 {
@@ -145,12 +115,13 @@ button {
 			margin: 0;
 			text-align: right;
 			@include make-md-column(2);
+			@include make-lg-column-offset(1);
 		}
 		section.block {
 			@include make-row();
 		}
 		.content {
-			@include make-md-column(9);
+			@include make-md-column(8);
 			@include make-lg-column(7);
 		}
 		h2, section {

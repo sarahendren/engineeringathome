@@ -1,5 +1,6 @@
 <?php snippet('header') ?>
 
+<div class="container">
   <main class="main" role="main">
 
     <h1><?php echo $page->title()->html() ?></h1>
@@ -19,11 +20,19 @@
     <div class="row">
       <?php $Options = array('startURI' => '/adaptations', 'searchField' => 'Verbs');
       $relpages = relatedpages($Options); ?>
-      <ul>
-        <?php foreach($relpages->shuffle()->limit(3) as $relpage): ?>
-          <li><a href="<?php echo $relpage->url() ?>"><?php echo $relpage->title() ?></a></li>
+
+      <div class="grid">
+        <?php foreach($relpages->shuffle()->limit(3) as $adaptation): ?>
+        <div class="col-xs-6 col-sm-4 col-md-3 element-item <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
+          <?php if($image = $adaptation->images()->sortBy('sort', 'asc')->first()): ?>
+          <a class="thumbnail" href="<?php echo $adaptation->url() ?>">
+            <img class="img-circle" src="<?php echo $image->crop(150,150)->url() ?>" alt="<?php echo $adaptation->title()->html() ?>" width="150" height="150">
+            <h2><?php echo $adaptation->title() ?></h2>
+          </a>
+          <?php endif ?>
+        </div>
         <?php endforeach ?>
-      </ul>
+      </div>
 
     </div>
   </main>
