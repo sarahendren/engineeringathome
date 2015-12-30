@@ -1,6 +1,7 @@
 @import "bootstrap";
 
 @import "nav";
+@import "adaptations";
 
 @import "dev";
 
@@ -29,14 +30,23 @@ h1 strong {
 }
 
 .main-gallery {
-	img {
-		height: auto;
+	figure {
+												height: 342px;
+		@media (min-width: $screen-xs-min) {& {	height: 547px;	}}
+		@media (min-width: $screen-sm-min) {& {	height: 536px;	}}
+		@media (min-width: $screen-md-min) {& {	height: 693px;	}}
+		@media (min-width: $screen-lg-min) {& {	height: 836px;	}}
 	}
 	.gallery-cell {
 		width: 100%;
 		img {
 			display: block;
 			margin: auto;
+			max-height: 100%;
+			max-width: 100%;
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
 		}
 		/* fade in image when loaded */
 		.gallery-cell-image {

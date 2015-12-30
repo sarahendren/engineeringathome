@@ -7,7 +7,7 @@
     <div class="row">
       <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": 3}'>
         <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
-        <div class="gallery-cell <?php echo $image->kind() ?>"><img data-flickity-lazyload="<?php echo $image->resize(1170, 780)->url() ?>" width="<?php echo $image->resize(1170, 780)->width() ?>" height="<?php echo $image->resize(1170, 780)->height() ?>" alt="<?php echo $page->title()->html() ?>"></div>
+        <div class="gallery-cell <?php echo $image->kind() ?>"><figure><img src="<?php echo $image->resize(1170, 780)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $page->title()->html() ?>"></figure></div>
         <?php endforeach ?>
       </div>
     </div>

@@ -42,3 +42,10 @@ c::set('routes', array(
     }
   )
 ));
+
+c::set('responsiveimages.sources', array( 
+    'xs'  => array('width' => 480),
+    'sm' => array('width' => 768),
+    'md'  => array('width' => 992),
+    'lg'  => array('width' => 1200)
+));
