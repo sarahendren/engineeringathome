@@ -32,13 +32,14 @@ $moss: 					#4f6046;
 $brown: 				#343534;
 $red: 					#c02528;
 $crimson: 				#862e26;
+$taupe:					#B3a999;
 
 //== Scaffolding
 //
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-$body-bg:               #B3A999 !default;
+$body-bg:               #fff !default;
 //** Global text color on `<body>`.
 $text-color:            $gray-darker !default;
 
@@ -54,7 +55,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "AcuminProExtraCond-Regular", sans-serif !default;
+$font-family-sans-serif:  "acumin-pro-extra-condensed", sans-serif !default;
 $font-family-serif:       "Century Schoolbook", Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
