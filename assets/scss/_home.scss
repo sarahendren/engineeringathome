@@ -1,0 +1,20 @@
+#collage {
+	* {
+//		background-color:rgba(0,0,0,.05)
+	}
+	a {
+		@include make-xs-column(6);
+		@include make-md-column(4);
+	}
+}
+.row {
+	margin-bottom: 75px;
+}
+#collage .row:nth-child(odd) a {
+	@include make-xs-column-offset(6);
+}
+
+#collage .row:nth-child(4n+0) a {@include make-md-column-offset(4);}
+#collage .row:nth-child(4n+1) a {@include make-md-column-offset(8);}
+#collage .row:nth-child(4n+2) a {@include make-md-column-offset(4);}
+#collage .row:nth-child(4n+3) a {@include make-md-column-offset(0);}

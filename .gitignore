@@ -6,3 +6,4 @@
 /content
 /.sass-cache
 /site/cache
+*.log

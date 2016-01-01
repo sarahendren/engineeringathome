@@ -3,6 +3,7 @@
 @import "nav";
 @import "adaptations";
 @import "longform";
+@import "home";
 
 @import "dev";
 
@@ -86,10 +87,6 @@ h1 strong {
 	}
 }
 
-.navbar a.active {
-	background: darken($mustard, 10%);
-}
-
 blockquote {
 	text-align: right;
 	font-family: $font-family-sans-serif;
@@ -101,31 +98,5 @@ blockquote {
 .text {
 	a:link, a:visited {
 		text-decoration: underline;
-	}
-}
-
-@media (min-width: $screen-md-min) {
-	.text {
-		header {
-			@include make-md-column(9);
-			@include make-md-column-offset(2);
-		}
-		h2 {
-			padding: 0;
-			margin: 0;
-			text-align: right;
-			@include make-md-column(2);
-			@include make-lg-column-offset(1);
-		}
-		section.block {
-			@include make-row();
-		}
-		.content {
-			@include make-md-column(8);
-			@include make-lg-column(7);
-		}
-		h2, section {
-			margin-top: 40px;
-		}	
 	}
 }

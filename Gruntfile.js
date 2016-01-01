@@ -11,7 +11,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'assets/js/app.min.js': ['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/flickity/dist/flickity.pkgd.min.js', 'node_modules/isotope-layout/dist/isotope.pkgd.min.js']
+          'assets/js/app.min.js': ['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/flickity/dist/flickity.pkgd.min.js', 'node_modules/isotope-layout/dist/isotope.pkgd.min.js', 'node_modules/skrollr/dist/skrollr.min.js']
         }
       }
     },

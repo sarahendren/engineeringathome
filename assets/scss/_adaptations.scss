@@ -1,5 +1,5 @@
 body#adaptations {
-	background: $moss;
+	background: $green-background;
 	hr {
 		border-color: darken($moss,15%)!important;
 		border-width: 2px;
@@ -11,6 +11,7 @@ body#adaptations {
 		padding-top: 1em;
 		padding-bottom: 1em;
 		margin: 0 15px;
+		box-shadow: 10px 10px 0 darken($moss, 15%);
 		@include make-sm-column(4);
 		@include make-sm-column-offset(4);
 	}

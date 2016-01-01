@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<?php if($page->images()->count() == 1): ?>
+<?php if($page->images()->count() > 0): ?>
 	<header class="image">
 		<div class="container">
 			<img src="<?php echo $page->images()->first()->url() ?>">

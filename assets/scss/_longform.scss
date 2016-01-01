@@ -25,3 +25,36 @@ body.longform {
 		color: $sky;
 	}
 }
+
+
+.text {
+	header {
+		@include make-md-column(9);
+		@include make-md-column-offset(2);
+	}
+	h2 {
+		@include make-sm-column(2);
+		@include make-md-column(2);
+		@include make-lg-column-offset(1);
+		@media (min-width: $screen-sm-min) {
+			& {
+				padding: 0;
+				margin: 0;
+				text-align: right;
+			}
+		}
+	}
+	section.block {
+		@include make-row();
+	}
+	.content {
+		@include make-sm-column(10);
+		@include make-md-column(7);
+		@include make-lg-column(7);
+	}
+	@media (min-width: $screen-sm-min) {
+		h2, section {
+			margin-top: 40px;
+		}	
+	}
+}
