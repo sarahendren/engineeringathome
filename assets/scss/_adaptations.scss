@@ -1,24 +1,18 @@
 body#adaptations {
 	background: $green-background;
+	color: $moss;
 	hr {
 		border-color: darken($moss,15%)!important;
 		border-width: 2px;
 	}
 	h1 {
-		color: $yellow;
-		border: 2px solid $yellow;
-		text-align: center;
-		padding-top: 1em;
-		padding-bottom: 1em;
-		margin: 0 15px;
-		box-shadow: 10px 10px 0 darken($moss, 15%);
-		@include make-sm-column(4);
-		@include make-sm-column-offset(4);
-	}
-	.lead {
-		padding-top: 2em;
-		color: $yellow;
-		text-align: center;
+		color: $moss;
+		font-weight: 100;
+		strong {
+			font-weight: 900;
+			display: inline;
+		}
+		@include make-lg-column(8);
 	}
 	@media (min-width: $screen-md-min) {
 		.container header {
@@ -30,54 +24,41 @@ body#adaptations {
 .grid {
 	margin: 0!important;
 	padding: 0!important;
-}
-
-
-button {
-	outline: none;
-}
-
-.thumbnail {
-	border: none;
-	text-align: center;
-	color: #000;
-	&:hover {
-		color: $yellow;
-	}
-	h2 {
-		margin-top: 11px;
-	}
-	.img-circle {
-		border:10px solid $moss;
-	}
-	&:hover img.img-circle {
-		border:none;
-		box-shadow: 0 0 50px $yellow;
-	}
-}
-
-.list-group {
-	&, button {
-		background-color: $moss;
-		border-color: darken($moss,5%);
-		color: #000;
-	}
-	.badge {
-		background: darken($moss,5%)!important;
-		color: darken($moss,25%)!important;
-		padding: 1px 7px 5px 7px;
-	}
-	button:hover {
-		box-shadow: 0 0 50px $yellow;
-	}
-	button:hover, button:active, button.active {
-		background: $yellow!important;
-		border-color: $yellow!important;
-		z-index: 5;
-		color: $moss!important;
-		.badge {
-			background: lighten($yellow,10%)!important;
-			color: $moss!important;
+	a {
+		display: block;
+		cursor: hand!important;
+		margin-bottom: 30px;
+		img {
+			max-width: none!important;
+			transition: background-color .5s;
 		}
+		img.gif {
+			width: 100%;
+		}
+		h2 {
+			opacity: 0;
+			color: #fff;
+			padding: 0 20px;
+			margin: 0;
+			display: block;
+			position: absolute;
+				top: 40%;
+				left: 0;
+			transform: translateY(-40%);
+			text-align: center;
+			width: 100%;
+			transition: opacity .5s;
+		}
+		&:hover {
+			h2 {
+				opacity: 1;
+			}
+			img {
+				background-color: $moss;
+			}
+		}
+	}
+	.responsive-sprites {
+		max-height: 181px;
 	}
 }
