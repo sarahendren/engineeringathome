@@ -5,24 +5,17 @@ pages: false
 files:
   sortable: true
   fields:
-    kind:
-      label: Image Kind
-      type: radio
-      columns: 3
-      default: studio
-      options:
-        studio: "Studio"
-        closeup: "Closeup"
-        inuse: "In Use"
-        insitu: "In Situ"
-        sequence: "Sequence"
-        diagram: "Diagram"
-    photoedits:
-      label: Photo Edit Comments (Private)
-      type: textarea
     caption:
       label: Caption
       type: textarea
+    kind:
+      label: Image Kind
+      type: radio
+      default: studio
+      options:
+        studio: "Studio"
+        inuse: "In Use"
+        diagram: "Diagram"
 fields:
   title:
     label: Title
