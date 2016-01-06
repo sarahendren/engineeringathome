@@ -3,7 +3,6 @@
 /assets/avatars
 /thumbs/*
 /node_modules
-/content
 /.sass-cache
 /site/cache
 *.log
