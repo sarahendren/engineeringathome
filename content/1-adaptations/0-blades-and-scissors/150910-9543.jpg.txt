@@ -6,4 +6,4 @@ Kind: studio
 
 ----
 
-Caption: 
+Caption: Another studio view of the scissors.

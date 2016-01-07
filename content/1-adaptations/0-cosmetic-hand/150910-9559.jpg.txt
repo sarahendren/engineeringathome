@@ -1,1 +1,9 @@
 Sort: 8
+
+----
+
+Caption: Top side of left cosmetic hand.
+
+----
+
+Kind: studio
