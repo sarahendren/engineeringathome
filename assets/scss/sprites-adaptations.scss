@@ -1,0 +1,338 @@
+.responsive-sprites {
+  height: auto;
+  overflow: hidden;
+
+  & > img {
+    display: block;
+  }
+}
+
+// explanation:
+// width         = 100% * spritesheet width                       / image width
+// margin-top    = 100% * distance from top of sprite to image    / image width
+// margin-bottom = 100% * distance from bottom of sprite to image / image width
+// margin-left   = 100% * distance from left of sprite to image   / image width
+
+
+// Constants	
+$total_width: 3512;
+$total_height: 2870;
+
+img.adhesive-wall-hooks {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * 0 / 500;
+  margin-bottom: -100% * ($total_height - 0 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.adhesive-wall-hooks.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1795 / 500;
+  margin-bottom: -100% * ($total_height - 1795 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.brand-slicer {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -359 / 500;
+  margin-bottom: -100% * ($total_height - 359 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.brand-slicer.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -359 / 500;
+  margin-bottom: -100% * ($total_height - 359 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.button-aid-and-zipper-pull {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * 0 / 500;
+  margin-bottom: -100% * ($total_height - 0 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.button-aid-and-zipper-pull.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -359 / 500;
+  margin-bottom: -100% * ($total_height - 359 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.cable-ties {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -718 / 500;
+  margin-bottom: -100% * ($total_height - 718 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.cable-ties.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -718 / 500;
+  margin-bottom: -100% * ($total_height - 718 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.car-assistance-tool {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -718 / 500;
+  margin-bottom: -100% * ($total_height - 718 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.car-assistance-tool.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1077 / 500;
+  margin-bottom: -100% * ($total_height - 1077 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.carabiners {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1077 / 500;
+  margin-bottom: -100% * ($total_height - 1077 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.carabiners.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1077 / 500;
+  margin-bottom: -100% * ($total_height - 1077 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.card-holder {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * 0 / 500;
+  margin-bottom: -100% * ($total_height - 0 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.card-holder.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -359 / 500;
+  margin-bottom: -100% * ($total_height - 359 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.clasps {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -718 / 500;
+  margin-bottom: -100% * ($total_height - 718 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.clasps.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1077 / 500;
+  margin-bottom: -100% * ($total_height - 1077 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.cosmetic-hand {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1436 / 500;
+  margin-bottom: -100% * ($total_height - 1436 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.cosmetic-hand.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1436 / 500;
+  margin-bottom: -100% * ($total_height - 1436 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.cosmetic-sponges {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1436 / 500;
+  margin-bottom: -100% * ($total_height - 1436 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.cosmetic-sponges.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1436 / 500;
+  margin-bottom: -100% * ($total_height - 1436 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.deodorant-stick {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * 0 / 500;
+  margin-bottom: -100% * ($total_height - 0 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.deodorant-stick.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -359 / 500;
+  margin-bottom: -100% * ($total_height - 359 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.fingers-3d-printed {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -718 / 500;
+  margin-bottom: -100% * ($total_height - 718 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.fingers-3d-printed.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1077 / 500;
+  margin-bottom: -100% * ($total_height - 1077 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.fiskars {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1436 / 500;
+  margin-bottom: -100% * ($total_height - 1436 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.fiskars.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1795 / 500;
+  margin-bottom: -100% * ($total_height - 1795 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.fork-holder {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * 0 / 500;
+  margin-bottom: -100% * ($total_height - 0 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.fork-holder.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1795 / 500;
+  margin-bottom: -100% * ($total_height - 1795 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.fork-strap {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1795 / 500;
+  margin-bottom: -100% * ($total_height - 1795 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.fork-strap.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1795 / 500;
+  margin-bottom: -100% * ($total_height - 1795 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.french-washcloth {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * 0 / 500;
+  margin-bottom: -100% * ($total_height - 0 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.french-washcloth.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -359 / 500;
+  margin-bottom: -100% * ($total_height - 359 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.knife-holder {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -718 / 500;
+  margin-bottom: -100% * ($total_height - 718 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.knife-holder.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1077 / 500;
+  margin-bottom: -100% * ($total_height - 1077 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.laundry-detergent-system {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1436 / 500;
+  margin-bottom: -100% * ($total_height - 1436 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.laundry-detergent-system.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1795 / 500;
+  margin-bottom: -100% * ($total_height - 1795 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.light-switches {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2154 / 500;
+  margin-bottom: -100% * ($total_height - 2154 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.loop-scissors {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2154 / 500;
+  margin-bottom: -100% * ($total_height - 2154 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.loop-scissors.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2154 / 500;
+  margin-bottom: -100% * ($total_height - 2154 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.medical-id-necklace {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2154 / 500;
+  margin-bottom: -100% * ($total_height - 2154 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.medical-id-necklace.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2154 / 500;
+  margin-bottom: -100% * ($total_height - 2154 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.myoelectric-hand {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2154 / 500;
+  margin-bottom: -100% * ($total_height - 2154 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.myoelectric-hand.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2513 / 500;
+  margin-bottom: -100% * ($total_height - 2513 - 357) / 500;
+  margin-left: -100% * 0 / 500;
+}
+img.newspaper-board {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2513 / 500;
+  margin-bottom: -100% * ($total_height - 2513 - 357) / 500;
+  margin-left: -100% * 502 / 500;
+}
+img.newspaper-board.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2513 / 500;
+  margin-bottom: -100% * ($total_height - 2513 - 357) / 500;
+  margin-left: -100% * 1004 / 500;
+}
+img.pen-holder {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2513 / 500;
+  margin-bottom: -100% * ($total_height - 2513 - 357) / 500;
+  margin-left: -100% * 1506 / 500;
+}
+img.pen-holder.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2513 / 500;
+  margin-bottom: -100% * ($total_height - 2513 - 357) / 500;
+  margin-left: -100% * 2008 / 500;
+}
+img.sandwich-tongs {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -2513 / 500;
+  margin-bottom: -100% * ($total_height - 2513 - 357) / 500;
+  margin-left: -100% * 2510 / 500;
+}
+img.sandwich-tongs.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * 0 / 500;
+  margin-bottom: -100% * ($total_height - 0 - 357) / 500;
+  margin-left: -100% * 3012 / 500;
+}
+img.soft-tubing {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -359 / 500;
+  margin-bottom: -100% * ($total_height - 359 - 357) / 500;
+  margin-left: -100% * 3012 / 500;
+}
+img.soft-tubing.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -718 / 500;
+  margin-bottom: -100% * ($total_height - 718 - 357) / 500;
+  margin-left: -100% * 3012 / 500;
+}
+img.tweezers-and-demitasse-spoon {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1077 / 500;
+  margin-bottom: -100% * ($total_height - 1077 - 357) / 500;
+  margin-left: -100% * 3012 / 500;
+}
+img.tweezers-and-demitasse-spoon.silhouette {
+  width: 100% * $total_width / 500;
+  margin-top: 100% * -1436 / 500;
+  margin-bottom: -100% * ($total_height - 1436 - 357) / 500;
+  margin-left: -100% * 3012 / 500;
+}

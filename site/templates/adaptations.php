@@ -12,10 +12,19 @@
 			</div>
 			<div class="row">
 				<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
-				<div class="filter-button-group">
-					<?php foreach($tagcloud as $tag): ?>
-						<button class="<?php echo $tag->name() ?>" data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?></button>
-					<?php endforeach ?>
+				<div class="filter-button-group row">
+					<div class="js-isotope">
+						<?php foreach($tagcloud as $tag): ?>
+							<div class="col-xs-6 col-sm-4 col-md-3">
+								<button data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?>
+									<div class="responsive-sprites">
+								    	<img src="/assets/handwriting-sprite.png" class="<?php echo $tag->name() ?>" alt="<?php echo $tag->name() ?>">
+									</div>
+								</button>
+							</div>
+						<?php endforeach ?>
+					</div>
+					<h2><a href="#filter=*" data-filter="*">browse all</a> ☛ ## adaptations to <strong>squeeze</strong></h2>
 				</div>
 			</div>
 	    </section>
@@ -29,7 +38,7 @@
 						<img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
 				  	<?php else: ?>
 					    <div class="responsive-sprites">
-					    	<img src="/assets/adaptations-sprite-min.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
+					    	<img src="/assets/adaptations-sprite.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
 					    </div>
 					<?php endif ?>
 			    	<h2><?php echo $adaptation->title()->widont() ?></h2>

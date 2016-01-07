@@ -5799,7 +5799,8 @@ button.close {
   font-family: "acumin-pro-extra-condensed", sans-serif;
   font-size: 20px;
   text-transform: lowercase;
-  border: none; }
+  border: none;
+  z-index: 5; }
   .navbar a.active:link, .navbar a.active:visited, .navbar a.active:hover, .navbar a.active:active {
     color: #fff !important;
     background: rgba(0, 0, 0, 0.5) !important; }
@@ -5817,6 +5818,90 @@ button.close {
   .responsive-sprites > img {
     display: block; }
 
+img.Attach {
+  width: 200.76046%;
+  margin-top: -114.44867%;
+  margin-bottom: -19.01141%;
+  margin-left: -100.76046%; }
+
+img.Carry {
+  width: 200.76046%;
+  margin-top: -49.80989%;
+  margin-bottom: -77.94677%;
+  margin-left: -100.76046%; }
+
+img.Connect {
+  width: 200.76046%;
+  margin-top: -133.8403%;
+  margin-bottom: -1.52091%;
+  margin-left: -100.76046%; }
+
+img.Cut {
+  width: 200.76046%;
+  margin-top: -133.8403%;
+  margin-bottom: 0%;
+  margin-left: 0%; }
+
+img.Grasp {
+  width: 200.76046%;
+  margin-top: -31.55894%;
+  margin-bottom: -88.59316%;
+  margin-left: 0%; }
+
+img.Hold {
+  width: 200.76046%;
+  margin-top: -114.44867%;
+  margin-bottom: -17.11027%;
+  margin-left: 0%; }
+
+img.Lift {
+  width: 200.76046%;
+  margin-top: 0%;
+  margin-bottom: -124.71483%;
+  margin-left: -100.76046%; }
+
+img.Pinch {
+  width: 200.76046%;
+  margin-top: -91.63498%;
+  margin-bottom: -36.5019%;
+  margin-left: 0%; }
+
+img.Pull {
+  width: 200.76046%;
+  margin-top: -91.63498%;
+  margin-bottom: -36.88213%;
+  margin-left: -100.76046%; }
+
+img.Squeeze {
+  width: 200.76046%;
+  margin-top: 0%;
+  margin-bottom: -119.39163%;
+  margin-left: 0%; }
+
+img.Steady {
+  width: 200.76046%;
+  margin-top: -26.23574%;
+  margin-bottom: -101.14068%;
+  margin-left: -100.76046%; }
+
+img.Turn {
+  width: 200.76046%;
+  margin-top: -73.0038%;
+  margin-bottom: -59.31559%;
+  margin-left: -100.76046%; }
+
+img.Yank {
+  width: 203.07692%;
+  margin-top: -63.07692%;
+  margin-bottom: -60%;
+  margin-left: 0%; }
+
+.responsive-sprites {
+  height: auto;
+  overflow: hidden; }
+  .responsive-sprites > img {
+    display: block; }
+
 img.adhesive-wall-hooks {
   width: 702.4%;
   margin-top: 0%;
@@ -5827,7 +5912,7 @@ img.adhesive-wall-hooks.silhouette {
   width: 702.4%;
   margin-top: -359%;
   margin-bottom: -143.6%;
-  margin-left: 0%; }
+  margin-left: -100.4%; }
 
 img.brand-slicer {
   width: 702.4%;
@@ -5901,226 +5986,238 @@ img.card-holder.silhouette {
   margin-bottom: -430.8%;
   margin-left: -301.2%; }
 
-img.cosmetic-hand {
+img.clasps {
   width: 702.4%;
   margin-top: -143.6%;
   margin-bottom: -359%;
   margin-left: -301.2%; }
 
-img.cosmetic-hand.silhouette {
+img.clasps.silhouette {
   width: 702.4%;
   margin-top: -215.4%;
   margin-bottom: -287.2%;
   margin-left: -301.2%; }
+
+img.cosmetic-hand {
+  width: 702.4%;
+  margin-top: -287.2%;
+  margin-bottom: -215.4%;
+  margin-left: 0%; }
+
+img.cosmetic-hand.silhouette {
+  width: 702.4%;
+  margin-top: -287.2%;
+  margin-bottom: -215.4%;
+  margin-left: -100.4%; }
 
 img.cosmetic-sponges {
   width: 702.4%;
   margin-top: -287.2%;
   margin-bottom: -215.4%;
-  margin-left: 0%; }
+  margin-left: -200.8%; }
 
 img.cosmetic-sponges.silhouette {
   width: 702.4%;
   margin-top: -287.2%;
   margin-bottom: -215.4%;
-  margin-left: -100.4%; }
-
-img.deodorant-stick {
-  width: 702.4%;
-  margin-top: -287.2%;
-  margin-bottom: -215.4%;
-  margin-left: -200.8%; }
-
-img.deodorant-stick.silhouette {
-  width: 702.4%;
-  margin-top: -287.2%;
-  margin-bottom: -215.4%;
   margin-left: -301.2%; }
 
-img.fingers-3d-printed {
+img.deodorant-stick {
   width: 702.4%;
   margin-top: 0%;
   margin-bottom: -502.6%;
   margin-left: -401.6%; }
 
-img.fingers-3d-printed.silhouette {
+img.deodorant-stick.silhouette {
   width: 702.4%;
   margin-top: -71.8%;
   margin-bottom: -430.8%;
   margin-left: -401.6%; }
 
-img.fiskars {
+img.fingers-3d-printed {
   width: 702.4%;
   margin-top: -143.6%;
   margin-bottom: -359%;
   margin-left: -401.6%; }
 
-img.fiskars.silhouette {
+img.fingers-3d-printed.silhouette {
   width: 702.4%;
   margin-top: -215.4%;
   margin-bottom: -287.2%;
   margin-left: -401.6%; }
 
-img.fork-holder {
+img.fiskars {
   width: 702.4%;
   margin-top: -287.2%;
   margin-bottom: -215.4%;
   margin-left: -401.6%; }
 
-img.fork-holder.silhouette {
+img.fiskars.silhouette {
+  width: 702.4%;
+  margin-top: -359%;
+  margin-bottom: -143.6%;
+  margin-left: 0%; }
+
+img.fork-holder {
   width: 702.4%;
   margin-top: 0%;
   margin-bottom: -502.6%;
   margin-left: 0%; }
+
+img.fork-holder.silhouette {
+  width: 702.4%;
+  margin-top: -359%;
+  margin-bottom: -143.6%;
+  margin-left: -200.8%; }
 
 img.fork-strap {
   width: 702.4%;
   margin-top: -359%;
   margin-bottom: -143.6%;
-  margin-left: -100.4%; }
+  margin-left: -301.2%; }
 
 img.fork-strap.silhouette {
   width: 702.4%;
   margin-top: -359%;
   margin-bottom: -143.6%;
-  margin-left: -200.8%; }
-
-img.french-washcloth {
-  width: 702.4%;
-  margin-top: -359%;
-  margin-bottom: -143.6%;
-  margin-left: -301.2%; }
-
-img.french-washcloth.silhouette {
-  width: 702.4%;
-  margin-top: -359%;
-  margin-bottom: -143.6%;
   margin-left: -401.6%; }
 
-img.knife-holder {
+img.french-washcloth {
   width: 702.4%;
   margin-top: 0%;
   margin-bottom: -502.6%;
   margin-left: -502%; }
 
-img.knife-holder.silhouette {
+img.french-washcloth.silhouette {
   width: 702.4%;
   margin-top: -71.8%;
   margin-bottom: -430.8%;
   margin-left: -502%; }
 
-img.laundry-detergent-system {
+img.knife-holder {
   width: 702.4%;
   margin-top: -143.6%;
   margin-bottom: -359%;
   margin-left: -502%; }
 
-img.laundry-detergent-system.silhouette {
+img.knife-holder.silhouette {
   width: 702.4%;
   margin-top: -215.4%;
   margin-bottom: -287.2%;
   margin-left: -502%; }
 
-img.light-switches {
+img.laundry-detergent-system {
   width: 702.4%;
   margin-top: -287.2%;
   margin-bottom: -215.4%;
   margin-left: -502%; }
 
-img.loop-scissors {
+img.laundry-detergent-system.silhouette {
   width: 702.4%;
   margin-top: -359%;
   margin-bottom: -143.6%;
   margin-left: -502%; }
 
-img.loop-scissors.silhouette {
+img.light-switches {
   width: 702.4%;
   margin-top: -430.8%;
   margin-bottom: -71.8%;
   margin-left: 0%; }
+
+img.loop-scissors {
+  width: 702.4%;
+  margin-top: -430.8%;
+  margin-bottom: -71.8%;
+  margin-left: -100.4%; }
+
+img.loop-scissors.silhouette {
+  width: 702.4%;
+  margin-top: -430.8%;
+  margin-bottom: -71.8%;
+  margin-left: -200.8%; }
 
 img.medical-id-necklace {
   width: 702.4%;
   margin-top: -430.8%;
   margin-bottom: -71.8%;
-  margin-left: -100.4%; }
+  margin-left: -301.2%; }
 
 img.medical-id-necklace.silhouette {
   width: 702.4%;
   margin-top: -430.8%;
   margin-bottom: -71.8%;
-  margin-left: -200.8%; }
+  margin-left: -401.6%; }
 
 img.myoelectric-hand {
   width: 702.4%;
   margin-top: -430.8%;
   margin-bottom: -71.8%;
-  margin-left: -301.2%; }
-
-img.myoelectric-hand.silhouette {
-  width: 702.4%;
-  margin-top: -430.8%;
-  margin-bottom: -71.8%;
-  margin-left: -401.6%; }
-
-img.newspaper-board {
-  width: 702.4%;
-  margin-top: -430.8%;
-  margin-bottom: -71.8%;
   margin-left: -502%; }
 
-img.newspaper-board.silhouette {
+img.myoelectric-hand.silhouette {
   width: 702.4%;
   margin-top: -502.6%;
   margin-bottom: 0%;
   margin-left: 0%; }
 
-img.pen-holder {
+img.newspaper-board {
   width: 702.4%;
   margin-top: -502.6%;
   margin-bottom: 0%;
   margin-left: -100.4%; }
 
-img.pen-holder.silhouette {
+img.newspaper-board.silhouette {
   width: 702.4%;
   margin-top: -502.6%;
   margin-bottom: 0%;
   margin-left: -200.8%; }
 
-img.sandwich-tongs {
+img.pen-holder {
   width: 702.4%;
   margin-top: -502.6%;
   margin-bottom: 0%;
   margin-left: -301.2%; }
 
-img.sandwich-tongs.silhouette {
+img.pen-holder.silhouette {
   width: 702.4%;
   margin-top: -502.6%;
   margin-bottom: 0%;
   margin-left: -401.6%; }
 
-img.soft-tubing {
+img.sandwich-tongs {
   width: 702.4%;
   margin-top: -502.6%;
   margin-bottom: 0%;
   margin-left: -502%; }
 
-img.soft-tubing.silhouette {
+img.sandwich-tongs.silhouette {
   width: 702.4%;
   margin-top: 0%;
   margin-bottom: -502.6%;
   margin-left: -602.4%; }
 
-img.tweezers-and-demitasse-spoon {
+img.soft-tubing {
   width: 702.4%;
   margin-top: -71.8%;
   margin-bottom: -430.8%;
   margin-left: -602.4%; }
 
-img.tweezers-and-demitasse-spoon.silhouette {
+img.soft-tubing.silhouette {
   width: 702.4%;
   margin-top: -143.6%;
   margin-bottom: -359%;
+  margin-left: -602.4%; }
+
+img.tweezers-and-demitasse-spoon {
+  width: 702.4%;
+  margin-top: -215.4%;
+  margin-bottom: -287.2%;
+  margin-left: -602.4%; }
+
+img.tweezers-and-demitasse-spoon.silhouette {
+  width: 702.4%;
+  margin-top: -287.2%;
+  margin-bottom: -215.4%;
   margin-left: -602.4%; }
 
 body#adaptations {
@@ -6176,8 +6273,23 @@ body#adaptations {
       opacity: 1; }
     .grid a:hover img {
       background-color: #4f6046; }
-  .grid .responsive-sprites {
-    max-height: 181px; }
+
+button {
+  max-width: 100%;
+  text-indent: -5000em;
+  overflow: hidden;
+  display: block;
+  background: transparent;
+  border: none;
+  max-height: 106px;
+  border-radius: 50%;
+  transition: box-shadow .5s; }
+  button:hover {
+    box-shadow: 0 0 75px #F6f07A; }
+
+.responsive-sprites img {
+  max-width: none !important;
+  transition: background-color .5s; }
 
 body.longform {
   background: #a6e8f5;
@@ -6300,6 +6412,43 @@ body.longform {
   .text h2, .text section {
     margin-top: 40px; } }
 
+section {
+  background-size: cover;
+  background-position: center; }
+  section div div div {
+    height: 66vh;
+    position: relative; }
+  section a.readmore {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 0 50px 50px #fff; }
+  section h1 {
+    color: #fff; }
+  section#unlikelyengineering {
+    background-color: #c8b12d;
+    background-image: url(/assets/collage.png);
+    text-indent: -5000em;
+    overflow: hidden; }
+    section#unlikelyengineering h1 {
+      color: #e6d98f; }
+  section#unlikelyobjects {
+    background-color: #4f6046; }
+    section#unlikelyobjects h1 strong {
+      color: #8ea482; }
+  section#unlikelypeople {
+    background-color: #007a89; }
+    section#unlikelypeople h1 strong {
+      color: #0ae4ff; }
+  section#expansiveview {
+    background-color: #FF8C92;
+    background-image: url(/assets/expansiveview.jpg); }
+    section#expansiveview h1 strong {
+      color: #ffd9db; }
+
 #collage a {
   position: relative;
   float: left;
@@ -6337,6 +6486,51 @@ body.longform {
 @media (min-width: 992px) {
   #collage .row:nth-child(4n+3) a {
     margin-left: 0%; } }
+
+body {
+  height: 10000px; }
+
+.navbar {
+  margin: 0; }
+
+#collage {
+  margin-top: 75vh;
+  position: relative;
+  display: block; }
+
+#collage a {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 0; }
+
+#collage a img {
+  opacity: 0;
+  display: block;
+  margin: auto; }
+
+#collage a:hover img {
+  opacity: 1 !important; }
+
+#objects section {
+  display: block;
+  height: 100vh;
+  text-align: center; }
+
+#objects h1 {
+  position: relative;
+  top: 40%;
+  left: -50%;
+  transform: translateY(-60%), translateX(-50%);
+  color: #fff;
+  font-size: 5em; }
+
+.more {
+  display: block;
+  text-align: center;
+  padding: 125px 0 !important;
+  color: #fff; }
 
 #content-checklist table {
   width: 100%; }

@@ -16,10 +16,17 @@ module.exports = function(grunt) {
       }
     },
     sprite:{
-      all: {
+      adaptations: {
         src: 'content/home/*.png',
         dest: 'assets/adaptations-sprite.png',
-        destCss: 'assets/scss/sprites.scss',
+        destCss: 'assets/scss/sprites-adaptations.scss',
+        padding: 2,
+        cssTemplate: "assets/sprites.css.handlebars"
+     },
+      actions: {
+        src: 'content/1-adaptations/*.png',
+        dest: 'assets/handwriting-sprite.png',
+        destCss: 'assets/scss/sprites-actions.scss',
         padding: 2,
         cssTemplate: "assets/sprites.css.handlebars"
      }

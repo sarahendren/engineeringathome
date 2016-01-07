@@ -1,3 +1,46 @@
+section {
+	background-size: cover;
+	background-position: center;
+	div div div {
+		height: 66vh;
+		position: relative;
+	}
+	a.readmore {
+		position: absolute;
+			bottom: 0;
+			left: 0;
+		background: #fff;
+		border-radius: 50%;
+		padding: 20px;
+		box-shadow: 0 0 50px 50px #fff;
+	}
+	h1 {
+		color: #fff;
+	}
+	&#unlikelyengineering {
+		background-color: $mustard;
+		background-image:url(/assets/collage.png);
+		h1 {color: lighten($mustard, 25%)}
+		text-indent: -5000em;
+		overflow: hidden;
+	}
+	&#unlikelyobjects {
+		background-color: $moss;	
+		h1 strong {color: lighten($moss, 25%)}	
+	}
+	&#unlikelypeople {
+		background-color: $teal;		
+		h1 strong {color: lighten($teal, 25%)}	
+	}
+	&#expansiveview {
+		background-color: $pink;		
+		background-image:url(/assets/expansiveview.jpg);
+		h1 strong {color: lighten($pink, 15%)}	
+	}
+}
+
+
+
 #collage {
 	* {
 //		background-color:rgba(0,0,0,.05)
@@ -18,3 +61,51 @@
 #collage .row:nth-child(4n+1) a {@include make-md-column-offset(8);}
 #collage .row:nth-child(4n+2) a {@include make-md-column-offset(4);}
 #collage .row:nth-child(4n+3) a {@include make-md-column-offset(0);}
+
+* {
+}
+body {
+	height:10000px;
+}
+.navbar {
+	margin:0;
+}
+#collage {
+	margin-top: 75vh;
+	position: relative;
+	display: block;
+}
+#collage a {
+	display: block;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	padding:0;
+}
+#collage a img {
+	opacity: 0;
+	display: block;
+	margin: auto;
+}
+#collage a:hover img {
+	opacity: 1!important;
+}
+#objects section {
+	display: block;
+	height: 100vh;
+	text-align: center;
+}
+#objects h1 {
+	position: relative;
+	top: 40%;
+	left: -50%;
+	transform: translateY(-60%), translateX(-50%);
+	color: #fff;
+	font-size: 5em;
+}
+.more {
+	display:block;
+	text-align: center;
+	padding: 125px 0!important;
+	color: #fff;
+}
