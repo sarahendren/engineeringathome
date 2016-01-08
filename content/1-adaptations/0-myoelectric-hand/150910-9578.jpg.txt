@@ -2,8 +2,8 @@ Sort: 3
 
 ----
 
-Kind: closeup
+Kind: studio
 
 ----
 
-Caption: 
+Caption: A close up shot of the carbon fiber and motors that form the palm and digit attachments on the hand.
