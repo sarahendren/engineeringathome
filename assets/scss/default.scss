@@ -110,7 +110,15 @@ blockquote {
 
 footer {
 	padding: 1em;
-	background: $mustard;
+	background: $gray;
+	color: $gray-lighter;
+	margin-top: 40px;
+	a:link, a:visited {
+		color: $gray-lighter;
+	}
+	.container {
+		padding: 40px 0;
+	}
 }
 
 .uniform__potty {

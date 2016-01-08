@@ -6746,7 +6746,13 @@ blockquote {
 
 footer {
   padding: 1em;
-  background: #c8b12d; }
+  background: #555555;
+  color: #eeeeee;
+  margin-top: 40px; }
+  footer a:link, footer a:visited {
+    color: #eeeeee; }
+  footer .container {
+    padding: 40px 0; }
 
 .uniform__potty {
   position: absolute;
