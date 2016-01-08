@@ -1,9 +1,0 @@
-Sort: 
-
-----
-
-Kind: diagram
-
-----
-
-Caption: 
