@@ -9,9 +9,9 @@ return function($site, $pages, $page) {
         'actions' => [
             [
                 '_action' => 'email',
-                'to'      => 'casey@bullshit.systems',
-                'sender'  => 'info@my-domain.tld',
-                'subject' => 'New message from the contact form'
+                'to'      => 'unlikely.engineering@gmail.com',
+                'sender'  => 'unlikely.engineering@gmail.com',
+                'subject' => '[unlikelyengineering] New message from {name}'
             ]
         ]
     ]);
