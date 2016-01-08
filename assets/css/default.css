@@ -6274,7 +6274,7 @@ body#adaptations {
     .grid a:hover img {
       background-color: #4f6046; }
 
-button {
+#filter button {
   max-width: 100%;
   text-indent: -5000em;
   overflow: hidden;
@@ -6284,7 +6284,7 @@ button {
   max-height: 106px;
   border-radius: 50%;
   transition: box-shadow .5s; }
-  button:hover {
+  #filter button:hover {
     box-shadow: 0 0 75px #F6f07A; }
 
 .responsive-sprites img {
@@ -6732,5 +6732,10 @@ blockquote {
 
 .text a:link, .text a:visited {
   text-decoration: underline; }
+
+.uniform__potty {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
 
 /*# sourceMappingURL=default.css.map */

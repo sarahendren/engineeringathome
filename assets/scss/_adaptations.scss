@@ -60,18 +60,20 @@ body#adaptations {
 	}
 }
 
-button {
-	max-width: 100%;
-	text-indent: -5000em;
-	overflow: hidden;
-	display: block;
-	background: transparent;
-    border: none;
-    max-height: 106px;
-	border-radius: 50%;
-	transition: box-shadow .5s;
-	&:hover {
-		box-shadow: 0 0 75px $yellow;
+#filter {
+	button {
+		max-width: 100%;
+		text-indent: -5000em;
+		overflow: hidden;
+		display: block;
+		background: transparent;
+	    border: none;
+	    max-height: 106px;
+		border-radius: 50%;
+		transition: box-shadow .5s;
+		&:hover {
+			box-shadow: 0 0 75px $yellow;
+		}
 	}
 }
 
