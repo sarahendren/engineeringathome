@@ -6430,6 +6430,7 @@ section {
     color: #fff; }
   section#unlikelyengineering {
     background-color: #c8b12d;
+    background-position: left center;
     background-image: url(/assets/collage.png);
     text-indent: -5000em; }
     section#unlikelyengineering h1 {
@@ -6518,12 +6519,6 @@ section {
   transform: translateY(-60%), translateX(-50%);
   color: #fff;
   font-size: 5em; }
-
-.more {
-  display: block;
-  text-align: center;
-  padding: 125px 0 !important;
-  color: #fff; }
 
 #content-checklist table {
   width: 100%; }
