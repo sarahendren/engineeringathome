@@ -9,7 +9,7 @@ fields:
     label: Title
     type:  text
   cindy:
-    label: Cindy's Tory
+    label: Cindy's Story
     type:  markdown
   about:
     label: About the Project
