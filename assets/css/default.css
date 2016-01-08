@@ -6431,8 +6431,7 @@ section {
   section#unlikelyengineering {
     background-color: #c8b12d;
     background-image: url(/assets/collage.png);
-    text-indent: -5000em;
-    overflow: hidden; }
+    text-indent: -5000em; }
     section#unlikelyengineering h1 {
       color: #e6d98f; }
   section#unlikelyobjects {
@@ -6486,12 +6485,6 @@ section {
 @media (min-width: 992px) {
   #collage .row:nth-child(4n+3) a {
     margin-left: 0%; } }
-
-body {
-  height: 10000px; }
-
-.navbar {
-  margin: 0; }
 
 #collage {
   margin-top: 75vh;

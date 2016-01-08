@@ -22,7 +22,6 @@ section {
 		background-image:url(/assets/collage.png);
 		h1 {color: lighten($mustard, 25%)}
 		text-indent: -5000em;
-		overflow: hidden;
 	}
 	&#unlikelyobjects {
 		background-color: $moss;	
@@ -64,12 +63,6 @@ section {
 
 * {
 }
-body {
-	height:10000px;
-}
-.navbar {
-	margin:0;
-}
 #collage {
 	margin-top: 75vh;
 	position: relative;
@@ -102,10 +95,4 @@ body {
 	transform: translateY(-60%), translateX(-50%);
 	color: #fff;
 	font-size: 5em;
-}
-.more {
-	display:block;
-	text-align: center;
-	padding: 125px 0!important;
-	color: #fff;
 }
