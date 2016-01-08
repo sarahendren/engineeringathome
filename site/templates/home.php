@@ -46,8 +46,4 @@
 	</div>
 </section>
 <div class="container">
-	
-	<script type="text/javascript">
-	var s = skrollr.init();
-	</script>
 	<?php snippet('footer') ?>
