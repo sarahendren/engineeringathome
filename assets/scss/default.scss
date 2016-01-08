@@ -1,14 +1,11 @@
 @import "bootstrap";
 
-
 @import "nav";
 @import "sprites-actions";
 @import "sprites-adaptations";
 @import "adaptations";
 @import "longform";
 @import "home";
-
-@import "dev";
 
 /*! Flickity v1.1.1
 http://flickity.metafizzy.co
@@ -98,10 +95,15 @@ blockquote {
 	font-size: 2em;
 }
 
-.text {
+.text, footer {
 	a:link, a:visited {
 		text-decoration: underline;
 	}
+}
+
+footer {
+	padding: 1em;
+	background: $mustard;
 }
 
 .uniform__potty {

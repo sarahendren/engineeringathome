@@ -1,12 +1,16 @@
-  <footer class="footer cf" role="contentinfo">
-    <div class="contact">
-		<?php echo $site->contact()->kt() ?>
-    </div>
-    <div class="copyright">
-		<?php echo $site->copyright()->kt() ?>
-    </div>
-  </footer>
- </div>
+</div>
+<footer class="footer" role="contentinfo">
+	<div class="container">
+		<div class="row">
+				<div class="contact">
+					<?php echo $site->contact()->kt() ?>
+				</div>
+				<div class="copyright">
+					<?php echo $site->copyright()->kt() ?>
+				</div>		
+		</div>
+	</div>
+</footer>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
 	<script>
 	  (function(d) {
