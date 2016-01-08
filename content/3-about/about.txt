@@ -2,15 +2,8 @@ Title: About
 
 ----
 
-Text: 
+Cindy: 
 
-(image: about.jpg)
-
-# About
-
-<section class="block" markdown="1">
-## Cindy's Story
-<section class="content" markdown="1">
 Cindy woke up in a room at Brigham and Women’s Hospital in Boston, Massachusetts in September 2009 in a radically altered body. She suffered a catastrophic heart attack while on vacation two months earlier and was med-flighted from Maine to Boston. In response to the heart attack, Cindy experienced an adverse reaction to medication and multiple organ failure. Despite dire predictions, Cindy survived and made it through weeks of delirium where she was never fully conscious. These complications resulted in amputations involving all four limbs: both of her legs below the knees and varying amounts of each of her fingers.
  
 Cindy was lucky. Her doctors had been pessimistic about her survival. But waking up, alive, also meant a long recovery that included making friends with a fundamentally new physicality: a body that now required adaptations, extensions, and subtle changes that she and her family could never have anticipated from her hospital bed.
@@ -18,29 +11,25 @@ Cindy was lucky. Her doctors had been pessimistic about her survival. But waking
 It wasn’t easy. It took Cindy months to want to look at her legs and hands; and even today, six years later, there is a brief moment when she wakes up in the morning before she remembers how different her life is now.
  
 With time, though, Cindy regained her ability to walk and started to find a “new normal.” She got great care from occupational therapists, physical therapists, physicians, and prosthetists. But over time she found that the standard tools provided to her, even at a top-flight rehab hospital, didn’t facilitate some of the most important things she wanted to recover—how to write a thank you note, feed herself, put on makeup and jewelry, turn the pages in a picture book as she reads to her grandchildren. So Cindy started to design and build what she needed. From small hacks on her hand cream jar to repurposing cable ties for pulling out drawers and salad tongs for holding a sandwich, Cindy has embraced an everyday engineering ethic that she never thought possible.
- </section>
-</section>
 
- <section class="block" markdown="1">
-## About the Project
-<section class="content" markdown="1">
+----
+
+About: 
+
 We created this website because we are inspired by Cindy. We also created it because we are convinced that her story illustrates new ways of understanding who can engineer, what counts as engineering, and why this matters. This website is about her adaptations. It is also about Cindy herself. And it’s about a new way of imagining engineering. The full archive is here, and we invite you to explore these designs individually or by action. 
  
 Cindy is not alone in adapting her environment with informal engineering—we know she joins millions of garage tinkerers, household inventors, and, of course, participants in Maker culture. However, Cindy’s story is distinctive. She needed the expertise of clinicians, yes—and the most advanced medical care and technology available (including a $90,000 myoelectric hand). But she also needed to find dozens of ways to make a new life for herself, and for that she needed deceptively simple engineering: a tool to write in her own signature hand, the ability to feed herself, to play cards with friends. Cindy’s adaptations say something powerful about health and wellbeing, and the tools that make those things possible. Medical technology and skilled clinicians sustained her life, but getting to a “new normal” turned out not to be a high-tech matter. These inventions—repurposed household objects, simple materials, clever hacks—give her something that pain medications and medical gear cannot: a life tailored, customized, tuned to her wishes and aspirations. This is a story about surviving a radical life change in the company of experts but also with one’s own ingenuity. Today Cindy has gotten relicensed to drive, has traveled to Europe, and goes out on her own to visit friends or to shop. Life goes on. She is 69 years old as of this writing (December 2015) and she looks forward to many more years with her five grandchildren (three born since the heart attack).
 
 Inspiration and precedents for this project include sites like Zebreda Makes It Work, Maker Nurse, and Farm Hack, and others, all of which alter the context, meaning, and import of Maker culture trends. Read on for an extended discussion: what counts as engineering, and how do we know?
-</section>
-</section>
-
-<section class="block" markdown="1">
-## Creators
-<section class="content" markdown="1">
-(link: http://www.olin.edu/faculty/profile/caitrin-lynch/ text: Caitrin Lynch) and (link: http://ablersite.org/ text: Sara Hendren), faculty members at Olin College of Engineering. With Olin students William Lu, Mary Martin, and Toni Saylor. With work by photographer (link: mjmcamera@gmail.com text: Michael J. Maloney), graphic designer (link: http://brettrowley.me/ text: Brett Rowley), and web designer (link: http://caseyagollan.com/ text: Casey Gollan). 
-</section>
-## Acknowledgements
-Thanks to Tim Ferguson Sauder, Aaron Hoover, Rob Martello, and Lynn Andrea Stein for timely advice. Thanks also to Greig Martino. Our deepest gratitude goes to Cindy, for allowing us to share her story and for working with us on this website (photoshoots, interviews, conversations, edits, research)—as well as to her husband Ken and the remainder of their family for cooperation and support. This website is part of a larger project that includes work with psychologist (link: http://www.olin.edu/faculty/profile/jonathan-m-adler/ text: Jon Adler) and journalist (link: https://aridanielshapiro.wordpress.com/ text: Ari Daniel).
-</section>
 
 ----
 
-Header: 
+Creators: 
+
+(link: http://www.olin.edu/faculty/profile/caitrin-lynch/ text: Caitrin Lynch) and (link: http://ablersite.org/ text: Sara Hendren), faculty members at Olin College of Engineering. With Olin students William Lu, Mary Martin, and Toni Saylor. With work by photographer (link: mjmcamera@gmail.com text: Michael J. Maloney), graphic designer (link: http://brettrowley.me/ text: Brett Rowley), and web designer (link: http://caseyagollan.com/ text: Casey Gollan). 
+
+----
+
+Acknowledgements: 
+
+Thanks to Tim Ferguson Sauder, Aaron Hoover, Rob Martello, and Lynn Andrea Stein for timely advice. Thanks also to Greig Martino. Our deepest gratitude goes to Cindy, for allowing us to share her story and for working with us on this website (photoshoots, interviews, conversations, edits, research)—as well as to her husband Ken and the remainder of their family for cooperation and support. This website is part of a larger project that includes work with psychologist (link: http://www.olin.edu/faculty/profile/jonathan-m-adler/ text: Jon Adler) and journalist (link: https://aridanielshapiro.wordpress.com/ text: Ari Daniel).
