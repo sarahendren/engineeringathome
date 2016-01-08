@@ -6298,90 +6298,29 @@ body#adaptations {
   max-width: none !important;
   transition: background-color .5s; }
 
-body.longform {
-  background: #a6e8f5;
-  color: #16445c; }
-  body.longform .navbar {
-    margin-bottom: 0; }
-  body.longform header.image {
-    background-color: #16445c; }
-  body.longform .header-content {
-    background-color: #fff;
-    padding-bottom: .5em;
-    box-shadow: 10px 10px 0 #159fba;
-    margin-top: 15px;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px; }
-    body.longform .header-content h1 {
-      color: #159fba; }
-    @media (min-width: 768px) {
-      body.longform .header-content {
-        float: left;
-        width: 58.33333%; } }
-    @media (min-width: 992px) {
-      body.longform .header-content {
-        float: left;
-        width: 50%; } }
-    @media (min-width: 1200px) {
-      body.longform .header-content {
-        float: left;
-        width: 41.66667%; } }
-    @media (min-width: 1200px) {
-      body.longform .header-content {
-        margin-left: 8.33333%; } }
-    @media (min-width: 768px) {
-      body.longform .header-content {
-        margin-top: -8%; } }
-  body.longform h2 {
-    color: #159fba; }
+* {
+  background-color: rgba(0, 0, 0, 0.15); }
 
-.text header {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 992px) {
-    .text header {
-      float: left;
-      width: 75%; } }
-  @media (min-width: 992px) {
-    .text header {
-      margin-left: 16.66667%; } }
+body#manifesto {
+  background: #fcdfe0;
+  color: #16445c; }
+  @media (min-width: 768px) {
+    body#manifesto header.row {
+      padding: 60px 0 30px 0; } }
+  body#manifesto h1, body#manifesto h2 {
+    color: #c02528; }
+  body#manifesto .header-content {
+    color: #c02528; }
+
 .text h2 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
   padding-right: 15px; }
   @media (min-width: 768px) {
     .text h2 {
       float: left;
       width: 16.66667%; } }
-  @media (min-width: 992px) {
-    .text h2 {
-      float: left;
-      width: 16.66667%; } }
-  @media (min-width: 1200px) {
-    .text h2 {
-      margin-left: 8.33333%; } }
-  @media (min-width: 768px) {
-    .text h2 {
-      padding: 0;
-      margin: 0;
-      text-align: right; } }
 .text section.block {
   margin-left: -15px;
   margin-right: -15px; }
@@ -6398,10 +6337,6 @@ body.longform {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
   padding-right: 15px; }
   @media (min-width: 768px) {
     .text .content {
@@ -6410,11 +6345,7 @@ body.longform {
   @media (min-width: 992px) {
     .text .content {
       float: left;
-      width: 58.33333%; } }
-  @media (min-width: 1200px) {
-    .text .content {
-      float: left;
-      width: 58.33333%; } }
+      width: 50%; } }
 @media (min-width: 768px) {
   .text h2, .text section {
     margin-top: 40px; } }
@@ -6432,9 +6363,9 @@ body#home section {
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #fff;
     border-radius: 50%;
     padding: 20px;
+    background: #fff;
     box-shadow: 0 0 50px 50px #fff;
     font-family: "acumin-pro-extra-condensed", sans-serif;
     text-transform: lowercase;
@@ -6533,9 +6464,6 @@ body#about {
       padding: 60px 0 30px 0; } }
   body#about h1, body#about h2 {
     color: #159fba; }
-    @media (min-width: 768px) {
-      body#about h1.left-heading, body#about h2.left-heading {
-        text-align: right; } }
   @media (min-width: 768px) {
     body#about h2, body#about section, body#about figure {
       margin-top: 40px; }

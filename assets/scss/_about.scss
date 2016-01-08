@@ -8,11 +8,6 @@ body#about {
 	}
 	h1, h2 {
 		color: $sky;
-		@media (min-width: $screen-sm-min) {
-			&.left-heading {
-				text-align: right;
-			}
-		}
 	}
 	@media (min-width: $screen-sm-min) {
 		h2, section, figure {

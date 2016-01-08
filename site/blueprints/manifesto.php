@@ -1,6 +1,6 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-title: Longform
+title: Manifesto
 pages: false
 files: true
   sortable: true
