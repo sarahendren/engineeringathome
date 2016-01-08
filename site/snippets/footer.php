@@ -1,11 +1,7 @@
   <footer class="footer cf" role="contentinfo">
 
     <div class="copyright">
-      <?php echo $site->copyright()->kirbytext() ?>
-    </div>
-
-    <div class="colophon">
-      <a href="http://getkirby.com/made-with-kirby-and-love">Made with Kirby and <b>♥</b></a>
+		<p><a href="/about">This project</a> is the work of <a href="http://ablersite.org">Sara Hendren</a> and <a href="http://www.olin.edu/faculty/profile/caitrin-lynch/">Caitrin Lynch</a> at <a href="http://www.olin.edu">Olin College of Engineering</a>. This work is licensed under a <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. We'd love to hear from you via the <a href="/contact">contact page</a>.</p>
     </div>
 
   </footer>
