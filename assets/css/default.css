@@ -6022,73 +6022,73 @@ img.cosmetic-sponges.silhouette {
   margin-bottom: -215.4%;
   margin-left: -301.2%; }
 
-img.deodorant-stick {
+img.fingers-3d-printed {
   width: 702.4%;
   margin-top: 0%;
   margin-bottom: -502.6%;
   margin-left: -401.6%; }
 
-img.deodorant-stick.silhouette {
+img.fingers-3d-printed.silhouette {
   width: 702.4%;
   margin-top: -71.8%;
   margin-bottom: -430.8%;
   margin-left: -401.6%; }
 
-img.fingers-3d-printed {
+img.fiskars {
   width: 702.4%;
   margin-top: -143.6%;
   margin-bottom: -359%;
   margin-left: -401.6%; }
 
-img.fingers-3d-printed.silhouette {
+img.fiskars.silhouette {
   width: 702.4%;
   margin-top: -215.4%;
   margin-bottom: -287.2%;
   margin-left: -401.6%; }
 
-img.fiskars {
+img.fork-holder {
   width: 702.4%;
   margin-top: -287.2%;
   margin-bottom: -215.4%;
   margin-left: -401.6%; }
 
-img.fiskars.silhouette {
-  width: 702.4%;
-  margin-top: -359%;
-  margin-bottom: -143.6%;
-  margin-left: 0%; }
-
-img.fork-holder {
-  width: 702.4%;
-  margin-top: 0%;
-  margin-bottom: -502.6%;
-  margin-left: 0%; }
-
 img.fork-holder.silhouette {
   width: 702.4%;
   margin-top: -359%;
   margin-bottom: -143.6%;
-  margin-left: -200.8%; }
+  margin-left: 0%; }
 
 img.fork-strap {
   width: 702.4%;
-  margin-top: -359%;
-  margin-bottom: -143.6%;
-  margin-left: -301.2%; }
+  margin-top: 0%;
+  margin-bottom: -502.6%;
+  margin-left: 0%; }
 
 img.fork-strap.silhouette {
   width: 702.4%;
   margin-top: -359%;
   margin-bottom: -143.6%;
-  margin-left: -401.6%; }
+  margin-left: -200.8%; }
 
 img.french-washcloth {
+  width: 702.4%;
+  margin-top: -359%;
+  margin-bottom: -143.6%;
+  margin-left: -301.2%; }
+
+img.french-washcloth.silhouette {
+  width: 702.4%;
+  margin-top: -359%;
+  margin-bottom: -143.6%;
+  margin-left: -401.6%; }
+
+img.hand-clip {
   width: 702.4%;
   margin-top: 0%;
   margin-bottom: -502.6%;
   margin-left: -502%; }
 
-img.french-washcloth.silhouette {
+img.hand-clip.silhouette {
   width: 702.4%;
   margin-top: -71.8%;
   margin-bottom: -430.8%;
@@ -6281,7 +6281,7 @@ body#adaptations {
   background: transparent;
   border: none;
   max-height: 106px; }
-  #filters button:hover {
+  #filters button:hover, #filters button.active {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f07a+0,f6f07a+100&1+0,1+25,0.01+75 */
     background: -moz-radial-gradient(center, ellipse cover, #f6f07a 0%, #f6f07a 25%, rgba(246, 240, 122, 0.01) 75%, rgba(246, 240, 122, 0.01) 100%);
     /* FF3.6-15 */
@@ -6524,6 +6524,127 @@ body#home #objects h1 {
   transform: translateY(-60%), translateX(-50%);
   color: #fff;
   font-size: 5em; }
+
+body#about {
+  background: #C4CCCE;
+  color: #16445c; }
+  body#about .navbar {
+    margin-bottom: 0; }
+  body#about header.image {
+    background-color: #16445c; }
+  body#about .header-content {
+    background-color: #fff;
+    padding-bottom: .5em;
+    box-shadow: 10px 10px 0 #159fba;
+    margin-top: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    body#about .header-content h1 {
+      color: #159fba; }
+    @media (min-width: 768px) {
+      body#about .header-content {
+        float: left;
+        width: 58.33333%; } }
+    @media (min-width: 992px) {
+      body#about .header-content {
+        float: left;
+        width: 50%; } }
+    @media (min-width: 1200px) {
+      body#about .header-content {
+        float: left;
+        width: 41.66667%; } }
+    @media (min-width: 1200px) {
+      body#about .header-content {
+        margin-left: 8.33333%; } }
+    @media (min-width: 768px) {
+      body#about .header-content {
+        margin-top: -8%; } }
+  body#about h2 {
+    color: #159fba; }
+
+.text header {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 992px) {
+    .text header {
+      float: left;
+      width: 75%; } }
+  @media (min-width: 992px) {
+    .text header {
+      margin-left: 16.66667%; } }
+.text h2 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .text h2 {
+      float: left;
+      width: 16.66667%; } }
+  @media (min-width: 992px) {
+    .text h2 {
+      float: left;
+      width: 16.66667%; } }
+  @media (min-width: 1200px) {
+    .text h2 {
+      margin-left: 8.33333%; } }
+  @media (min-width: 768px) {
+    .text h2 {
+      padding: 0;
+      margin: 0;
+      text-align: right; } }
+.text section.block {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .text section.block:before, .text section.block:after {
+    content: " ";
+    display: table; }
+  .text section.block:after {
+    clear: both; }
+.text .content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 768px) {
+    .text .content {
+      float: left;
+      width: 83.33333%; } }
+  @media (min-width: 992px) {
+    .text .content {
+      float: left;
+      width: 58.33333%; } }
+  @media (min-width: 1200px) {
+    .text .content {
+      float: left;
+      width: 58.33333%; } }
+@media (min-width: 768px) {
+  .text h2, .text section {
+    margin-top: 40px; } }
 
 /*! Flickity v1.1.1
 http://flickity.metafizzy.co
