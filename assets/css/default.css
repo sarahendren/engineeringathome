@@ -6298,9 +6298,6 @@ body#adaptations {
   max-width: none !important;
   transition: background-color .5s; }
 
-* {
-  background-color: rgba(0, 0, 0, 0.15); }
-
 body#manifesto {
   background: #fcdfe0;
   color: #16445c; }
