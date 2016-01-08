@@ -1,45 +1,55 @@
-section {
-	background-size: cover;
-	background-position: center;
-	div div div {
-		height: 66vh;
-		position: relative;
+body#home {
+	.navbar {
+		margin-bottom: 0;
 	}
-	a.readmore {
-		position: absolute;
-			bottom: 0;
-			left: 0;
-		background: #fff;
-		border-radius: 50%;
-		padding: 20px;
-		box-shadow: 0 0 50px 50px #fff;
+	section {
+		background-size: cover;
+		background-position: center;
+		overflow: hidden;
+		div div div {
+			height: 66vh;
+			position: relative;
+		}
+		a.readmore {
+			position: absolute;
+				bottom: 0;
+				left: 0;
+			background: #fff;
+			border-radius: 50%;
+			padding: 20px;
+			box-shadow: 0 0 50px 50px #fff;
+			font-family: $font-family-sans-serif;
+			text-transform: lowercase;
+			font-size: 1.5em;
+			text-decoration: underline;
+		}
+		h1 {
+			color: #fff;
+		}
+		&#unlikelyengineering {
+			background-color: $mustard;
+			background-position: left center;
+			background-image:url(/assets/collage.png);
+			h1 {color: lighten($mustard, 25%)}
+			text-indent: -5000em;
+		}
+		&#unlikelyobjects {
+			background-color: $moss;	
+			h1 strong {color: lighten($moss, 25%)}
+			a:link, a:visited {color: $moss}	
+		}
+		&#unlikelypeople {
+			background-color: $teal;		
+			h1 strong {color: lighten($teal, 25%)}	
+			a:link, a:visited {color: $teal}	
+		}
+		&#expansiveview {
+			background-color: $pink;		
+			background-image:url(/assets/expansiveview.jpg);
+			h1 strong {color: lighten($pink, 15%)}	
+			a:link, a:visited {color: $pink}	
+		}
 	}
-	h1 {
-		color: #fff;
-	}
-	&#unlikelyengineering {
-		background-color: $mustard;
-		background-position: left center;
-		background-image:url(/assets/collage.png);
-		h1 {color: lighten($mustard, 25%)}
-		text-indent: -5000em;
-	}
-	&#unlikelyobjects {
-		background-color: $moss;	
-		h1 strong {color: lighten($moss, 25%)}	
-	}
-	&#unlikelypeople {
-		background-color: $teal;		
-		h1 strong {color: lighten($teal, 25%)}	
-	}
-	&#expansiveview {
-		background-color: $pink;		
-		background-image:url(/assets/expansiveview.jpg);
-		h1 strong {color: lighten($pink, 15%)}	
-	}
-}
-
-
 
 #collage {
 	* {
@@ -49,9 +59,6 @@ section {
 		@include make-xs-column(6);
 		@include make-md-column(4);
 	}
-}
-.row {
-	margin-bottom: 75px;
 }
 #collage .row:nth-child(odd) a {
 	@include make-xs-column-offset(6);
@@ -96,4 +103,6 @@ section {
 	transform: translateY(-60%), translateX(-50%);
 	color: #fff;
 	font-size: 5em;
+}
+
 }

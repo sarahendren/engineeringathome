@@ -26,7 +26,6 @@ body#adaptations {
 	padding: 0!important;
 	a {
 		display: block;
-		cursor: hand!important;
 		margin-bottom: 30px;
 		img {
 			max-width: none!important;
@@ -60,20 +59,25 @@ body#adaptations {
 	}
 }
 
-#filter {
+#filters {
 	button {
-		max-width: 100%;
 		text-indent: -5000em;
+		max-width: 100%;
 		overflow: hidden;
 		display: block;
 		background: transparent;
 	    border: none;
 	    max-height: 106px;
-		border-radius: 50%;
-		transition: box-shadow .5s;
 		&:hover {
-			box-shadow: 0 0 75px $yellow;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f07a+0,f6f07a+100&1+0,1+25,0.01+75 */
+			background: -moz-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%, rgba(246,240,122,1) 25%, rgba(246,240,122,0.01) 75%, rgba(246,240,122,0.01) 100%); /* FF3.6-15 */
+			background: -webkit-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 25%,rgba(246,240,122,0.01) 75%,rgba(246,240,122,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: radial-gradient(ellipse at center,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 25%,rgba(246,240,122,0.01) 75%,rgba(246,240,122,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f07a', endColorstr='#03f6f07a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 		}
+	}
+	.Cover, .Alert, .Buffer, .Pour, .Squeeze, .Relieve, .Open {
+		display: none;
 	}
 }
 

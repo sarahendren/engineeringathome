@@ -8,7 +8,7 @@
 	    </div>
 	    <section id="filters">
 		    <div class="row">
-			    <p class="text-center lead"><em>Filter adaptations by selecting a verb below.</em></p>
+			    <p class="text-center lead"><em>Filter adaptations by selecting an action below.</em></p>
 			</div>
 			<div class="row">
 				<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
@@ -16,7 +16,7 @@
 					<div class="js-isotope">
 						<?php foreach($tagcloud as $tag): ?>
 							<div class="col-xs-6 col-sm-4 col-md-3">
-								<button data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?>
+								<button class="<?php echo $tag->name() ?>" data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?>
 									<div class="responsive-sprites">
 								    	<img src="/assets/handwriting-sprite.png" class="<?php echo $tag->name() ?>" alt="<?php echo $tag->name() ?>">
 									</div>

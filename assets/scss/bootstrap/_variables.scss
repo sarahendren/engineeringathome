@@ -45,9 +45,9 @@ $body-bg:               #fff !default;
 $text-color:            $gray-darker !default;
 
 //** Global textual link color.
-$link-color:            $teal !default;
+$link-color:            #000 !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      #fff !default;
+$link-hover-color:      $teal !default;
 //** Link hover decoration.
 $link-hover-decoration: underline !default;
 
