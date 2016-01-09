@@ -2,8 +2,8 @@ Sort:
 
 ----
 
-Kind: insitu
+Kind: inuse
 
 ----
 
-Caption: 
+Caption: A closeup of the lower leg socket, with a sponge indicating its placement at the point of friction. (The sponge is always worn inside the sock, only shown here for placement detail.)

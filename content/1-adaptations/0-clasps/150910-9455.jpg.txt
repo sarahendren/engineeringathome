@@ -2,8 +2,8 @@ Sort: 2
 
 ----
 
-Kind: studio
+Kind: inuse
 
 ----
 
-Caption: 
+Caption: Cindy's two hands can open a kiss-clasp purse, even with limited fine motor ability.

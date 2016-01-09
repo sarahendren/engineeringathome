@@ -2,8 +2,8 @@ Sort:
 
 ----
 
-Kind: insitu
+Kind: inuse
 
 ----
 
-Caption: 
+Caption: After donning both lower prosthetic legs, Cindy checks her attachments with a handheld "rearview" mirror.

@@ -6,4 +6,4 @@ Kind: diagram
 
 ----
 
-Caption: 
+Caption: A technical drawing showing two views of the pen holder, pens lodged.

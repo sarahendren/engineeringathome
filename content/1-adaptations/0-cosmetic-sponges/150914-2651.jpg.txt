@@ -2,8 +2,8 @@ Sort:
 
 ----
 
-Kind: insitu
+Kind: inuse
 
 ----
 
-Caption: 
+Caption: Cindy sits and attaches the upper leg to the lower prosthetic leg.
