@@ -7,14 +7,14 @@ body#contact {
 	h1, label {
 		color: $sky;
 	}
-	button {
-		background: $sky;
-		color: #fff;
-	}
 	form {
 		padding: 15px 0;
+		button {
+			background: $sky;
+			color: #fff;
+		}
 	}
-	@media (min-width: $screen-sm-min) {
+	@media (min-width: $screen-md-min) {
 		main {
 			margin-top: 100px;
 			margin-bottom: 75px;

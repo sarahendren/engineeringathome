@@ -6558,12 +6558,12 @@ body#contact {
     box-shadow: 15px 15px 0 #b39f28; }
   body#contact h1, body#contact label {
     color: #159fba; }
-  body#contact button {
-    background: #159fba;
-    color: #fff; }
   body#contact form {
     padding: 15px 0; }
-  @media (min-width: 768px) {
+    body#contact form button {
+      background: #159fba;
+      color: #fff; }
+  @media (min-width: 992px) {
     body#contact main {
       margin-top: 100px;
       margin-bottom: 75px; } }
