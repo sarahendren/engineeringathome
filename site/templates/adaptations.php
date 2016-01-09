@@ -8,12 +8,12 @@
 	    </div>
 	    <section id="filters">
 		    <div class="row">
-			    <p class="text-center lead"><em>Filter adaptations by selecting an action below.</em></p>
+			    <div class="col-xs-12"><p class="text-center lead"><em>Filter adaptations by selecting an action&nbsp;below.</em></p></div>
 			</div>
 			<div class="row">
 				<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
 				<div class="filter-button-group row">
-					<div class="js-isotope">
+					<div class="filters">
 						<?php foreach($tagcloud as $tag): ?>
 							<div class="col-xs-6 col-sm-4 col-md-3">
 								<button class="<?php echo $tag->name() ?>" data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?>
@@ -24,13 +24,13 @@
 							</div>
 						<?php endforeach ?>
 					</div>
-					<h2><a href="#filter=*" data-filter="*">browse all</a> ☛ ## adaptations to <strong>squeeze</strong></h2>
+					<h2 class="col-xs-12 text-center">adaptations <strong class="filter-status"></strong> <a href="#filter=*" data-filter="*" class="clear-button" style="display:none">(clear filter)</a></h2>
 				</div>
 			</div>
 	    </section>
 	</header>
 	<div class="row">
-		<div class="col-xs-12 grid grid js-isotope">
+		<div class="col-xs-12 grid">
 		  <?php foreach(page('adaptations')->children() as $adaptation):?>
 			  <div class="col-xs-6 col-sm-4 col-md-3 element-item <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
 			    <a href="<?php echo $adaptation->url() ?>">
@@ -62,6 +62,7 @@
 	$( function() {
 
 	  var $grid = $('.grid');
+	  var $filters = $('.filters');
 
 	  // bind filter button click
 	  var $filterButtonGroup = $('.filter-button-group');
@@ -84,11 +85,18 @@
 	      itemSelector: '.element-item',
 	      layoutMode: 'fitRows',
 	      filter: hashFilter
-	    });
+	    })
+	    $filters.isotope();
 	    // set selected class on button
 	    if ( hashFilter ) {
 	      $filterButtonGroup.find('.active').removeClass('active');
 	      $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
+				$('.filter-status').text(' to ' + hashFilter.substr(1));
+				$('.clear-button').show();	
+	    }
+	    if (hashFilter == '*') {
+				$('.filter-status').text('');	
+				$('.clear-button').hide();	
 	    }
 	  }
 
@@ -96,9 +104,15 @@
 
 	  // trigger event handler to init Isotope
 		var $container = $('.grid');
+		var $filters = $('.filters');
 		$container.imagesLoaded(function () {
 			onHashchange();
 		});
+		$filters.imagesLoaded(function () {
+			onHashchange();
+		});
+
+		$grid
 
 	});
 	</script>

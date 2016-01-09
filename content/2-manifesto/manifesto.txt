@@ -4,7 +4,7 @@ Title: Manifesto
 
 Header: 
 
-# **This Counts Too:** An Unlikely Engineering Story
+# **This Counts Too:** An Unlikely Engineering&nbsp;Story
 _by Sara Hendren and Caitrin Lynch_
 
 ----
