@@ -13,29 +13,37 @@
 		<div class="row">
 			<h2 class="col-sm-2 left-heading">engineering with unlikely people.</h2>
 			<section class="content col-sm-10">
-				<?php echo $page->unlikelypeople()->kirbytext() ?>		
+				<div class="row">
+					<?php echo $page->unlikelypeople()->kirbytext() ?>
+				</div>	
 			</section>
 		</div>
 		<div class="row">
 			<h2 class="col-sm-2 left-heading">engineering with unlikely things.</h2>
 			<section class="content col-sm-10">
-				<?php echo $page->unlikelythings()->kirbytext() ?>		
+				<div class="row">
+					<?php echo $page->unlikelythings()->kirbytext() ?>		
+				</div>	
 			</section>
 		</div>
 		<div class="row">
 			<h2 class="col-sm-2 left-heading">engineering with an expansive view.</h2>
 			<section class="content col-sm-10">
-				<?php echo $page->expansiveview()->kirbytext() ?>		
+				<div class="row">
+					<?php echo $page->expansiveview()->kirbytext() ?>		
+				</div>	
 			</section>
 		</div>
 		<div class="row">
 			<h2 class="col-sm-2 left-heading">this counts too.</h2>
 			<section class="content col-sm-10">
-				<?php echo $page->thiscountstoo()->kirbytext() ?>		
+				<div class="row">
+					<?php echo $page->thiscountstoo()->kirbytext() ?>		
+				</div>	
 			</section>
 		</div>
 	</main>
 <script>
-	$('main').sidenotes();
+	$('main').sidenotes;
 </script>
 <?php snippet('footer') ?>

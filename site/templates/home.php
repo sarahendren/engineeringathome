@@ -20,7 +20,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h1><strong>Engineering With</strong> Unlikely Objects</h1>
-				<a class="readmore" href="">Browse all <strong>adaptations</strong></a>
+				<a class="readmore" href="/adaptations">Browse all <strong>adaptations</strong></a>
 			</div>
 		</div>
 	</div>
@@ -30,7 +30,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h1><strong>Engineering With</strong> Unlikely People</h1>
-				<a class="readmore" href="">Read <strong>about</strong> the project and Cindy's story</a>
+				<a class="readmore" href="/about">Read <strong>about</strong> the project and Cindy's story</a>
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h1><strong>Engineering With</strong> An Expansive View</h1>
-				<a class="readmore" href="">Ready the unlikely engineering <strong>manifesto</strong></a>
+				<a class="readmore" href="/manifesto">Ready the unlikely engineering <strong>manifesto</strong></a>
 			</div>
 		</div>
 	</div>

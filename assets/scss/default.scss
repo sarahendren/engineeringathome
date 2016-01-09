@@ -7,6 +7,7 @@
 @import "manifesto";
 @import "home";
 @import "about";
+@import "contact";
 
 /*! Flickity v1.1.1
 http://flickity.metafizzy.co
@@ -55,13 +56,22 @@ blockquote {
 footer {
 	padding: 1em;
 	background: $gray;
-	color: $gray-lighter;
+	color: $gray-lighter!important;
 	margin-top: 40px;
+	h2 {
+		color: $gray-lighter!important;
+	}
 	a:link, a:visited {
 		color: $gray-lighter;
 	}
 	.container {
 		padding: 40px 0;
+	}
+	hr {
+		border-top-color: $gray-darker;
+	}
+	.row div {
+		margin-bottom: 60px;
 	}
 }
 

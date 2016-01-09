@@ -15,10 +15,10 @@ body#manifesto {
 	.header-content {
 		color: $red;
 	}
-	.content>p {
+	.content .row>p {
 		@include make-md-column(7);	
 	}
-	.content>aside {
+	.content .row>aside {
 		@include make-md-column(3);
 		@include make-md-column-offset(1);
 		margin-bottom: 15px;

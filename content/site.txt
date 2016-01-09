@@ -10,4 +10,8 @@ Copyright: (link: /about text: This project) is the work of (link: http://ablers
 
 ----
 
-Contact: We'd love to hear from you via the (link: /contact text: contact page) and connect (link: http://facebook.com/unlikely.engineering text: on Facebook).
+Contact: We'd love to hear from you via the (link: /contact text: contact page).
+
+----
+
+Social: Connect with us via our (link: http://facebook.com/unlikely.engineering text: Facebook page).

@@ -12,6 +12,9 @@ fields:
   contact:
     label: Contact
     type: textarea
+  social:
+    label: Social
+    type: textarea
   copyright:
     label: Copyright
     type:  textarea

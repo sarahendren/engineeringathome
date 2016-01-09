@@ -6397,16 +6397,16 @@ body#manifesto {
     color: #c02528; }
   body#manifesto .header-content {
     color: #c02528; }
-  body#manifesto .content > p {
+  body#manifesto .content .row > p {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px; }
     @media (min-width: 992px) {
-      body#manifesto .content > p {
+      body#manifesto .content .row > p {
         float: left;
         width: 58.33333%; } }
-  body#manifesto .content > aside {
+  body#manifesto .content .row > aside {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
@@ -6415,11 +6415,11 @@ body#manifesto {
     font-style: italic;
     font-size: 14px; }
     @media (min-width: 992px) {
-      body#manifesto .content > aside {
+      body#manifesto .content .row > aside {
         float: left;
         width: 25%; } }
     @media (min-width: 992px) {
-      body#manifesto .content > aside {
+      body#manifesto .content .row > aside {
         margin-left: 8.33333%; } }
   body#manifesto sup, body#manifesto aside {
     color: #c02528; }
@@ -6550,6 +6550,23 @@ body#about {
       margin-top: 0; }
     body#about .right-col section {
       margin-bottom: 40px; } }
+
+body#contact {
+  background-color: #c8b12d; }
+  body#contact main {
+    background: #e0e5e6;
+    box-shadow: 15px 15px 0 #b39f28; }
+  body#contact h1, body#contact label {
+    color: #159fba; }
+  body#contact button {
+    background: #159fba;
+    color: #fff; }
+  body#contact form {
+    padding: 15px 0; }
+  @media (min-width: 768px) {
+    body#contact main {
+      margin-top: 100px;
+      margin-bottom: 75px; } }
 
 /*! Flickity v1.1.1
 http://flickity.metafizzy.co
@@ -6704,12 +6721,18 @@ blockquote {
 footer {
   padding: 1em;
   background: #555555;
-  color: #eeeeee;
+  color: #eeeeee !important;
   margin-top: 40px; }
+  footer h2 {
+    color: #eeeeee !important; }
   footer a:link, footer a:visited {
     color: #eeeeee; }
   footer .container {
     padding: 40px 0; }
+  footer hr {
+    border-top-color: #222222; }
+  footer .row div {
+    margin-bottom: 60px; }
 
 .lead {
   margin-bottom: 22px;

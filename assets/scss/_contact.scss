@@ -1,0 +1,23 @@
+body#contact {
+	background-color: $mustard;
+	main {
+		background: $blue-background;
+		box-shadow: 15px 15px 0 darken($mustard, 5%);
+	}
+	h1, label {
+		color: $sky;
+	}
+	button {
+		background: $sky;
+		color: #fff;
+	}
+	form {
+		padding: 15px 0;
+	}
+	@media (min-width: $screen-sm-min) {
+		main {
+			margin-top: 100px;
+			margin-bottom: 75px;
+		}
+	}
+}
