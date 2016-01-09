@@ -3,9 +3,6 @@
 	font-size: $font-size-h3;
 	text-transform: lowercase;
 	border: none;
-	a:link, a:visited {
-		background: rgba(255,255,255,.5)!important;
-	}
 	a.active:link, a.active:visited, a.active:hover, a.active:active {
 		color: #fff !important;
 		background: rgba(0,0,0,.5)!important;
