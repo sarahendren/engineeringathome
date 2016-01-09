@@ -126,7 +126,10 @@
 <script src="/node_modules/fluidbox/dist/js/jquery.fluidbox.min.js"></script>
 <script>
 // Initialize Fluidbox
-$('figure a').fluidbox();
+$('figure a').fluidbox({
+  'loader': true,
+  'immediateOpen': false
+});
 
 // Call public methods
 $(window).scroll(function() {
