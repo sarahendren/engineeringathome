@@ -6412,7 +6412,8 @@ body#manifesto {
     padding-left: 15px;
     padding-right: 15px;
     margin-bottom: 15px;
-    font-style: italic; }
+    font-style: italic;
+    font-size: 14px; }
     @media (min-width: 992px) {
       body#manifesto .content > aside {
         float: left;
@@ -6421,17 +6422,18 @@ body#manifesto {
       body#manifesto .content > aside {
         margin-left: 8.33333%; } }
   body#manifesto sup, body#manifesto aside {
-    color: #c02528;
-    font-size: 14px; }
+    color: #c02528; }
   @media (min-width: 768px) {
     body#manifesto h2, body#manifesto section {
       margin-top: 40px; } }
 
 body#home .navbar {
   margin-bottom: 0; }
+  body#home .navbar a:link, body#home .navbar a:visited {
+    background-color: #c8b12d; }
 body#home section {
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   overflow: hidden; }
   body#home section div div div {
     height: 66vh;

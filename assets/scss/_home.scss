@@ -1,10 +1,13 @@
 body#home {
 	.navbar {
 		margin-bottom: 0;
+		a:link, a:visited {
+			background-color: $mustard;
+		}
 	}
 	section {
 		background-size: cover;
-		background-position: center;
+		background-position: top center;
 		overflow: hidden;
 		div div div {
 			height: 66vh;
