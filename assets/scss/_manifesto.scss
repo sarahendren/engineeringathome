@@ -15,22 +15,22 @@ body#manifesto {
 	.header-content {
 		color: $red;
 	}
-}
-
-.text {
-	h2 {
-		@include make-sm-column(2);
+	.content>p {
+		@include make-md-column(7);	
 	}
-	section.block {
-		@include make-row();
+	.content>aside {
+		@include make-md-column(3);
+		@include make-md-column-offset(1);
+		margin-bottom: 15px;
+		font-style: italic;
+		font-size: 14px;
 	}
-	.content {
-		@include make-sm-column(10);
-		@include make-md-column(6);
+	sup, aside {
+		color: $red;
 	}
 	@media (min-width: $screen-sm-min) {
 		h2, section {
 			margin-top: 40px;
-		}	
+		}
 	}
 }

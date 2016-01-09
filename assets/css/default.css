@@ -6397,44 +6397,35 @@ body#manifesto {
     color: #c02528; }
   body#manifesto .header-content {
     color: #c02528; }
-
-.text h2 {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  body#manifesto .content > p {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 992px) {
+      body#manifesto .content > p {
+        float: left;
+        width: 58.33333%; } }
+  body#manifesto .content > aside {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+    font-style: italic; }
+    @media (min-width: 992px) {
+      body#manifesto .content > aside {
+        float: left;
+        width: 25%; } }
+    @media (min-width: 992px) {
+      body#manifesto .content > aside {
+        margin-left: 8.33333%; } }
+  body#manifesto sup, body#manifesto aside {
+    color: #c02528;
+    font-size: 14px; }
   @media (min-width: 768px) {
-    .text h2 {
-      float: left;
-      width: 16.66667%; } }
-.text section.block {
-  margin-left: -15px;
-  margin-right: -15px; }
-  .text section.block:before, .text section.block:after {
-    content: " ";
-    display: table; }
-  .text section.block:after {
-    clear: both; }
-.text .content {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 768px) {
-    .text .content {
-      float: left;
-      width: 83.33333%; } }
-  @media (min-width: 992px) {
-    .text .content {
-      float: left;
-      width: 50%; } }
-@media (min-width: 768px) {
-  .text h2, .text section {
-    margin-top: 40px; } }
+    body#manifesto h2, body#manifesto section {
+      margin-top: 40px; } }
 
 body#home .navbar {
   margin-bottom: 0; }

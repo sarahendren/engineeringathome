@@ -10,9 +10,32 @@
 		</figure>
 	</div>
 	<main class="main" role="main">
-		<div class="text">
-			<?php echo $page->text()->footnotes()->kirbytext() ?>
+		<div class="row">
+			<h2 class="col-sm-2 left-heading">engineering with unlikely people.</h2>
+			<section class="content col-sm-10">
+				<?php echo $page->unlikelypeople()->kirbytext() ?>		
+			</section>
+		</div>
+		<div class="row">
+			<h2 class="col-sm-2 left-heading">engineering with unlikely things.</h2>
+			<section class="content col-sm-10">
+				<?php echo $page->unlikelythings()->kirbytext() ?>		
+			</section>
+		</div>
+		<div class="row">
+			<h2 class="col-sm-2 left-heading">engineering with an expansive view.</h2>
+			<section class="content col-sm-10">
+				<?php echo $page->expansiveview()->kirbytext() ?>		
+			</section>
+		</div>
+		<div class="row">
+			<h2 class="col-sm-2 left-heading">this counts too.</h2>
+			<section class="content col-sm-10">
+				<?php echo $page->thiscountstoo()->kirbytext() ?>		
+			</section>
 		</div>
 	</main>
-
+<script>
+	$('main').sidenotes();
+</script>
 <?php snippet('footer') ?>
