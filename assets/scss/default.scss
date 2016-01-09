@@ -37,62 +37,6 @@ h1 strong {
 .wf-loading {
 	visibility: hidden;
 }
-.main-gallery {
-	figure {
-												height: 342px;
-		@media (min-width: $screen-xs-min) {& {	height: 547px;	}}
-		@media (min-width: $screen-sm-min) {& {	height: 536px;	}}
-		@media (min-width: $screen-md-min) {& {	height: 693px;	}}
-		@media (min-width: $screen-lg-min) {& {	height: 836px;	}}
-	}
-	.gallery-cell {
-		width: 100%;
-		background: $taupe;
-		img {
-			display: block;
-			margin: auto;
-			max-height: 100%;
-			max-width: 100%;
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-		/* fade in image when loaded */
-		.gallery-cell-image {
-		  transition: opacity 0.4s;
-		  opacity: 0;
-		}
-
-		.gallery-cell-image.flickity-lazyloaded,
-		.gallery-cell-image.flickity-lazyerror {
-		  opacity: 1;
-		}
-	}
-	.diagram {
-		background: $pink;
-	}
-	.flickity-page-dots {
-		position: relative;
-			bottom: 0;
-		margin: 20px auto;
-		.dot {
-			background: $taupe;
-		}
-	}
-	.flickity-prev-next-button {
-		top: auto;
-		bottom: -35px;
-		@media (min-width: $screen-sm-min) {
-			& {
-				top: 50%;
-				bottom: auto;
-			}
-		}
-		.arrow {
-			fill: $taupe;
-		}
-	}
-}
 
 blockquote {
 	text-align: right;
@@ -119,6 +63,18 @@ footer {
 	.container {
 		padding: 40px 0;
 	}
+}
+
+.lead {
+  margin-bottom: $line-height-computed;
+  font-size: floor(($font-size-base * 1.15));
+  font-weight: 300;
+  line-height: 1.4;
+
+  @media (min-width: $screen-sm-min) {
+    font-size: ($font-size-base * 1.25);
+  line-height: 1.4;
+  }
 }
 
 .uniform__potty {

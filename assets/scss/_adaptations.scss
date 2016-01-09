@@ -1,12 +1,16 @@
-body#adaptations {
+body#adaptations, body.adaptation {
 	background: $green-background;
 	color: $moss;
 	hr {
-		border-color: darken($moss,15%)!important;
-		border-width: 2px;
+		border-color: lighten($moss, 25%);
+		border-top-width: 1px;
 	}
 	h1 {
 		color: $moss;
+	}
+}
+body#adaptations {
+	h1 {
 		font-weight: 100;
 		strong {
 			font-weight: 900;
@@ -85,5 +89,100 @@ body#adaptations {
 	img {
 		max-width: none!important;
 		transition: background-color .5s;
+	}
+}
+
+body.adaptation {
+	@media (min-width: $screen-sm-min) {
+		main {
+			margin-top: 85px;
+		}
+		h1 {
+			margin-top: 45px;
+		}
+	}
+	main ul {
+		list-style-type: none;
+		font-style: italic;
+		padding: 0;
+		li:before {
+			content: "\0273B \000A0 \000A0";
+		}
+	}
+	.main-gallery {
+		background: #000;
+		figure {
+													height: 342px;
+			@media (min-width: $screen-xs-min) {& {	height: 547px;	}}
+			@media (min-width: $screen-sm-min) {& {	height: 336px;	}}
+			@media (min-width: $screen-md-min) {& {	height: 441px;	}}
+			@media (min-width: $screen-lg-min) {& {	height: 535px;	}}
+		}
+		.gallery-cell {
+			width: 100%;
+			img {
+				display: block;
+				margin: auto;
+				max-height: 100%;
+				max-width: 100%;
+				position: relative;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			/* fade in image when loaded */
+			.gallery-cell-image {
+			  transition: opacity 0.4s;
+			  opacity: 0;
+			}
+
+			.gallery-cell-image.flickity-lazyloaded,
+			.gallery-cell-image.flickity-lazyerror {
+			  opacity: 1;
+			}
+		}
+		.flickity-page-dots {
+			position: relative;
+				bottom: 0;
+			margin: 20px auto;
+			.dot {
+				background: $taupe;
+			}
+		}
+		.flickity-prev-next-button {
+			top: auto;
+			bottom: -35px;
+			@media (min-width: $screen-sm-min) {
+				& {
+					top: 50%;
+					bottom: auto;
+				}
+			}
+			.arrow {
+				fill: $taupe;
+			}
+		}
+	}
+	.gallery-nav {
+		margin-top: 15px;
+		.gallery-cell {
+			height: 100px;
+			width: 100px;
+			margin-right: 15px;
+			opacity: .5;
+			&.is-selected, &:hover {
+				opacity: 1;
+			}
+			img {
+				max-width: none!important;
+				max-height: none!important;
+				cursor: pointer;
+			}
+		}
+	}
+	.diagram img {
+		background: $pink;
+	}
+	.fluidbox__overlay {
+		background-color: $green-background;
 	}
 }

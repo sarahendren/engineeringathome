@@ -20,9 +20,12 @@ fields:
   title:
     label: Title
     type:  text
+  intro:
+    label: Intro
+    type:  markdown
   text:
     label: Text
     type:  markdown
   verbs:
-    label: Verbs
+    label: Actions
     type:  tags
