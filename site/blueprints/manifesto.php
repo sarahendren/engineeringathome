@@ -9,8 +9,17 @@ fields:
     label: Title
     type:  text
   header:
-    label: header
+    label: Header
     type:  markdown
-  text:
-    label: Text
+  unlikelypeople:
+    label: Engineering with unlikely people
+    type:  markdown
+  unlikelythings:
+    label: Engineering with unlikely things
+    type:  markdown
+  expansiveview:
+    label: Engineering with an expansive view
+    type:  markdown
+  thiscountstoo:
+    label: This counts too
     type:  markdown

@@ -6255,7 +6255,7 @@ body#adaptations #filters button {
   background: transparent;
   border: none;
   max-height: 106px; }
-  body#adaptations #filters button:hover, body#adaptations #filters button.active {
+  body#adaptations #filters button:hover, body#adaptations #filters button:focus, body#adaptations #filters button.active {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f07a+0,f6f07a+100&1+0,1+25,0.01+75 */
     background: -moz-radial-gradient(center, ellipse cover, #f6f07a 0%, #f6f07a 25%, rgba(246, 240, 122, 0.01) 75%, rgba(246, 240, 122, 0.01) 100%);
     /* FF3.6-15 */
@@ -6265,6 +6265,8 @@ body#adaptations #filters button {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f07a', endColorstr='#03f6f07a',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
+body#adaptations #filters button:focus {
+  outline: 0; }
 body#adaptations #filters .Cover, body#adaptations #filters .Alert, body#adaptations #filters .Buffer, body#adaptations #filters .Pour, body#adaptations #filters .Squeeze, body#adaptations #filters .Relieve, body#adaptations #filters .Open {
   display: none !important; }
 

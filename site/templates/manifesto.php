@@ -11,7 +11,7 @@
 	</div>
 	<main class="main" role="main">
 		<div class="row">
-			<h2 class="col-sm-2 left-heading">engineering with unlikely people.</h2>
+			<h2 class="col-sm-2 left-heading">engineering with unlikely people</h2>
 			<section class="content col-sm-10">
 				<div class="row">
 					<?php echo $page->unlikelypeople()->kirbytext() ?>
@@ -19,7 +19,7 @@
 			</section>
 		</div>
 		<div class="row">
-			<h2 class="col-sm-2 left-heading">engineering with unlikely things.</h2>
+			<h2 class="col-sm-2 left-heading">engineering with unlikely things</h2>
 			<section class="content col-sm-10">
 				<div class="row">
 					<?php echo $page->unlikelythings()->kirbytext() ?>		
@@ -27,7 +27,7 @@
 			</section>
 		</div>
 		<div class="row">
-			<h2 class="col-sm-2 left-heading">engineering with an expansive view.</h2>
+			<h2 class="col-sm-2 left-heading">engineering with an expansive view</h2>
 			<section class="content col-sm-10">
 				<div class="row">
 					<?php echo $page->expansiveview()->kirbytext() ?>		
@@ -35,7 +35,7 @@
 			</section>
 		</div>
 		<div class="row">
-			<h2 class="col-sm-2 left-heading">this counts too.</h2>
+			<h2 class="col-sm-2 left-heading">this counts too</h2>
 			<section class="content col-sm-10">
 				<div class="row">
 					<?php echo $page->thiscountstoo()->kirbytext() ?>		
