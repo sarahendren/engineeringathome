@@ -27,6 +27,10 @@ body#manifesto {
 	}
 	sup, aside {
 		color: $red;
+		a:link, a:visited {
+			color: $red;
+			text-decoration: underline;
+		}
 	}
 	@media (min-width: $screen-sm-min) {
 		h2, section {

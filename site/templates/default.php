@@ -7,5 +7,5 @@
     </div>
 
   </main>
-
+</div>
 <?php snippet('footer') ?>

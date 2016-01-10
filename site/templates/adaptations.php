@@ -47,6 +47,8 @@
 		  <?php endforeach ?>
 		</div>
 	</div>
+  </main>
+</div>
 	<script type="text/javascript">
 	$('.grid a').hover(
 		function(myClass){ $(this).find('img').addClass('silhouette') },

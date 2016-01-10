@@ -106,6 +106,7 @@
 		<?php endforeach ?>
 		</table>
  	</main>
+</div>
 <link type="text/css" href="/node_modules/fluidbox/dist/css/fluidbox.min.css" media="all" rel="stylesheet" />
 <script type="text/javascript" src="/assets/jquery.ba-throttle-debounce.min.js"></script>
 <script src="/node_modules/fluidbox/dist/js/jquery.fluidbox.min.js"></script>

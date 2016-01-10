@@ -6422,6 +6422,9 @@ body#manifesto {
         margin-left: 8.33333%; } }
   body#manifesto sup, body#manifesto aside {
     color: #c02528; }
+    body#manifesto sup a:link, body#manifesto sup a:visited, body#manifesto aside a:link, body#manifesto aside a:visited {
+      color: #c02528;
+      text-decoration: underline; }
   @media (min-width: 768px) {
     body#manifesto h2, body#manifesto section {
       margin-top: 40px; } }

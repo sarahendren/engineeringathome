@@ -43,6 +43,7 @@
 			</section>
 		</div>
 	</main>
+</div>
 <script>
 	$('main').sidenotes;
 </script>
