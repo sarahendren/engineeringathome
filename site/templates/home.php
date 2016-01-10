@@ -1,16 +1,9 @@
 <?php snippet('header') ?>
-<style>
-<?php foreach($page->images() as $adaptation): ?>
-<?php if(!strpos($adaptation->name(), '-hover') !== false): ?>
-#a-<?php echo $adaptation->name() ?>-hover {background-image: url('/content/home/<?php echo $adaptation->name() ?>.png');}
-<?php endif ?>
-<?php endforeach ?>
-</style>
-<section id="unlikelyengineering">
+<section id="unlikelyengineering" data-bottom-top="background-position: center 90%" data-top-bottom="background-position: center -25%">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<h1>unlikely.engineering</h1>
+			<div class="col-xs-12" data-anchor-target="#unlikelyengineering" data-bottom-top="transform: translateY(0%)" data-top-bottom="transform: translateY(100%)">
+				<h1>unlikely<strong>.engineering</strong></h1>
 			</div>
 		</div>
 	</div>
@@ -20,12 +13,50 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<h1><strong>Engineering With</strong> Unlikely Objects</h1>
+			</div>
+		</div>
+	</div>
+	<div class="conveyor grid" data-anchor-target="#unlikelyobjects" data-bottom-top="transform:translateX(1%)" data-top-bottom="transform:translateX(-25%)">
+	  <?php foreach(page('adaptations')->children()->limit(7) as $adaptation):?>
+		  <div class="adaptation <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
+		    <a href="<?php echo $adaptation->url() ?>">
+			  	<?php if($adaptation->images()->find('thumbnail.gif')): ?>
+					<img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
+			  	<?php else: ?>
+				    <div class="responsive-sprites">
+				    	<img src="/assets/adaptations-sprite.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
+				    </div>
+				<?php endif ?>
+		    	<h2><?php echo $adaptation->title()->widont() ?></h2>
+		    </a>
+		  </div>
+	  <?php endforeach ?>
+	</div>
+	<div class="conveyor grid last" data-anchor-target="#unlikelyobjects" data-bottom-center="transform:translateX(-25%)" data-top-bottom="transform:translateX(1%)">
+	  <?php foreach(page('adaptations')->children()->slice(7, 7) as $adaptation):?>
+		  <div class="adaptation <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
+		    <a href="<?php echo $adaptation->url() ?>">
+			  	<?php if($adaptation->images()->find('thumbnail.gif')): ?>
+					<img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
+			  	<?php else: ?>
+				    <div class="responsive-sprites">
+				    	<img src="/assets/adaptations-sprite.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
+				    </div>
+				<?php endif ?>
+		    	<h2><?php echo $adaptation->title()->widont() ?></h2>
+		    </a>
+		  </div>
+	  <?php endforeach ?>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
 				<a class="readmore" href="/adaptations">Browse all <strong>adaptations</strong></a>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="unlikelypeople">
+<section id="unlikelypeople" data-bottom-top="background-position: right 75%" data-top-bottom="background-position: right -25%">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -35,15 +66,20 @@
 		</div>
 	</div>
 </section>
-<section id="expansiveview">
+<section id="expansiveview" data-bottom-top="background-position: center 75%" data-top-bottom="background-position: center 25%">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
 				<h1><strong>Engineering With</strong> An Expansive View</h1>
-				<a class="readmore" href="/manifesto">Ready the unlikely engineering <strong>manifesto</strong></a>
+				<a class="readmore" href="/manifesto">Read the unlikely engineering <strong>manifesto</strong></a>
 			</div>
 		</div>
 	</div>
 </section>
-<div class="container">
-	<?php snippet('footer') ?>
+<script type="text/javascript">
+$('.grid a').hover(
+	function(myClass){ $(this).find('img').addClass('silhouette') },
+	function(myClass){ $(this).find('img').removeClass('silhouette') }
+);
+</script>
+<?php snippet('footer') ?>

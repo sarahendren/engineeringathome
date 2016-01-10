@@ -23,6 +23,30 @@ body#adaptations {
 			margin-top: 60px;
 		}
 	}
+	#filters {
+		.lead, .filter-button-group h2 {
+			padding: 30px 0;
+		}
+		button {
+			text-indent: -5000em;
+			max-width: 100%;
+			overflow: hidden;
+			display: block;
+			background: transparent;
+		    border: none;
+		    max-height: 106px;
+			&:hover, &.active {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f07a+0,f6f07a+100&1+0,1+25,0.01+75 */
+				background: -moz-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%, rgba(246,240,122,1) 25%, rgba(246,240,122,0.01) 75%, rgba(246,240,122,0.01) 100%); /* FF3.6-15 */
+				background: -webkit-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 25%,rgba(246,240,122,0.01) 75%,rgba(246,240,122,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: radial-gradient(ellipse at center,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 25%,rgba(246,240,122,0.01) 75%,rgba(246,240,122,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f07a', endColorstr='#03f6f07a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			}
+		}
+		.Cover, .Alert, .Buffer, .Pour, .Squeeze, .Relieve, .Open {
+			display: none!important;
+		}
+	}
 }
 
 .grid {
@@ -31,6 +55,7 @@ body#adaptations {
 	a {
 		display: block;
 		margin-bottom: 30px;
+		position: relative;
 		img {
 			max-width: none!important;
 			transition: background-color .5s;
@@ -70,32 +95,6 @@ body#adaptations {
 			}
 		}
 	}
-}
-
-#filters {
-	.lead, .filter-button-group h2 {
-		padding: 30px 0;
-	}
-	button {
-		text-indent: -5000em;
-		max-width: 100%;
-		overflow: hidden;
-		display: block;
-		background: transparent;
-	    border: none;
-	    max-height: 106px;
-		&:hover, &.active {
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f07a+0,f6f07a+100&1+0,1+25,0.01+75 */
-			background: -moz-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%, rgba(246,240,122,1) 25%, rgba(246,240,122,0.01) 75%, rgba(246,240,122,0.01) 100%); /* FF3.6-15 */
-			background: -webkit-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 25%,rgba(246,240,122,0.01) 75%,rgba(246,240,122,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: radial-gradient(ellipse at center,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 25%,rgba(246,240,122,0.01) 75%,rgba(246,240,122,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f07a', endColorstr='#03f6f07a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-		}
-	}
-}
-
-.Cover, .Alert, .Buffer, .Pour, .Squeeze, .Relieve, .Open {
-display: none!important;
 }
 
 .responsive-sprites {

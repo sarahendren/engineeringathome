@@ -1,4 +1,3 @@
-</div>
 <footer class="footer" role="contentinfo">
 	<div class="container">
 		<div class="row">
@@ -32,6 +31,7 @@
 	  })(document);
 	$(function() {
 		FastClick.attach(document.body);
+		var s = skrollr.init();
 	});
 	</script>
 </body>

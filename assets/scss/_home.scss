@@ -1,4 +1,5 @@
 body#home {
+	background-color: $mustard;
 	.navbar {
 		margin-bottom: 0;
 		a:link, a:visited {
@@ -6,9 +7,11 @@ body#home {
 		}
 	}
 	section {
-		background-size: cover;
-		background-position: top center;
+		background-size: fit;
+		background-position: center;
+		background-repeat: no-repeat;
 		overflow: hidden;
+		position: relative;
 		div div div {
 			height: 66vh;
 			position: relative;
@@ -31,81 +34,76 @@ body#home {
 		}
 		&#unlikelyengineering {
 			background-color: $mustard;
-			background-position: left center;
-			background-image:url(/assets/collage.png);
-			h1 {color: lighten($mustard, 25%)}
-			text-indent: -5000em;
+			background-position: center;
+			background-image:url(/assets/collage.jpg);
+			h1 {
+				color: #fff;
+				position: static;
+					top: 50%;
+					left: 0;
+				transform: translateY(-50%);
+				text-align: center;
+				width: 100%;
+				@media (min-width: $screen-md-min) {
+					font-size: 5em;
+				}
+			}
+			h1 strong {
+				color: lighten($mustard, 25%);
+				display: inline;
+			}
+			div div div {
+				height: 90vh;
+			}
 		}
+		
 		&#unlikelyobjects {
 			background-color: $moss;	
 			h1 strong {color: lighten($moss, 25%)}
 			a:link, a:visited {color: $moss}	
+			div div div {
+				height: auto!important;
+			}
+			.conveyor {
+				width: 4000px;
+				height: 286px;
+				display:block;
+				&.last {
+					margin-bottom:75px;
+				}
+				.adaptation {
+					width: 400px;
+					height: 286px;
+					overflow: hidden;
+					float: left;
+					img {
+						max-width: none!important;
+						transition: background-color .5s;
+					}
+					img.gif {
+						width: 100%;
+					}
+
+				}
+				a:hover img {
+					background-color: darken($moss, 15%);
+				}
+			}
 		}
 		&#unlikelypeople {
 			background-color: $teal;		
 			h1 strong {color: lighten($teal, 25%)}	
 			a:link, a:visited {color: $teal}	
+			background-image: url(/content/3-about/cindy.jpg);
 		}
 		&#expansiveview {
 			background-color: $pink;		
-			background-image:url(/assets/expansiveview.jpg);
+			background-image: url(/content/2-manifesto/manifesto.jpg);
 			h1 strong {color: lighten($pink, 15%)}	
 			a:link, a:visited {color: $pink}	
 		}
 	}
-
-#collage {
-	* {
-//		background-color:rgba(0,0,0,.05)
+	footer {
+		margin-top: 0;
 	}
-	a {
-		@include make-xs-column(6);
-		@include make-md-column(4);
-	}
-}
-#collage .row:nth-child(odd) a {
-	@include make-xs-column-offset(6);
-}
-
-#collage .row:nth-child(4n+0) a {@include make-md-column-offset(4);}
-#collage .row:nth-child(4n+1) a {@include make-md-column-offset(8);}
-#collage .row:nth-child(4n+2) a {@include make-md-column-offset(4);}
-#collage .row:nth-child(4n+3) a {@include make-md-column-offset(0);}
-
-* {
-}
-#collage {
-	margin-top: 75vh;
-	position: relative;
-	display: block;
-}
-#collage a {
-	display: block;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	padding:0;
-}
-#collage a img {
-	opacity: 0;
-	display: block;
-	margin: auto;
-}
-#collage a:hover img {
-	opacity: 1!important;
-}
-#objects section {
-	display: block;
-	height: 100vh;
-	text-align: center;
-}
-#objects h1 {
-	position: relative;
-	top: 40%;
-	left: -50%;
-	transform: translateY(-60%), translateX(-50%);
-	color: #fff;
-	font-size: 5em;
-}
-
 }
