@@ -12,7 +12,7 @@
 			</div>
 			<div class="row">
 				<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
-				<div class="filter-button-group row">
+				<div class="filter-button-group">
 					<div class="filters">
 						<?php foreach($tagcloud as $tag): ?>
 							<div class="col-xs-6 col-sm-4 col-md-3">
