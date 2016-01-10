@@ -26,9 +26,9 @@
 				<section class="content">
 					<?php echo $page->creators()->kirbytext() ?>
 				</section>
-				<h2>Acknowledgements</h2>
+				<h2>Acknowledgments</h2>
 				<section class="content">
-					<?php echo $page->acknowledgements()->kirbytext() ?>
+					<?php echo $page->acknowledgments()->kirbytext() ?>
 				</section>
 			</section>
 		</div>
