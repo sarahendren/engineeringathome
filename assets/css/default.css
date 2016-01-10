@@ -5819,82 +5819,82 @@ button.close {
     display: block; }
 
 img.Attach {
-  width: 200.76046%;
-  margin-top: -114.44867%;
-  margin-bottom: -19.01141%;
-  margin-left: -100.76046%; }
+  width: 300.38023%;
+  margin-top: -31.17871%;
+  margin-bottom: -124.71483%;
+  margin-left: 0%; }
 
 img.Carry {
-  width: 200.76046%;
-  margin-top: -49.80989%;
-  margin-bottom: -77.94677%;
-  margin-left: -100.76046%; }
+  width: 300.38023%;
+  margin-top: -93.53612%;
+  margin-bottom: -62.35741%;
+  margin-left: 0%; }
 
 img.Connect {
-  width: 200.76046%;
-  margin-top: -133.8403%;
-  margin-bottom: -1.52091%;
-  margin-left: -100.76046%; }
+  width: 300.38023%;
+  margin-top: -62.35741%;
+  margin-bottom: -93.53612%;
+  margin-left: 0%; }
 
 img.Cut {
-  width: 200.76046%;
-  margin-top: -133.8403%;
-  margin-bottom: 0%;
-  margin-left: 0%; }
+  width: 300.38023%;
+  margin-top: 0%;
+  margin-bottom: -155.89354%;
+  margin-left: -100.76046%; }
 
 img.Grasp {
-  width: 200.76046%;
-  margin-top: -31.55894%;
-  margin-bottom: -88.59316%;
-  margin-left: 0%; }
-
-img.Hold {
-  width: 200.76046%;
-  margin-top: -114.44867%;
-  margin-bottom: -17.11027%;
-  margin-left: 0%; }
-
-img.Lift {
-  width: 200.76046%;
-  margin-top: 0%;
+  width: 300.38023%;
+  margin-top: -31.17871%;
   margin-bottom: -124.71483%;
   margin-left: -100.76046%; }
 
-img.Pinch {
-  width: 200.76046%;
-  margin-top: -91.63498%;
-  margin-bottom: -36.5019%;
+img.Hold {
+  width: 300.38023%;
+  margin-top: -62.35741%;
+  margin-bottom: -93.53612%;
+  margin-left: -100.76046%; }
+
+img.Lift {
+  width: 300.38023%;
+  margin-top: 0%;
+  margin-bottom: -155.89354%;
   margin-left: 0%; }
+
+img.Pinch {
+  width: 300.38023%;
+  margin-top: -93.53612%;
+  margin-bottom: -62.35741%;
+  margin-left: -100.76046%; }
 
 img.Pull {
-  width: 200.76046%;
-  margin-top: -91.63498%;
-  margin-bottom: -36.88213%;
-  margin-left: -100.76046%; }
-
-img.Squeeze {
-  width: 200.76046%;
-  margin-top: 0%;
-  margin-bottom: -119.39163%;
+  width: 300.38023%;
+  margin-top: -124.71483%;
+  margin-bottom: -31.17871%;
   margin-left: 0%; }
 
-img.Steady {
-  width: 200.76046%;
-  margin-top: -26.23574%;
-  margin-bottom: -101.14068%;
+img.Squeeze {
+  width: 300.38023%;
+  margin-top: -124.71483%;
+  margin-bottom: -31.17871%;
   margin-left: -100.76046%; }
 
+img.Steady {
+  width: 300.38023%;
+  margin-top: -155.89354%;
+  margin-bottom: 0%;
+  margin-left: 0%; }
+
 img.Turn {
-  width: 200.76046%;
-  margin-top: -73.0038%;
-  margin-bottom: -59.31559%;
+  width: 300.38023%;
+  margin-top: -155.89354%;
+  margin-bottom: 0%;
   margin-left: -100.76046%; }
 
 img.Yank {
-  width: 203.07692%;
-  margin-top: -63.07692%;
-  margin-bottom: -60%;
-  margin-left: 0%; }
+  width: 303.84615%;
+  margin-top: 0%;
+  margin-bottom: -157.69231%;
+  margin-left: -203.84615%; }
 
 .responsive-sprites {
   height: auto;
