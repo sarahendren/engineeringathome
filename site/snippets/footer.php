@@ -31,7 +31,6 @@
 	  })(document);
 	$(function() {
 		FastClick.attach(document.body);
-		var s = skrollr.init();
 	});
 	</script>
 </body>

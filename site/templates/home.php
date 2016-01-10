@@ -81,5 +81,10 @@ $('.grid a').hover(
 	function(myClass){ $(this).find('img').addClass('silhouette') },
 	function(myClass){ $(this).find('img').removeClass('silhouette') }
 );
+if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+    skrollr.init({
+        forceHeight: false
+    });
+}
 </script>
 <?php snippet('footer') ?>
