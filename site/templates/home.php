@@ -12,7 +12,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1><strong>Engineering With</strong> Unlikely Objects</h1>
+				<h1><a href="/adaptations"><strong>Engineering With</strong> Unlikely Objects</a></h1>
 			</div>
 		</div>
 	</div>
@@ -60,7 +60,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1><strong>Engineering With</strong> Unlikely People</h1>
+				<h1><a href="/about"><strong>Engineering With</strong> Unlikely People</a></h1>
 				<a class="readmore" href="/about">Read <strong>about</strong> the project and Cindy's story</a>
 			</div>
 		</div>
@@ -70,7 +70,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<h1><strong>Engineering With</strong> An Expansive View</h1>
+				<h1><a href="/manifesto"><strong>Engineering With</strong> An Expansive View</a></h1>
 				<a class="readmore" href="/manifesto">Read the unlikely engineering <strong>manifesto</strong></a>
 			</div>
 		</div>

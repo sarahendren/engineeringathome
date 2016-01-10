@@ -6453,8 +6453,10 @@ body#home {
       text-transform: lowercase;
       font-size: 1.5em;
       text-decoration: underline; }
-    body#home section h1 {
+    body#home section h1, body#home section h1 a:link, body#home section h1 a:visited {
       color: #fff; }
+    body#home section h1 a:hover, body#home section h1 a:active {
+      text-decoration: none; }
     body#home section#unlikelyengineering {
       background-color: #c8b12d;
       background-position: center;
@@ -6481,7 +6483,7 @@ body#home {
       background-image: url(/content/home/adhesive-wall-hooks.png); }
       body#home section#unlikelyobjects h1 strong {
         color: #8ea482; }
-      body#home section#unlikelyobjects a:link, body#home section#unlikelyobjects a:visited {
+      body#home section#unlikelyobjects a.readmore:link, body#home section#unlikelyobjects a.readmore:visited {
         color: #4f6046; }
       body#home section#unlikelyobjects .conveyor {
         display: none; }
@@ -6492,14 +6494,14 @@ body#home {
       background-image: url(/content/3-about/cindy.jpg); }
       body#home section#unlikelypeople h1 strong {
         color: #0ae4ff; }
-      body#home section#unlikelypeople a:link, body#home section#unlikelypeople a:visited {
+      body#home section#unlikelypeople a.readmore:link, body#home section#unlikelypeople a.readmore:visited {
         color: #007a89; }
     body#home section#expansiveview {
       background-color: #FF8C92;
       background-image: url(/content/2-manifesto/manifesto.jpg); }
       body#home section#expansiveview h1 strong {
         color: #ffd9db; }
-      body#home section#expansiveview a:link, body#home section#expansiveview a:visited {
+      body#home section#expansiveview a.readmore:link, body#home section#expansiveview a.readmore:visited {
         color: #FF8C92; }
   body#home footer {
     margin-top: 0; }
