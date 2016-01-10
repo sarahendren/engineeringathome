@@ -6461,10 +6461,10 @@ body#home {
       background-image: url(/assets/collage.jpg); }
       body#home section#unlikelyengineering h1 {
         color: #fff;
-        position: static;
-        top: 50%;
+        position: absolute;
+        top: 40%;
         left: 0;
-        transform: translateY(-50%);
+        transform: translateY(-40%);
         text-align: center;
         width: 100%; }
         @media (min-width: 992px) {
@@ -6476,31 +6476,17 @@ body#home {
       body#home section#unlikelyengineering div div div {
         height: 90vh; }
     body#home section#unlikelyobjects {
-      background-color: #4f6046; }
+      background-color: #4f6046;
+      background-position: -100% 50%;
+      background-image: url(/content/home/adhesive-wall-hooks.png); }
       body#home section#unlikelyobjects h1 strong {
         color: #8ea482; }
       body#home section#unlikelyobjects a:link, body#home section#unlikelyobjects a:visited {
         color: #4f6046; }
-      body#home section#unlikelyobjects div div div {
-        height: auto !important; }
       body#home section#unlikelyobjects .conveyor {
-        width: 4000px;
-        height: 286px;
-        display: block; }
-        body#home section#unlikelyobjects .conveyor.last {
-          margin-bottom: 75px; }
-        body#home section#unlikelyobjects .conveyor .adaptation {
-          width: 400px;
-          height: 286px;
-          overflow: hidden;
-          float: left; }
-          body#home section#unlikelyobjects .conveyor .adaptation img {
-            max-width: none !important;
-            transition: background-color .5s; }
-          body#home section#unlikelyobjects .conveyor .adaptation img.gif {
-            width: 100%; }
-        body#home section#unlikelyobjects .conveyor a:hover img {
-          background-color: #2b3426; }
+        display: none; }
+      body#home section#unlikelyobjects div div div {
+        height: 33vh; }
     body#home section#unlikelypeople {
       background-color: #007a89;
       background-image: url(/content/3-about/cindy.jpg); }
@@ -6517,6 +6503,34 @@ body#home {
         color: #FF8C92; }
   body#home footer {
     margin-top: 0; }
+
+html.skrollr body#home section#unlikelyengineering h1 {
+  position: static;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%); }
+html.skrollr body#home section#unlikelyobjects {
+  background: #4f6046; }
+  html.skrollr body#home section#unlikelyobjects div div div {
+    height: auto !important; }
+  html.skrollr body#home section#unlikelyobjects .conveyor {
+    width: 4000px;
+    height: 286px;
+    display: block; }
+    html.skrollr body#home section#unlikelyobjects .conveyor.last {
+      margin-bottom: 75px; }
+    html.skrollr body#home section#unlikelyobjects .conveyor .adaptation {
+      width: 400px;
+      height: 286px;
+      overflow: hidden;
+      float: left; }
+      html.skrollr body#home section#unlikelyobjects .conveyor .adaptation img {
+        max-width: none !important;
+        transition: background-color .5s; }
+      html.skrollr body#home section#unlikelyobjects .conveyor .adaptation img.gif {
+        width: 100%; }
+    html.skrollr body#home section#unlikelyobjects .conveyor a:hover img {
+      background-color: #2b3426; }
 
 body#about {
   background: #e0e5e6;

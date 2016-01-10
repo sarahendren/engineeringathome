@@ -115,6 +115,7 @@
 		$grid
 
 	});
+
 	</script>
 
 <?php snippet('footer') ?>
