@@ -24,7 +24,7 @@
 					<img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
 			  	<?php else: ?>
 				    <div class="responsive-sprites">
-				    	<img src="/assets/adaptations-sprite.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
+				    	<img src="/assets/adaptations-sprite-min.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
 				    </div>
 				<?php endif ?>
 		    	<h2><?php echo $adaptation->title()->widont() ?></h2>
@@ -40,7 +40,7 @@
 					<img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
 			  	<?php else: ?>
 				    <div class="responsive-sprites">
-				    	<img src="/assets/adaptations-sprite.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
+				    	<img src="/assets/adaptations-sprite-min.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
 				    </div>
 				<?php endif ?>
 		    	<h2><?php echo $adaptation->title()->widont() ?></h2>
