@@ -38,7 +38,7 @@ body#home {
 		&#unlikelyengineering {
 			background-color: $mustard;
 			background-position: center;
-			background-image:url(/assets/collage.jpg);
+//			background-image:url(/assets/collage.jpg);
 			h1 {
 				color: #fff;
 				position: absolute;
@@ -64,8 +64,8 @@ body#home {
 			background-color: $moss;	
 			background-position: -100% 50%;
 			background-image:url(/content/home/adhesive-wall-hooks.png);
-			h1 strong {color: lighten($moss, 25%)}
-			a.readmore:link, a.readmore:visited {color: $moss}
+			h1 strong {color: #3c7e43}
+			a.readmore:link, a.readmore:visited {color: #3c7e43}
 			.conveyor {
 				display: none;
 			}
@@ -74,16 +74,16 @@ body#home {
 			}
 		}
 		&#unlikelypeople {
-			background-color: $teal;		
-			h1 strong {color: lighten($teal, 25%)}	
+			background-color: $sky;		
+			h1 strong {color: $teal}	
 			a.readmore:link, a.readmore:visited {color: $teal}	
-			background-image: url(/content/3-about/cindy.jpg);
+			background-image: url(/content/2-about/cindy.jpg);
 		}
 		&#expansiveview {
 			background-color: $pink;		
-			background-image: url(/content/2-manifesto/manifesto.jpg);
-			h1 strong {color: lighten($pink, 15%)}	
-			a.readmore:link, a.readmore:visited {color: $pink}	
+			background-image: url(/content/3-manifesto/manifesto.jpg);
+			h1 strong {color: $red}	
+			a.readmore:link, a.readmore:visited {color: $red}	
 		}
 	}
 	footer {

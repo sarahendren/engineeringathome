@@ -4,7 +4,7 @@
   <main class="main" role="main">
 	<header>
 		<div class="row">
-		    <h1>to date, <strong>cindy has engineered <?php echo $page->children()->count() ?> adaptations</strong>, built of things like cable ties, cosmetic sponges, peel-and-stick hooks, and more.</h1>
+		    <h1 class="col-xs-12">adaptations</h1>
 	    </div>
 	    <section id="filters">
 		    <div class="row">
@@ -24,7 +24,7 @@
 							</div>
 						<?php endforeach ?>
 					</div>
-					<h2 class="col-xs-12 text-center">adaptations <strong class="filter-status"></strong> <a href="#filter=*" data-filter="*" class="clear-button" style="display:none">(clear filter)</a></h2>
+					<h2 class="col-xs-12 text-center"><strong class="filter-status"></strong> <a href="#filter=*" data-filter="*" class="clear-button" style="display:none">(clear filter)</a></h2>
 				</div>
 			</div>
 	    </section>
@@ -38,7 +38,7 @@
 						<img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
 				  	<?php else: ?>
 					    <div class="responsive-sprites">
-					    	<img src="/assets/adaptations-sprite.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
+					    	<img src="/assets/adaptations-sprite-min.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
 					    </div>
 					<?php endif ?>
 			    	<h2><?php echo $adaptation->title()->widont() ?></h2>
@@ -55,7 +55,6 @@
 		function(myClass){ $(this).find('img').removeClass('silhouette') }
 	);
 	function getHashFilter() {
-	  // get filter=filterName
 	  var matches = location.hash.match( /filter=([^&]+)/i );
 	  var hashFilter = matches && matches[1];
 	  return hashFilter && decodeURIComponent( hashFilter );
@@ -66,7 +65,6 @@
 	  var $grid = $('.grid');
 	  var $filters = $('.filters');
 
-	  // bind filter button click
 	  var $filterButtonGroup = $('.filter-button-group');
 	  $filterButtonGroup.on( 'click', 'button', function() {
 	    var filterAttr = $( this ).attr('data-filter');
@@ -82,7 +80,6 @@
 	      return;
 	    }
 	    isIsotopeInit = true;
-	    // filter isotope
 	    $grid.isotope({
 	      itemSelector: '.element-item',
 	      layoutMode: 'fitRows',
@@ -93,7 +90,7 @@
 	    if ( hashFilter ) {
 	      $filterButtonGroup.find('.active').removeClass('active');
 	      $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
-				$('.filter-status').text(' to ' + hashFilter.substr(1));
+				$('.filter-status').text('adaptations to ' + hashFilter.substr(1));
 				$('.clear-button').show();	
 	    }
 	    if (hashFilter == '*') {
@@ -103,8 +100,6 @@
 	  }
 
 	  $(window).on( 'hashchange', onHashchange );
-
-	  // trigger event handler to init Isotope
 		var $container = $('.grid');
 		var $filters = $('.filters');
 		$container.imagesLoaded(function () {
@@ -113,9 +108,6 @@
 		$filters.imagesLoaded(function () {
 			onHashchange();
 		});
-
-		$grid
-
 	});
 
 	</script>

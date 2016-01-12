@@ -66,7 +66,7 @@
 		</div>
 	</div>
 </section>
-<section id="expansiveview" data-bottom-top="background-position: center 75%" data-top-bottom="background-position: center 25%">
+<section id="expansiveview" data-bottom-top="background-position: right 100%" data-top-bottom="background-position: right -25%">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
