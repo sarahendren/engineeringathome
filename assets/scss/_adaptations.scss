@@ -10,14 +10,6 @@ body#adaptations, body.adaptation {
 	}
 }
 body#adaptations {
-	h1 {
-		font-weight: 100;
-		strong {
-			font-weight: 900;
-			display: inline;
-		}
-		@include make-lg-column(8);
-	}
 	@media (min-width: $screen-md-min) {
 		.container header {
 			margin-top: 60px;
