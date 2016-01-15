@@ -6750,19 +6750,22 @@ blockquote {
 
 footer {
   padding: 1em;
-  background: #555555;
-  color: #eeeeee !important;
+  background: #B3a999;
+  color: #343534 !important;
   margin-top: 40px; }
   footer h2 {
-    color: #eeeeee !important; }
+    color: #343534 !important; }
   footer a:link, footer a:visited {
-    color: #eeeeee; }
+    color: #343534 !important; }
   footer .container {
     padding: 40px 0; }
   footer hr {
-    border-top-color: #222222; }
+    border-top-color: #343534 !important;
+    border-style: dashed; }
   footer .row div {
     margin-bottom: 60px; }
+  footer i.fa {
+    margin-left: 5px; }
 
 .lead {
   margin-bottom: 22px;

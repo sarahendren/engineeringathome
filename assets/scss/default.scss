@@ -55,23 +55,27 @@ blockquote {
 
 footer {
 	padding: 1em;
-	background: $gray;
-	color: $gray-lighter!important;
+	background: $taupe;
+	color: $brown!important;
 	margin-top: 40px;
 	h2 {
-		color: $gray-lighter!important;
+		color: $brown!important;
 	}
 	a:link, a:visited {
-		color: $gray-lighter;
+		color: $brown!important;
 	}
 	.container {
 		padding: 40px 0;
 	}
 	hr {
-		border-top-color: $gray-darker;
+		border-top-color: $brown!important;
+		border-style: dashed;
 	}
 	.row div {
 		margin-bottom: 60px;
+	}
+	i.fa {
+		margin-left: 5px;
 	}
 }
 

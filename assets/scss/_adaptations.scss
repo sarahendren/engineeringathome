@@ -1,12 +1,12 @@
 body#adaptations, body.adaptation {
 	background: $green-background;
-	color: $moss;
+	color: $olive;
 	hr {
-		border-color: lighten($moss, 25%);
+		border-color: lighten($olive, 25%);
 		border-top-width: 1px;
 	}
 	h1 {
-		color: $moss;
+		color: $olive;
 	}
 }
 body#adaptations {
@@ -74,12 +74,12 @@ body#adaptations {
 				opacity: 1;
 			}
 			img {
-				background-color: $moss;
+				background-color: $olive;
 			}
 		}
 		&.back-button {
 			img {
-				background: $moss;
+				background: $olive;
 				max-width: 100%!important;
 			}
 			h2 {
@@ -184,7 +184,7 @@ body.adaptation {
 		}
 	}
 	.diagram img {
-		background: $pink;
+		background: $salmon;
 	}
 	.fluidbox__overlay {
 		background-color: $green-background;
