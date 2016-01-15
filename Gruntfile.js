@@ -47,14 +47,6 @@ module.exports = function(grunt) {
         files: {
           'assets/adaptations-sprite-min.png': 'assets/adaptations-sprite.png',
           'assets/handwriting-sprite-min.png': 'assets/handwriting-sprite.png'
-        },
-        dynamic: {
-          files: [{
-            expand: true,
-            cwd: 'content/1-adaptations/',
-            src: ['**/*.{jpg}'],
-            dest: ['**/*.{jpg}']'
-          }]
         }
       }
     },
