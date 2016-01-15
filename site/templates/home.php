@@ -2,7 +2,7 @@
 <section id="unlikelyengineering" data-bottom-top="background-position: center 90%" data-top-bottom="background-position: center -25%">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12" data-anchor-target="#unlikelyengineering" data-bottom-top="transform: translateY(0%)" data-top-bottom="transform: translateY(100%)">
+			<div class="col-xs-12" data-anchor-target="#unlikelyengineering">
 				<h1>unlikely<strong>.engineering</strong></h1>
 			</div>
 		</div>

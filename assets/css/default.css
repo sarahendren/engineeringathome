@@ -6409,7 +6409,7 @@ body.adaptation .gallery-nav {
       max-height: none !important;
       cursor: pointer; }
 body.adaptation .diagram img {
-  background: #dea17e; }
+  background: #FE9E74; }
 body.adaptation .fluidbox__overlay {
   background-color: #CFD7CB; }
 
@@ -6465,7 +6465,6 @@ body#home {
     body#home .navbar a:link, body#home .navbar a:visited {
       background-color: #b8b840; }
   body#home section {
-    background-size: fit;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -6491,16 +6490,27 @@ body#home {
       text-decoration: none; }
     body#home section#unlikelyengineering {
       background-color: #b8b840;
-      background-position: center; }
+      background-position: center;
+      background-image: url(/assets/collage.png);
+      background-size: fit; }
+      @media (min-width: 992px) {
+        body#home section#unlikelyengineering {
+          background-size: 100%; }
+        body#home section#unlikelyengineering h1 {
+          position: absolute;
+          top: 55% !important;
+          left: 0;
+          transform: translateY(-55% !important); } }
       body#home section#unlikelyengineering h1 {
         color: #fff;
+        display: block;
         position: absolute;
-        top: 40%;
+        top: 50%;
         left: 0;
-        transform: translateY(-40%);
+        transform: translateY(-50%);
         text-align: center;
         width: 100%; }
-        @media (min-width: 992px) {
+        @media (min-width: 768px) {
           body#home section#unlikelyengineering h1 {
             font-size: 5em; } }
       body#home section#unlikelyengineering h1 strong {
@@ -6528,7 +6538,7 @@ body#home {
       body#home section#unlikelypeople a.readmore:link, body#home section#unlikelypeople a.readmore:visited {
         color: #387d95; }
     body#home section#expansiveview {
-      background-color: #dea17e;
+      background-color: #FE9E74;
       background-image: url(/content/3-manifesto/manifesto.jpg); }
       body#home section#expansiveview h1 strong {
         color: #D84348; }
@@ -6537,11 +6547,6 @@ body#home {
   body#home footer {
     margin-top: 0; }
 
-html.skrollr body#home section#unlikelyengineering h1 {
-  position: static;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%); }
 html.skrollr body#home section#unlikelyobjects {
   background: #465235; }
   html.skrollr body#home section#unlikelyobjects div div div {
