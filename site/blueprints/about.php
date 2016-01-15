@@ -17,6 +17,6 @@ fields:
   creators:
     label: Creators
     type:  markdown
-  acknowledgements:
-    label: Acknowledgements
+  acknowledgments:
+    label: Acknowledgments
     type:  markdown
