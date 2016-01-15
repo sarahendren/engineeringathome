@@ -5818,89 +5818,125 @@ button.close {
   .responsive-sprites > img {
     display: block; }
 
-img.Attach {
-  width: 300.38023%;
+img.Alert {
+  width: 301.52091%;
   margin-top: -31.17871%;
+  margin-bottom: -155.89354%;
+  margin-left: 0%; }
+
+img.Attach {
+  width: 301.52091%;
+  margin-top: -155.89354%;
+  margin-bottom: -31.17871%;
+  margin-left: 0%; }
+
+img.Buffer {
+  width: 301.52091%;
+  margin-top: -62.35741%;
   margin-bottom: -124.71483%;
   margin-left: 0%; }
 
 img.Carry {
-  width: 300.38023%;
-  margin-top: -93.53612%;
-  margin-bottom: -62.35741%;
+  width: 301.52091%;
+  margin-top: 0%;
+  margin-bottom: -187.07224%;
   margin-left: -100.76046%; }
 
 img.Connect {
-  width: 300.38023%;
-  margin-top: -62.35741%;
-  margin-bottom: -93.53612%;
-  margin-left: 0%; }
-
-img.Cut {
-  width: 300.38023%;
-  margin-top: 0%;
+  width: 301.52091%;
+  margin-top: -31.17871%;
   margin-bottom: -155.89354%;
   margin-left: -100.76046%; }
 
-img.Grasp {
-  width: 300.38023%;
-  margin-top: -31.17871%;
+img.Cover {
+  width: 301.52091%;
+  margin-top: -62.35741%;
   margin-bottom: -124.71483%;
   margin-left: -100.76046%; }
 
-img.Hold {
-  width: 300.38023%;
-  margin-top: -62.35741%;
+img.Cut {
+  width: 301.52091%;
+  margin-top: -93.53612%;
+  margin-bottom: -93.53612%;
+  margin-left: 0%; }
+
+img.Grasp {
+  width: 301.52091%;
+  margin-top: -93.53612%;
   margin-bottom: -93.53612%;
   margin-left: -100.76046%; }
 
-img.Lift {
-  width: 300.38023%;
-  margin-top: -93.53612%;
+img.Hold {
+  width: 301.52091%;
+  margin-top: -124.71483%;
   margin-bottom: -62.35741%;
   margin-left: 0%; }
 
-img.Pinch {
-  width: 300.38023%;
+img.Lift {
+  width: 301.52091%;
+  margin-top: -124.71483%;
+  margin-bottom: -62.35741%;
+  margin-left: -100.76046%; }
+
+img.Open {
+  width: 301.52091%;
   margin-top: 0%;
-  margin-bottom: -155.89354%;
+  margin-bottom: -187.07224%;
   margin-left: 0%; }
+
+img.Pinch {
+  width: 301.52091%;
+  margin-top: -155.89354%;
+  margin-bottom: -31.17871%;
+  margin-left: -100.76046%; }
+
+img.Pour {
+  width: 301.52091%;
+  margin-top: 0%;
+  margin-bottom: -187.07224%;
+  margin-left: -201.52091%; }
 
 img.Pull {
-  width: 300.38023%;
-  margin-top: -124.71483%;
-  margin-bottom: -31.17871%;
-  margin-left: 0%; }
+  width: 301.52091%;
+  margin-top: -31.17871%;
+  margin-bottom: -155.89354%;
+  margin-left: -201.52091%; }
+
+img.Relieve {
+  width: 301.52091%;
+  margin-top: -62.35741%;
+  margin-bottom: -124.71483%;
+  margin-left: -201.52091%; }
 
 img.Scratch {
-  width: 303.84615%;
-  margin-top: 0%;
-  margin-bottom: -157.69231%;
-  margin-left: -203.84615%; }
-
-img.Squeeze {
-  width: 300.38023%;
-  margin-top: -155.89354%;
+  width: 305%;
+  margin-top: -189.23077%;
   margin-bottom: 0%;
   margin-left: 0%; }
 
+img.Squeeze {
+  width: 301.52091%;
+  margin-top: -124.71483%;
+  margin-bottom: -62.35741%;
+  margin-left: -201.52091%; }
+
 img.Steady {
-  width: 300.38023%;
+  width: 301.52091%;
   margin-top: -155.89354%;
-  margin-bottom: 0%;
-  margin-left: -100.76046%; }
+  margin-bottom: -31.17871%;
+  margin-left: -201.52091%; }
 
 img.Turn {
-  width: 300.38023%;
-  margin-top: -124.71483%;
-  margin-bottom: -31.17871%;
-  margin-left: -100.76046%; }
+  width: 301.52091%;
+  margin-top: -93.53612%;
+  margin-bottom: -93.53612%;
+  margin-left: -201.52091%; }
 
 img.Yank {
-  width: 303.84615%;
-  margin-top: -31.53846%;
-  margin-bottom: -126.15385%;
-  margin-left: -203.84615%; }
+  width: 305%;
+  margin-top: -189.23077%;
+  margin-bottom: 0%;
+  margin-left: -100.76923%; }
 
 .responsive-sprites {
   height: auto;
@@ -6260,8 +6296,6 @@ body#adaptations #filters button {
     /* IE6-9 fallback on horizontal gradient */ }
 body#adaptations #filters button:focus {
   outline: 0; }
-body#adaptations #filters .Cover, body#adaptations #filters .Alert, body#adaptations #filters .Buffer, body#adaptations #filters .Pour, body#adaptations #filters .Squeeze, body#adaptations #filters .Relieve, body#adaptations #filters .Open {
-  display: none !important; }
 
 .grid {
   margin: 0 !important;

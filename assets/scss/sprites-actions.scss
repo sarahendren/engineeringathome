@@ -15,90 +15,126 @@
 
 
 // Constants	
-$total_width: 790;
-$total_height: 490;
+$total_width: 793;
+$total_height: 572;
 
-img.Attach {
+img.Alert {
   width: 100% * $total_width / 263;
   margin-top: 100% * -82 / 263;
   margin-bottom: -100% * ($total_height - 82 - 80) / 263;
+  margin-left: -100% * 0 / 263;
+}
+img.Attach {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * -410 / 263;
+  margin-bottom: -100% * ($total_height - 410 - 80) / 263;
+  margin-left: -100% * 0 / 263;
+}
+img.Buffer {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * -164 / 263;
+  margin-bottom: -100% * ($total_height - 164 - 80) / 263;
   margin-left: -100% * 0 / 263;
 }
 img.Carry {
   width: 100% * $total_width / 263;
-  margin-top: 100% * -246 / 263;
-  margin-bottom: -100% * ($total_height - 246 - 80) / 263;
-  margin-left: -100% * 265 / 263;
-}
-img.Connect {
-  width: 100% * $total_width / 263;
-  margin-top: 100% * -164 / 263;
-  margin-bottom: -100% * ($total_height - 164 - 80) / 263;
-  margin-left: -100% * 0 / 263;
-}
-img.Cut {
-  width: 100% * $total_width / 263;
   margin-top: 100% * 0 / 263;
   margin-bottom: -100% * ($total_height - 0 - 80) / 263;
   margin-left: -100% * 265 / 263;
 }
-img.Grasp {
+img.Connect {
   width: 100% * $total_width / 263;
   margin-top: 100% * -82 / 263;
   margin-bottom: -100% * ($total_height - 82 - 80) / 263;
   margin-left: -100% * 265 / 263;
 }
-img.Hold {
+img.Cover {
   width: 100% * $total_width / 263;
   margin-top: 100% * -164 / 263;
   margin-bottom: -100% * ($total_height - 164 - 80) / 263;
   margin-left: -100% * 265 / 263;
 }
-img.Lift {
+img.Cut {
   width: 100% * $total_width / 263;
   margin-top: 100% * -246 / 263;
   margin-bottom: -100% * ($total_height - 246 - 80) / 263;
   margin-left: -100% * 0 / 263;
 }
-img.Pinch {
+img.Grasp {
   width: 100% * $total_width / 263;
-  margin-top: 100% * 0 / 263;
-  margin-bottom: -100% * ($total_height - 0 - 80) / 263;
-  margin-left: -100% * 0 / 263;
+  margin-top: 100% * -246 / 263;
+  margin-bottom: -100% * ($total_height - 246 - 80) / 263;
+  margin-left: -100% * 265 / 263;
 }
-img.Pull {
+img.Hold {
   width: 100% * $total_width / 263;
   margin-top: 100% * -328 / 263;
   margin-bottom: -100% * ($total_height - 328 - 80) / 263;
   margin-left: -100% * 0 / 263;
 }
-img.Scratch {
-  width: 100% * $total_width / 260;
-  margin-top: 100% * 0 / 260;
-  margin-bottom: -100% * ($total_height - 0 - 80) / 260;
-  margin-left: -100% * 530 / 260;
+img.Lift {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * -328 / 263;
+  margin-bottom: -100% * ($total_height - 328 - 80) / 263;
+  margin-left: -100% * 265 / 263;
 }
-img.Squeeze {
+img.Open {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * 0 / 263;
+  margin-bottom: -100% * ($total_height - 0 - 80) / 263;
+  margin-left: -100% * 0 / 263;
+}
+img.Pinch {
   width: 100% * $total_width / 263;
   margin-top: 100% * -410 / 263;
   margin-bottom: -100% * ($total_height - 410 - 80) / 263;
-  margin-left: -100% * 0 / 263;
+  margin-left: -100% * 265 / 263;
+}
+img.Pour {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * 0 / 263;
+  margin-bottom: -100% * ($total_height - 0 - 80) / 263;
+  margin-left: -100% * 530 / 263;
+}
+img.Pull {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * -82 / 263;
+  margin-bottom: -100% * ($total_height - 82 - 80) / 263;
+  margin-left: -100% * 530 / 263;
+}
+img.Relieve {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * -164 / 263;
+  margin-bottom: -100% * ($total_height - 164 - 80) / 263;
+  margin-left: -100% * 530 / 263;
+}
+img.Scratch {
+  width: 100% * $total_width / 260;
+  margin-top: 100% * -492 / 260;
+  margin-bottom: -100% * ($total_height - 492 - 80) / 260;
+  margin-left: -100% * 0 / 260;
+}
+img.Squeeze {
+  width: 100% * $total_width / 263;
+  margin-top: 100% * -328 / 263;
+  margin-bottom: -100% * ($total_height - 328 - 80) / 263;
+  margin-left: -100% * 530 / 263;
 }
 img.Steady {
   width: 100% * $total_width / 263;
   margin-top: 100% * -410 / 263;
   margin-bottom: -100% * ($total_height - 410 - 80) / 263;
-  margin-left: -100% * 265 / 263;
+  margin-left: -100% * 530 / 263;
 }
 img.Turn {
   width: 100% * $total_width / 263;
-  margin-top: 100% * -328 / 263;
-  margin-bottom: -100% * ($total_height - 328 - 80) / 263;
-  margin-left: -100% * 265 / 263;
+  margin-top: 100% * -246 / 263;
+  margin-bottom: -100% * ($total_height - 246 - 80) / 263;
+  margin-left: -100% * 530 / 263;
 }
 img.Yank {
   width: 100% * $total_width / 260;
-  margin-top: 100% * -82 / 260;
-  margin-bottom: -100% * ($total_height - 82 - 80) / 260;
-  margin-left: -100% * 530 / 260;
+  margin-top: 100% * -492 / 260;
+  margin-bottom: -100% * ($total_height - 492 - 80) / 260;
+  margin-left: -100% * 262 / 260;
 }
