@@ -18,7 +18,7 @@
 							<div class="col-xs-6 col-sm-4 col-md-3">
 								<button class="<?php echo $tag->name() ?>" data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?>
 									<div class="responsive-sprites">
-								    	<img src="/assets/handwriting-sprite.png" class="<?php echo $tag->name() ?>" alt="<?php echo $tag->name() ?>">
+								    	<img src="/assets/handwriting-sprite-min.png" class="<?php echo $tag->name() ?>" alt="<?php echo $tag->name() ?>">
 									</div>
 								</button>
 							</div>

@@ -38,15 +38,17 @@ module.exports = function(grunt) {
           optipng: true,
           zopflipng: true,
           advpng: true,
-          jpegRecompress: false,
-          jpegoptim: false,
-          mozjpeg: false,
+          jpegRecompress: true,
+          jpegoptim: true,
+          mozjpeg: true,
           gifsicle: true,
           svgo: false
         },
         files: {
           'assets/adaptations-sprite-min.png': 'assets/adaptations-sprite.png',
-          'content/1-adaptations/*/thumbnail.gif': 'content/1-adaptations/*/thumbnail.gif'
+          'assets/handwriting-sprite-min.png': 'assets/handwriting-sprite.png',
+          'content/1-adaptations/**/thumbnail.gif': 'content/1-adaptations/**/thumbnail.gif',
+          'content/1-adaptations/**/*.jpg': 'content/1-adaptations/**/*.jpg'
         }
       }
     },
