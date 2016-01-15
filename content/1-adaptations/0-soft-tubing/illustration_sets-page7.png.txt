@@ -1,0 +1,9 @@
+Sort: 6
+
+----
+
+Kind: diagram
+
+----
+
+Caption: A technical drawing showing the eyeliner with tubing, top view and side view.

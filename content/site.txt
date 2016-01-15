@@ -1,17 +1,17 @@
-Title: Kirby Starterkit
+Title: Unlikely Engineering
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Caitrin Lynch and Sara Hendren
 
 ----
 
-Description: This is Kirby's Starterkit.
+Copyright: (link: /about text: This project) is the work of (link: http://ablersite.org text: Sara Hendren) and (link: http://www.olin.edu/faculty/profile/caitrin-lynch/ text: Caitrin Lynch) at (link: http://www.olin.edu text: Olin College of Engineering). This work is licensed under a (link: http://creativecommons.org/licenses/by/4.0/ text: Creative Commons Attribution 4.0 International License).
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Contact: We'd love to hear from you via the (link: /contact text: contact page).
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Social: Connect with us via our (link: http://facebook.com/unlikely.engineering text: Facebook page).

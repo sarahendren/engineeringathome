@@ -1,0 +1,54 @@
+Title: Manifesto
+
+----
+
+Header: 
+
+# **This Counts Too:** Unlikely Engineering
+_by Sara Hendren and Caitrin Lynch_
+
+----
+
+Unlikelypeople: 
+
+We are a designer (Sara Hendren) and an anthropologist (Caitrin Lynch), and we teach engineering students. When we met Cindy, we were moved by a number of aspects about her story, and so were the students in our classrooms. She survived a complex, life-threatening medical event; she joined a very small percentage of people to survive such an event without neurological impairment. All of this is extraordinary in itself. But she also received the best available “rehabilitation engineering” technology that money can buy—a sophisticated myoelectric hand—and it turned out to be of little importance to her recovery. Those hands are astonishing feats of engineering, and there’s no shortage of media attention celebrating them. But after a lengthy insurance process and specialized training for that replacement limb, Cindy found she had little use for it. By the time she received the hand, she was well on her way to adapting her body and environment with a variety of everyday materials and tools—using what was around her for daily tasks. It may come as a surprise, but the “universal” functionality of that hand had been supplanted by the quick and nimble devices she and her prosthetist could assemble.
+
+So, how has Cindy built a life that works? She’s not an engineer by training, and she wouldn’t have even called herself naturally inclined toward Do-It-Yourself handiwork. But she is the expert on her body and needs, and her wish to adapt to her new life has fueled the creation of everyday adaptations built of things like cable ties, cosmetic sponges, peel-and-stick hooks, and more—some that are available in the assistive technology market, and some with her prosthetist or her husband Ken, but many on her own. Cindy’s set of objects form an archive about the new interdependence that she lives with in her body: a combination of assistance from her husband and two daughters, family, church community, and friends; expert medical oversight; and this assembly of daily living tools and devices.
+
+----
+
+Unlikelythings: 
+
+Some of Cindy’s skill lies not in creating new technologies, but in seeing things differently. Rather than seeing a makeup sponge as simply a cosmetic tool, she saw a perfect friction-cushioning shield for her residual limb. In an adhesive wall hook, she saw a system for opening jars. And in a cable tie, a zipper pull. Cindy reminds us that sometimes the given designation for an object hides a clever alternate use. She directs our vision to the unexpected: low-tech objects or high-tech; not just “medically necessary” objects, but everyday objects that allow her to pursue her passions and live a life with meaning and purpose. 
+
+The technologies that are most useful to Cindy are flexible, multifaceted objects like tongs and sponges, elegant in their simplicity and universality. By patching together existing materials, appropriating tools from one context to another, Cindy shows us that innovation comes from deep appreciation of specific context but also disciplined attention to the tools at hand.<sup>1</sup>
+
+<aside>1. We are mindful here of Claude Levi Strauss’s productive distinction between the engineer and the bricoleur. Claude Levi-Strauss, *The Savage Mind* (1962), chapter 1.</aside>
+
+----
+
+Expansiveview: 
+
+The what and the how of engineering have been its principal disciplinary subjects for at least the last fifty years: an emphasis on engineering sciences, lab-based technical novelty, and abstract knowledge.<sup>2</sup> But engineering has historically included not only the technically complex, high-tech work that students hear about in theoretical lecture classes. It is fundamentally an applied field, tested and proven in fabrication for specific people and their contexts. We want to recover a nuanced understanding of engineering’s history of invention that includes craft, assembly, and appropriation—right alongside advances in material sciences and innovative technique.<sup>3</sup> In our classes, we create conditions for young engineers to ask not just what and how but also who, when and why we build the things we do. Why this choice and not another? Who is in front of me, asking for a new product or system? When might we expand the traditional questions, to get better answers? 
+
+<aside>2. See Richard K. Miller’s summary of these changes (prompted by the Grinter Report of 1955), in (link: http://www.olin.edu/sites/default/files/rebalancing_engineering_education_may_15.pdf text: “Why the Hard Science of Engineering is No Longer Enough to Meet the 21st Century Challenges.”)</aside>
+
+<aside>3. See a parallel discussion in Richard Sennett, *The Craftsman* (2008).</aside>
+
+An expanded view of engineering takes on new urgency, too, when it comes to design for disability. Prosthetics research has for decades been synonymous with expensive, high-tech research, and people with atypical bodies and minds have been relegated to user testing—at the end of a product’s development. Cindy’s range of objects start and end with her needs, but they also start with her ideas; they are made with, alongside, and in some cases by her. Placing people at the center of the research and development of “assistive technologies”<sup>4</sup> is critical to robust, innovative, adaptive engineering.
+
+<aside>4. Like others in the disability space, we claim that (link: https://medium.com/backchannel/all-technology-is-assistive-ac9f7183c8cd#.9bmhhi924 text: all technology is assistive). We therefore use the term “adaptive” more often, but we also continue to use it to signal a field of research.</aside>
+
+Finally, a number of Cindy’s objects are what’s been called “design-for-one” projects. They’re organized exclusively around her body and her environment, defying the usual rationale for a manufactured object to be valuable only at a scale of thousands or tens of thousands. What do we learn from such a radically tailored engineering? Cindy’s story embodies the surprises and complexities of what happens in user-initiated design.<sup>5</sup>s It’s something more than what’s popularly known as user-“centered” design or participatory design; it’s engineering that proceeds from the original wishes of a single end user. Perhaps especially in design for disability, attentive design-for-one practices can yield a powerful course correction to the top-down modes of manufacturing. A disposition of experimentation, a willingness to harvest the lessons of singularity, a provisional commitment to the one-off: these unique objects together form an argument for the recognition of more user-initiated technologies as engineering, wherever they originate and whatever market they may eventually find.
+
+<aside>5. This term comes from Ryerson University's (link: http://www.ryerson.ca/ecs/faculty_staff/fulltime/nolan_jason.html text: Jason Nolan).</aside>
+
+----
+
+Thiscountstoo: 
+
+We share Cindy’s story as one step in a campaign to create a more inclusive engineering discipline, where engineers re-open the research paradigm to include high- and low-tech devices, experts and amateurs, labs and living rooms. As researchers who teach engineers but from disciplines outside of engineering, we want a much greater practical attention to the hidden places—past and present—where engineering is already happening.  We use the term “unlikely” precisely to question our assumptions about what is likely to count as engineering, to help us to see the world (and engineering) in a new way.
+
+It’s possible to read this essay as a call for more broadly-conceived bioethics when training young engineers and designers. A little liberal arts sprinkled in to “round out” a technical education. To teach students this way, while valuable, is a complementarian model that hews closely to the traditional forms of higher education: lab work in the sciences, and analysis work in the humanities. We’re asking for the engineering classroom to do something more ambitious: to engage critical questions in the lab where students make daily material choices. In so doing, we call for a necessary, productive uncertainty about what kinds of engineering will do the work of addressing human needs. 
+
+The stakes are high. The next generation of engineering prosthetics can’t only be in high-tech innovation and technology. Building a desirable future depends on multiple voices and varied forms of expertise. It depends on engineering with unlikely people, with unlikely things, and with an expansive view.

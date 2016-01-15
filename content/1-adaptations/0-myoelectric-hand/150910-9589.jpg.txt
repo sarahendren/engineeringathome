@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Kind: studio
+
+----
+
+Caption: The myoelectric hand again, with its grip open and fingers in slightly different positions. The research behind these hands has gone significantly to replicating the intricate movement of mimetic fingers.

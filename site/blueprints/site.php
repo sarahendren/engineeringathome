@@ -7,14 +7,14 @@ fields:
     label: Title
     type:  text
   author:
-    label: Author
+    label: Authors
     type:  text
-  description:
-    label: Description
-    type:  textarea
-  keywords:
-    label: Keywords
-    type:  tags
+  contact:
+    label: Contact
+    type: textarea
+  social:
+    label: Social
+    type: textarea
   copyright:
     label: Copyright
     type:  textarea

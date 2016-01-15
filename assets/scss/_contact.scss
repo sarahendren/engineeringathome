@@ -1,0 +1,23 @@
+body#contact {
+	background-color: $chartreuse;
+	main {
+		background: $blue-background;
+		box-shadow: 15px 15px 0 darken($chartreuse, 5%);
+	}
+	h1, label {
+		color: $sky;
+	}
+	form {
+		padding: 15px 0;
+		button {
+			background: $sky;
+			color: #fff;
+		}
+	}
+	@media (min-width: $screen-md-min) {
+		main {
+			margin-top: 100px;
+			margin-bottom: 75px;
+		}
+	}
+}

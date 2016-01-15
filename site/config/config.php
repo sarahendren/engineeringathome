@@ -28,3 +28,24 @@ make Kirby work. For more fine-grained configuration
 of the system, please check out http://getkirby.com/docs/advanced/options
 
 */
+
+// c::set('cache', true);
+
+c::set('markdown.extra', true);
+
+c::set('routes', array(
+  array(
+    'pattern' => 'logout',
+    'action'  => function() {
+      if($user = site()->user()) $user->logout();
+      go('login');
+    }
+  )
+));
+
+c::set('responsiveimages.sources', array( 
+    'xs'  => array('width' => 480),
+    'sm' => array('width' => 768),
+    'md'  => array('width' => 992),
+    'lg'  => array('width' => 1200)
+));

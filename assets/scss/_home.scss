@@ -1,0 +1,144 @@
+body#home {
+	background-color: $chartreuse;
+	.navbar {
+		margin-bottom: 0;
+		a:link, a:visited {
+			background-color: $chartreuse;
+		}
+	}
+	section {
+		background-position: center;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		position: relative;
+		div div div {
+			height: 66vh;
+			position: relative;
+		}
+		a.readmore {
+			position: absolute;
+				bottom: 0;
+				left: 0;
+			border-radius: 50%;
+			padding: 20px;
+			background: #fff;
+			box-shadow: 0 0 50px 50px #fff;
+			font-family: $font-family-sans-serif;
+			text-transform: lowercase;
+			font-size: 1.5em;
+			text-decoration: underline;
+		}
+		h1, h1 a:link, h1 a:visited {
+			color: #fff;
+		}
+		h1 a:hover, h1 a:active {
+			text-decoration: none;
+		}
+		&#unlikelyengineering {
+			background-color: $chartreuse;
+			background-position: center;
+			background-image:url(/assets/collage.png);
+			background-size: fit;
+			@media (min-width: $screen-md-min) {
+				&{background-size: 100%;}
+				h1 {
+				position: absolute;
+					top: 55%!important;
+					left: 0;
+				transform: translateY(-55%!important);
+				}
+			}
+			h1 {
+				color: #fff;
+				display: block;
+				position: absolute;
+					top: 50%;
+					left: 0;
+				transform: translateY(-50%);
+				text-align: center;
+				width: 100%;
+				@media (min-width: $screen-sm-min) {
+					font-size: 5em;
+				}
+			}
+			h1 strong {
+				color: lighten($chartreuse, 25%);
+				display: inline;
+			}
+			div div div {
+				height: 90vh;
+			}
+		}
+		
+		&#unlikelyobjects {
+			background-color: $olive;	
+			background-position: -100% 50%;
+			background-image:url(/content/home/adhesive-wall-hooks.png);
+			h1 strong {color: #3c7e43}
+			a.readmore:link, a.readmore:visited {color: #3c7e43}
+			.conveyor {
+				display: none;
+			}
+			div div div {
+				height: 33vh;
+			}
+		}
+		&#unlikelypeople {
+			background-color: $sky;		
+			h1 strong {color: $teal}	
+			a.readmore:link, a.readmore:visited {color: $teal}	
+			background-image: url(/content/2-about/cindy.jpg);
+//			background-size: 75%;
+		}
+		&#expansiveview {
+			background-color: $salmon;		
+			background-image: url(/content/3-manifesto/manifesto.jpg);
+			h1 strong {color: $red}	
+			a.readmore:link, a.readmore:visited {color: $red}	
+		}
+	}
+	footer {
+		margin-top: 0;
+	}
+}
+
+html.skrollr {
+	body#home {
+		section {
+			&#unlikelyobjects {
+				background: $olive;	
+				div div div {
+					height: auto!important;
+				}
+				.conveyor {
+					width: 4000px;
+					height: 286px;
+					display:block;
+					&.last {
+						margin-bottom:75px;
+					}
+					.adaptation {
+						width: 400px;
+						height: 286px;
+						overflow: hidden;
+						float: left;
+						img {
+							max-width: none!important;
+							transition: background-color .5s;
+						}
+						img.gif {
+							width: 100%;
+						}
+
+					}
+					a:hover img {
+						background-color: darken($olive, 15%);
+					}
+				}
+			}
+			&#unlikelypeople, &#expansiveview {
+//				background-size: 100%;
+			}
+		}
+	}	
+}

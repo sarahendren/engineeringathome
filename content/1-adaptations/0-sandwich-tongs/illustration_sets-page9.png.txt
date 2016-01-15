@@ -1,0 +1,5 @@
+Caption: A technical drawing of the tongs, top and side view.
+
+----
+
+Kind: diagram

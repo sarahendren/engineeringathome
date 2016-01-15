@@ -2,3 +2,7 @@
 /site/accounts
 /assets/avatars
 /thumbs/*
+/node_modules
+/.sass-cache
+/site/cache
+*.log

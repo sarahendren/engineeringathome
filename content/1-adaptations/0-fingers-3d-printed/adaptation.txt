@@ -1,0 +1,21 @@
+Title: 3D Printed Fingers
+
+----
+
+Text: 
+
+In 2015, Cindy worked with a team of students in the (link: http://anthro-age.pitt.edu/ojs/index.php/anthro-age/article/view/108 text: Engineering for Humanity class) that Caitrin Lynch co-teaches with Ela Ben-Ur at Olin College. The team produced 3D printed fingers with the goal of enabling Cindy to carry items, reach for things, and interact more with her grandchildren (playing with toys, turning pages in books as she reads to them). The students, Frances Devanbu, Dheepan Thangavelu, and Fabiana Vivacqua, went through multiple prototypes that ranged from initial renderings in wire and duct tape to this final version. 
+
+The final product consisted of three 3D printed fingers--fingertips filled with food-grade silicone for flexibility, and the fingers attached to a woven elastic bandage (like an (link: https://en.wikipedia.org/wiki/Elastic_bandage text: Ace bandage)) as a wrist brace. The students crowned their creation with “bling” (fake sparkling jewels and pearls) to simulate rings because Cindy takes pride in her appearance, loves jewelery, and laments the inability to wear her collection of rings that she had accumulated over the years. Cindy uses the fingers today for lifting objects and for wrapping presents. One special early aim had been for her to be able to turn the pages of books as she read to her grandchildren, but the team eventually realized that she already had a good system in place, which is what she still uses today: tickle the listener when she needs the page turned.
+
+In their final report, the team wrote the following, a reflection that reveals their evolved understanding of why universal prosthetics are not always the solution and their attention to Cindy’s values and needs:
+
+> “Finger prosthetics are extremely hard to make, and our team learned this the hard way. At first we thought we would be able to make something to help Cindy with ALL her needs. These uses include untangling necklaces, having an attachable Lego finger (to play with grandchildren), and using a zipper. Unfortunately, after many fast prototyping iterations, we realized that this would be something almost impossible to make happen. So then we decided to focus on two things: reaching and pinching. If we could allow her to pinch, she would then be able to pick up a lot more things such as a sandwich, the last clothes in the laundry basket, etc. She would also be able to reach for these things instead of asking her husband for help.”
+
+----
+
+Verbs: Turn,Pull
+
+----
+
+Intro: A student team produced 3D printed fingers to enable Cindy to carry items, reach for things, and interact more with her grandchildren.

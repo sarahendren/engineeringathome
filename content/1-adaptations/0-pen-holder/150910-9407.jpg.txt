@@ -1,0 +1,5 @@
+Caption: Cindy writes on her notebook.
+
+----
+
+Kind: inuse
