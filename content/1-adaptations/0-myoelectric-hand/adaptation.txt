@@ -15,3 +15,7 @@ For us, the lesson of this high-tech innovation is a complicated one. A myoelect
 ----
 
 Verbs: Lift
+
+----
+
+Intro: The design and engineering of this high tech innovation seemed remarkable and promising, but Cindy finds she has little use for it.

@@ -1,10 +1,10 @@
-Title: Cosmetic Hand
+Title: Cosmetic Hands
 
 ----
 
 Text: 
 
-Cindy’s cosmetic hand is in a category of its own: not an assistive device in any conventional sense, and more a work of sculpture than engineering. In fact, it is not intended to be functional, and as Cindy often notes, it impairs most functions. Still, it performs some key functions that reveal important things about what it means to “perform” disability.
+Cindy’s cosmetic hands are in a category of their own: not an assistive device in any conventional sense, and more a work of sculpture than engineering. In fact, they are not intended to be functional, and as Cindy often notes, they impair most functions. Still, they perform some key functions that reveal important things about what it means to “perform” disability.
 
 While Cindy has designed, co-created, and collected a bevy of tools to aid her in many daily tasks, there are times when it’s easier and more desirable for her to cover her hands with these cosmetic approximations. If she’s attending a school concert with her grandchildren, for instance, or going to a big one-time event (such as a reunion), she wants the option to forego the questions, scrutiny, and all-around attention to her embodiment. These hands aren’t functional in a literal sense, but they provide her with privacy and anonymity when she wants it—a critical choice, when so often she can’t opt out of the public eye.
 
@@ -15,3 +15,7 @@ Cindy likes the long nails on these hands too, for their scratching—a function
 ----
 
 Verbs: Cover
+
+----
+
+Intro: Cindy’s cosmetic hands are in a category of their own: not an assistive device in any conventional sense, and more a work of sculpture than engineering.

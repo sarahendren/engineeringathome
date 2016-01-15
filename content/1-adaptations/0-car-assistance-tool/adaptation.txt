@@ -4,10 +4,14 @@ Title: Car Assistance Tool
 
 Text: 
 
-When Cindy was first getting accustomed to her new body and prosthetics, she found it difficult to get in and out of her car. For instance, when getting in, it was hard to find something steady to grab onto as she sat down on the seat and swung her legs into the car. Cindy would use this tool in those early days, until she got more comfortable with the process. The “(link: http://www.amazon.com/s/?ie=UTF8&keywords=the+handybar&tag=googhydr-20&index=aps&hvadid=79098688272&hvpos=1t1&hvexid=&hvnetw=g&hvrand=15993934606010553725&hvpone=&hvptwo=&hvqmt=b&hvdev=c&ref=pd_sl_1cw4cosiy_b text: Handy Bar)” hooks securely into the car’s metal door-latch (also called a “striker”) that is situated on the car body where the door latches to the body. It allows the user to get some leverage by putting complete weight on it as when entering or exiting the car. 
+When Cindy was first getting accustomed to her new body and prosthetics, she found it difficult to get in and out of her car. For instance, when getting in, it was hard to find something steady to grab onto as she sat down on the seat and swung her legs into the car. Cindy would use this tool in those early days, until she got more comfortable with the process. The “(link: http://www.amazon.com/s/?ie=UTF8&keywords=the+handybar&tag=googhydr-20&index=aps&hvadid=79098688272&hvpos=1t1&hvexid=&hvnetw=g&hvrand=15993934606010553725&hvpone=&hvptwo=&hvqmt=b&hvdev=c&ref=pd_sl_1cw4cosiy_b text: Handy Bar)” hooks securely into the car’s metal door-latch (also called a “striker”) that is situated on the car body where the door latches to the body. It allows the user to get some leverage by putting complete weight on it when entering or exiting the car. 
 
 The manufacturer is a company that makes adaptive tools for daily living, such as many of the items Cindy uses or has created herself. This tool has three uses in one, although on the manufacturer’s website it’s primarily marketed for the first use: Automotive Standing Aid, Seatbelt Cutter, and Window Breaker. This particular tool therefore joins a suite of tools for exiting cars in an emergency, such as (link: http://www.lifehammer.com/features_instructions.html text: LifeHammer) and (link: http://resqme.com/ text: ResQMe).
 
 ----
 
 Verbs: Steady
+
+----
+
+Intro: This tool allows the user to get some leverage by putting complete weight on it when entering or exiting the car.

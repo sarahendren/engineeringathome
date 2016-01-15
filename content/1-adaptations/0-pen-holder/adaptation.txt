@@ -13,3 +13,7 @@ It's not unusual for the Martinos to build custom devices when they can. Greig s
 ----
 
 Verbs: Hold
+
+----
+
+Intro: To recover Cindy’s ability to write in her own handwriting, her prosthetist molded a leftover scrap of silicon into a custom-fitted device, and lodged a pen into it.

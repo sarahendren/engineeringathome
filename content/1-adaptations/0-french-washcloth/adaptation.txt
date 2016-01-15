@@ -7,3 +7,7 @@ Text: Cindy’s hands make it hard for her to grip and scrub with a standard was
 ----
 
 Verbs: Grasp,Hold
+
+----
+
+Intro: Cindy’s hands make it hard for her to grip and scrub with a standard washcloth, but she can slip her hand into a pocket-style washcloth.

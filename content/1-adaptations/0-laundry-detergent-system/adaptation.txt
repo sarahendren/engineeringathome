@@ -13,3 +13,7 @@ We include this example of a systems workaround among Cindy’s other objects to
 ----
 
 Verbs: Hold,Pour
+
+----
+
+Intro: Cindy created a waypoint for laundry powder, a plastic container that can hold the powder and cup. “I had to find a way to do it that was easier with less chance of vacuuming up powder.”
