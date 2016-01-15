@@ -124,6 +124,32 @@
           </div>
         </div>
       </div>
+    <?php elseif($relpages->count == 0): ?>
+      <div class="row" id="related">
+        <h2 class="col-xs-12">More Adaptations</h2>
+        <div class="grid">
+          <?php foreach(page('adaptations')->children()->shuffle()->limit(3) as $adaptation):?>
+          <div class="col-xs-6 col-sm-4 col-md-3 element-item <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
+            <a href="<?php echo $adaptation->url() ?>">
+              <?php if($adaptation->images()->find('thumbnail.gif')): ?>
+              <img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
+              <?php else: ?>
+                <div class="responsive-sprites">
+                  <img src="/assets/adaptations-sprite.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
+                </div>
+            <?php endif ?>
+              <h2><?php echo $adaptation->title()->widont() ?></h2>
+            </a>
+          </div>
+          <?php endforeach ?>
+          <div class="col-xs-6 col-sm-4 col-md-3 element-item">
+            <a href="/adaptations" class="back-button">
+              <img src="/assets/spacer.png">
+              <h2>Browse all Adaptations</h2>
+            </a>
+          </div>
+        </div>
+      </div>      
     <?php endif ?>
   </main>
 </div>
