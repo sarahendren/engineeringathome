@@ -6417,12 +6417,12 @@ body.adaptation .gallery-nav {
 body.adaptation #inuse figure {
   margin-bottom: 20px; }
 body.adaptation .diagram img {
-  background: #FE9E74; }
+  background: #FF8C92; }
 body.adaptation .fluidbox__overlay {
   background-color: #CFD7CB; }
 
 body#manifesto {
-  background: #FCEBDF;
+  background: #fcdfe0;
   color: #16445c; }
   @media (min-width: 768px) {
     body#manifesto header.row {
@@ -6546,7 +6546,7 @@ body#home {
       body#home section#unlikelypeople a.readmore:link, body#home section#unlikelypeople a.readmore:visited {
         color: #387d95; }
     body#home section#expansiveview {
-      background-color: #FE9E74;
+      background-color: #FF8C92;
       background-image: url(/content/3-manifesto/manifesto.jpg); }
       body#home section#expansiveview h1 strong {
         color: #D84348; }
