@@ -47,11 +47,19 @@
         <?php foreach($inuse as $image): ?>
           <?php if ($inuse->count() == 1): ?>
           <figure class="col-sm-6 col-sm-offset-3">
-            <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+            <?php if ($image->extension() == 'gif'): ?>
+              <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
+            <?php else: ?>              
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+            <?php endif ?>
           </figure>
           <?php elseif ($inuse->count() == 2): ?>
           <figure class="col-xs-6">
-            <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+            <?php if ($image->extension() == 'gif'): ?>
+              <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
+            <?php else: ?>              
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+            <?php endif ?>
           </figure>
           <?php elseif ($inuse->count() == 3): ?>
           <figure class="col-xs-6 col-sm-4">
