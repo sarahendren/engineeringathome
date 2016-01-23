@@ -6414,6 +6414,8 @@ body.adaptation .gallery-nav {
       max-width: none !important;
       max-height: none !important;
       cursor: pointer; }
+body.adaptation #inuse figure {
+  margin-bottom: 20px; }
 body.adaptation .diagram img {
   background: #FE9E74; }
 body.adaptation .fluidbox__overlay {

@@ -65,7 +65,7 @@
           <figure class="col-xs-4 col-sm-2">
             <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
           </figure>
-          <?php elseif ($inuse->count() == 6): ?>
+          <?php elseif ($inuse->count() >= 6): ?>
           <figure class="col-sm-2">
             <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
           </figure>
