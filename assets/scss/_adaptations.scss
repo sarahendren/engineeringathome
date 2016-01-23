@@ -188,8 +188,8 @@ body.adaptation {
 			margin-bottom: 20px;
 		}
 	}
-	.diagram img {
-		background: $pink;
+	#diagram img, #diagram .fluidbox__ghost {
+		background-color: $pink;
 	}
 	.fluidbox__overlay {
 		background-color: $green-background;

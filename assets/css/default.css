@@ -6416,8 +6416,8 @@ body.adaptation .gallery-nav {
       cursor: pointer; }
 body.adaptation #inuse figure {
   margin-bottom: 20px; }
-body.adaptation .diagram img {
-  background: #FF8C92; }
+body.adaptation #diagram img, body.adaptation #diagram .fluidbox__ghost {
+  background-color: #FF8C92; }
 body.adaptation .fluidbox__overlay {
   background-color: #CFD7CB; }
 
