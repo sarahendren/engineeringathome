@@ -62,12 +62,13 @@ body#adaptations {
 		height: auto!important;
 	}
 }
-
+body#adaptations .grid {
+	min-height: 1170px;
+}
 .grid {
 	margin: 0!important;
 	padding: 0!important;
 	overflow: hidden;
-	min-height: 1170px;
 	a {
 		display: block;
 		margin-bottom: 30px;
