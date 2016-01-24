@@ -11,6 +11,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <script src="/assets/js/app.min.js"></script>
 <body id="<?php echo $page->slug() ?>" <?php if($page->template() != $page->slug()): ?>class="<?php echo $page->template() ?>"<?php endif ?>>
-<header>
+<header role="banner">
   <?php snippet('menu') ?>
 </header>

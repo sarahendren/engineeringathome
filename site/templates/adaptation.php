@@ -9,100 +9,100 @@
  ?>
 <div class="container">
   <main class="main" role="main">
+    <article role="article">
+      <div class="row" id="studio">
+        <div class="col-sm-6 col-md-4">
+          <h1><?php echo $page->title()->html() ?></h1>
+          <div class="lead"><?php echo $page->intro()->kirbytext() ?></div>
+          <hr>
+          <h2>Page Contents</h2>
+          <ul>
+            <li><?php echo $studio->count() . ' × Studio Photo' . plural( $studio->count() ); ?> <span class="visible-sm-inline visible-md-inline visible-lg-inline visible-xl-inline">(Right)</span><span class="visible-xs-inline">(Below)</span></li>
+            <?php if ($inuse->count() > 0): ?><li><a href="#inuse"><?php echo $inuse->count() . ' × In Situ Photo' . plural( $inuse->count() ); ?></a></li><?php endif ?>
+            <li><a href="#description">Description</a></li>
+            <?php if ($diagram->count() > 0): ?><li><a href="#diagram"><?php echo $diagram->count() . ' × Schematic' . plural( $diagram->count() ); ?></a></li><?php endif ?>
+            <li><a href="#related">Related adaptations</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-8">
+          <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": 3, "pageDots": false}'>
+            <?php foreach($studio as $image): ?>
+            <div class="gallery-cell"><figure><img src="<?php echo $image->resize(1170, 780)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></figure></div>
+            <?php endforeach ?>
+          </div>
+          <div class="gallery gallery-nav js-flickity"
+            data-flickity-options='{ "asNavFor": ".main-gallery", "pageDots": false, "setGallerySize": true, "contain": true, "prevNextButtons": false, "imagesLoaded": true }'>
+            <?php foreach($studio as $image): ?>
+              <div class="gallery-cell"><img src="<?php echo $image->crop(100,100)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
+            <?php endforeach ?>
+          </div>
+        </div>
+      </div>
 
-    <div class="row" id="studio">
-      <div class="col-sm-6 col-md-4">
-        <h1><?php echo $page->title()->html() ?></h1>
-        <div class="lead"><?php echo $page->intro()->kirbytext() ?></div>
+      <?php if ($inuse->count() > 0): ?>
         <hr>
-        <h2>Page Contents</h2>
-        <ul>
-          <li><?php echo $studio->count() . ' × Studio Photo' . plural( $studio->count() ); ?> <span class="visible-sm-inline visible-md-inline visible-lg-inline visible-xl-inline">(Right)</span><span class="visible-xs-inline">(Below)</span></li>
-          <?php if ($inuse->count() > 0): ?><li><a href="#inuse"><?php echo $inuse->count() . ' × In Situ Photo' . plural( $inuse->count() ); ?></a></li><?php endif ?>
-          <li><a href="#description">Description</a></li>
-          <?php if ($diagram->count() > 0): ?><li><a href="#diagram"><?php echo $diagram->count() . ' × Schematic' . plural( $diagram->count() ); ?></a></li><?php endif ?>
-          <li><a href="#related">Related adaptations</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-6 col-md-8">
-        <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": 3, "pageDots": false}'>
-          <?php foreach($studio as $image): ?>
-          <div class="gallery-cell"><figure><img src="<?php echo $image->resize(1170, 780)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></figure></div>
-          <?php endforeach ?>
-        </div>
-        <div class="gallery gallery-nav js-flickity"
-          data-flickity-options='{ "asNavFor": ".main-gallery", "pageDots": false, "setGallerySize": true, "contain": true, "prevNextButtons": false, "imagesLoaded": true }'>
-          <?php foreach($studio as $image): ?>
-            <div class="gallery-cell"><img src="<?php echo $image->crop(100,100)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
-          <?php endforeach ?>
-        </div>
-      </div>
-    </div>
 
-    <?php if ($inuse->count() > 0): ?>
-      <hr>
-
-      <div class="row" id="inuse">
-        <h2 class="col-xs-12">In Situ</h2>
-        <?php foreach($inuse as $image): ?>
-          <?php if ($inuse->count() == 1): ?>
-          <figure class="col-sm-6 col-sm-offset-3">
-            <?php if ($image->extension() == 'gif'): ?>
-              <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
-            <?php else: ?>              
-              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
-            <?php endif ?>
-          </figure>
-          <?php elseif ($inuse->count() == 2): ?>
-          <figure class="col-xs-6">
-            <?php if ($image->extension() == 'gif'): ?>
-              <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
-            <?php else: ?>              
-              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
-            <?php endif ?>
-          </figure>
-          <?php elseif ($inuse->count() == 3): ?>
-          <figure class="col-xs-6 col-sm-4">
-            <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
-          </figure>
-          <?php elseif ($inuse->count() == 4): ?>
-          <figure class="col-xs-6 col-sm-3">
-            <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
-          </figure>
-          <?php elseif ($inuse->count() == 5): ?>
-          <figure class="col-xs-4 col-sm-2">
-            <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
-          </figure>
-          <?php elseif ($inuse->count() >= 6): ?>
-          <figure class="col-sm-2">
-            <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
-          </figure>
-          <?php endif ?>
-        <?php endforeach ?>
-      </div>
-    <?php endif ?>
-
-    <hr>
-
-    <div class="row" id="description">
-      <h2 class="col-sm-3">Description</h2>
-      <div class="text col-sm-6">
-        <?php echo $page->text()->kirbytext() ?>
-      </div>
-    </div>
-
-    <?php if ($diagram->count() > 0): ?>
-    <hr>
-    <div class="row" id="diagram">
-      <h2 class="col-xs-12">Schematic</h2>
-          <?php foreach($diagram as $image): ?>
-            <figure class="col-sm-6">
+        <div class="row" id="inuse">
+          <h2 class="col-xs-12">In Situ</h2>
+          <?php foreach($inuse as $image): ?>
+            <?php if ($inuse->count() == 1): ?>
+            <figure class="col-sm-6 col-sm-offset-3">
+              <?php if ($image->extension() == 'gif'): ?>
+                <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
+              <?php else: ?>              
+                <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <?php endif ?>
+            </figure>
+            <?php elseif ($inuse->count() == 2): ?>
+            <figure class="col-xs-6">
+              <?php if ($image->extension() == 'gif'): ?>
+                <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
+              <?php else: ?>              
+                <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <?php endif ?>
+            </figure>
+            <?php elseif ($inuse->count() == 3): ?>
+            <figure class="col-xs-6 col-sm-4">
               <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
+            <?php elseif ($inuse->count() == 4): ?>
+            <figure class="col-xs-6 col-sm-3">
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+            </figure>
+            <?php elseif ($inuse->count() == 5): ?>
+            <figure class="col-xs-4 col-sm-2">
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+            </figure>
+            <?php elseif ($inuse->count() >= 6): ?>
+            <figure class="col-sm-2">
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+            </figure>
+            <?php endif ?>
           <?php endforeach ?>
-    </div>
-    <?php endif ?>
+        </div>
+      <?php endif ?>
 
+      <hr>
+
+      <div class="row" id="description">
+        <h2 class="col-sm-3">Description</h2>
+        <div class="text col-sm-6">
+          <?php echo $page->text()->kirbytext() ?>
+        </div>
+      </div>
+
+      <?php if ($diagram->count() > 0): ?>
+      <hr>
+      <div class="row" id="diagram">
+        <h2 class="col-xs-12">Schematic</h2>
+            <?php foreach($diagram as $image): ?>
+              <figure class="col-sm-6">
+                <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              </figure>
+            <?php endforeach ?>
+      </div>
+      <?php endif ?>
+    </article>
     <hr>
     <?php $Options = array('s{{tartURI' => '/adaptations', 'searchField' => 'Verbs');
     $relpages = relatedpages($Options); ?>
