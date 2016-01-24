@@ -19,6 +19,9 @@ body#adaptations {
 		.lead, .filter-button-group h2 {
 			padding: 30px 0;
 		}
+		div {
+			padding: 0!important;
+		}
 		button {
 			text-indent: -5000em;
 			max-width: 100%;
@@ -27,7 +30,14 @@ body#adaptations {
 			background: transparent;
 		    border: none;
 		    max-height: 106px;
-			&:hover, &:focus, &.active {
+			&:hover, &:focus {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f07a+0,f6f07a+100&1+0,1+12,0.01+50 */
+				background: -moz-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%, rgba(246,240,122,1) 12%, rgba(246,240,122,0.01) 50%, rgba(246,240,122,0.01) 100%); /* FF3.6-15 */
+				background: -webkit-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 12%,rgba(246,240,122,0.01) 50%,rgba(246,240,122,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: radial-gradient(ellipse at center,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 12%,rgba(246,240,122,0.01) 50%,rgba(246,240,122,0.01) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f07a', endColorstr='#03f6f07a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+			}
+			&.active {
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f6f07a+0,f6f07a+100&1+0,1+25,0.01+75 */
 				background: -moz-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%, rgba(246,240,122,1) 25%, rgba(246,240,122,0.01) 75%, rgba(246,240,122,0.01) 100%); /* FF3.6-15 */
 				background: -webkit-radial-gradient(center, ellipse cover,  rgba(246,240,122,1) 0%,rgba(246,240,122,1) 25%,rgba(246,240,122,0.01) 75%,rgba(246,240,122,0.01) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -44,6 +54,7 @@ body#adaptations {
 .grid {
 	margin: 0!important;
 	padding: 0!important;
+	overflow: hidden;
 	a {
 		display: block;
 		margin-bottom: 30px;

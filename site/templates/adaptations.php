@@ -15,7 +15,7 @@
 				<div class="filter-button-group">
 					<div class="filters">
 						<?php foreach($tagcloud as $tag): ?>
-							<div class="col-xs-6 col-sm-4 col-md-3">
+							<div class="col-xs-3 col-sm-3 col-md-2">
 								<button class="<?php echo $tag->name() ?>" data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?>
 									<div class="responsive-sprites">
 								    	<img src="/assets/handwriting-sprite-min.png" class="<?php echo $tag->name() ?>" alt="<?php echo $tag->name() ?>">
@@ -24,7 +24,7 @@
 							</div>
 						<?php endforeach ?>
 					</div>
-					<h2 class="col-xs-12 text-center"><strong class="filter-status"></strong> <a href="#filter=*" data-filter="*" class="clear-button" style="display:none">(clear filter)</a></h2>
+					<h2 class="col-xs-12 text-center" id="adaptationsgrid"><strong class="filter-status"></strong> <a href="#filter=*" data-filter="*" class="clear-button" style="display:none">(clear filter)</a></h2>
 				</div>
 			</div>
 	    </section>
@@ -32,7 +32,7 @@
 	<div class="row">
 		<div class="col-xs-12 grid">
 		  <?php foreach(page('adaptations')->children() as $adaptation):?>
-			  <div class="col-xs-6 col-sm-4 col-md-3 element-item <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
+			  <div class="col-xs-4 col-sm-4 col-md-3 element-item <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
 			    <a href="<?php echo $adaptation->url() ?>">
 				  	<?php if($adaptation->images()->find('thumbnail.gif')): ?>
 						<img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
@@ -66,10 +66,39 @@
 	  var $filters = $('.filters');
 
 	  var $filterButtonGroup = $('.filter-button-group');
+	  $filterButtonGroup.on( 'mouseenter', 'button', function() {
+		$('.filter-status').text('adaptations to ' + $( this ).attr('data-filter').substr(1));
+		$grid.find('.element-item').removeClass('col-md-6');
+	    $grid.isotope({
+	      itemSelector: '.element-item',
+	      layoutMode: 'fitRows',
+	      filter: $( this ).attr('data-filter')
+	    })
+	  });
+
 	  $filterButtonGroup.on( 'click', 'button', function() {
 	    var filterAttr = $( this ).attr('data-filter');
-	    // set filter in hash
 	    location.hash = 'filter=' + encodeURIComponent( filterAttr );
+        $('html,body').animate({
+          scrollTop: $("#adaptationsgrid").offset().top
+        }, 1000);
+	  });
+
+	  $filterButtonGroup.on( 'mouseleave', 'button', function() {
+	    if ( getHashFilter() == null ) {
+		    location.hash = 'filter=*';
+		    return
+		}
+	    if ( getHashFilter() == '*' ) {
+		    location.hash = 'filter=*';
+			onHashchange();
+		    return
+		}
+	    if ( getHashFilter() != '*' ) {
+		    location.hash = 'filter=' + getHashFilter();
+			onHashchange();
+		    return
+		}
 	  });
 
 	  var isIsotopeInit = false;
@@ -80,23 +109,25 @@
 	      return;
 	    }
 	    isIsotopeInit = true;
+	    // set selected class on button
+	    if ( hashFilter ) {
+			$grid.find('.element-item').addClass('col-xs-6 col-md-4');
+		    $filterButtonGroup.find('.active').removeClass('active');
+		    $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
+			$('.filter-status').text('adaptations to ' + hashFilter.substr(1));
+			$('.clear-button').show();	
+	    }
+	    if (hashFilter == '*') {
+			$grid.find('.element-item').removeClass('col-xs-6 col-md-4');
+			$('.filter-status').text('');	
+			$('.clear-button').hide();	
+	    }
 	    $grid.isotope({
 	      itemSelector: '.element-item',
 	      layoutMode: 'fitRows',
 	      filter: hashFilter
 	    })
 	    $filters.isotope();
-	    // set selected class on button
-	    if ( hashFilter ) {
-	      $filterButtonGroup.find('.active').removeClass('active');
-	      $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
-				$('.filter-status').text('adaptations to ' + hashFilter.substr(1));
-				$('.clear-button').show();	
-	    }
-	    if (hashFilter == '*') {
-				$('.filter-status').text('');	
-				$('.clear-button').hide();	
-	    }
 	  }
 
 	  $(window).on( 'hashchange', onHashchange );
