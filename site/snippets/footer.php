@@ -19,7 +19,6 @@
 			</div>
 		</div>
 	</footer>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
 	<script>
 	  (function(d) {
 	    var config = {

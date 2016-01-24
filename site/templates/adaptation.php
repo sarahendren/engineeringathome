@@ -167,8 +167,6 @@
     <?php endif ?>
   </main>
 </div>
-<link type="text/css" href="/node_modules/fluidbox/dist/css/fluidbox.min.css" media="all" rel="stylesheet" />
-<script src="/node_modules/fluidbox/dist/js/jquery.fluidbox.min.js"></script>
 <script>
 $('.grid a').hover(
   function(myClass){ $(this).find('img').addClass('silhouette') },
