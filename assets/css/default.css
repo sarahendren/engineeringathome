@@ -6634,6 +6634,21 @@ body#contact {
       margin-top: 100px;
       margin-bottom: 75px; } }
 
+body#error {
+  background-color: #343534; }
+  body#error main {
+    background: #fff;
+    box-shadow: 15px 15px 0 #272827;
+    padding-bottom: 15px !important; }
+  body#error h1, body#error label {
+    color: #343534; }
+  @media (min-width: 992px) {
+    body#error main {
+      margin-top: 100px;
+      margin-bottom: 75px; } }
+  body#error .navbar a:link, body#error .navbar a:visited {
+    color: #fff; }
+
 /*! Flickity v1.1.1
 http://flickity.metafizzy.co
 ---------------------------------------------- */

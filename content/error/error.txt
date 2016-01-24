@@ -2,4 +2,8 @@ Title: Error
 
 ----
 
-Text: The page has not been found.
+Text: 
+
+**The page you requested cannot be found.**
+
+Try going <a href="javascript:history.back()">back</a> or (link: http://unlike text: home), and don't hesitate to (link: /contact text: contact) us if we can help.

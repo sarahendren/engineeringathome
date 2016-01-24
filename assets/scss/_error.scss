@@ -1,0 +1,22 @@
+body#error {
+	background-color: $brown;
+	main {
+		background: #fff;
+		box-shadow: 15px 15px 0 darken($brown, 5%);
+		padding-bottom: 15px!important;
+	}
+	h1, label {
+		color: $brown;
+	}
+	@media (min-width: $screen-md-min) {
+		main {
+			margin-top: 100px;
+			margin-bottom: 75px;
+		}
+	}
+	.navbar {
+		a:link, a:visited {
+			color: #fff;
+		}
+	}
+}
