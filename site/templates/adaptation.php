@@ -25,17 +25,23 @@
           </ul>
         </div>
         <div class="col-sm-6 col-md-8">
-          <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": 3, "pageDots": false}'>
-            <?php foreach($studio as $image): ?>
-            <div class="gallery-cell"><figure><img src="<?php echo $image->resize(1170, 780)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></figure></div>
-            <?php endforeach ?>
-          </div>
-          <div class="gallery gallery-nav js-flickity"
-            data-flickity-options='{ "asNavFor": ".main-gallery", "pageDots": false, "setGallerySize": true, "contain": true, "prevNextButtons": false, "imagesLoaded": true }'>
-            <?php foreach($studio as $image): ?>
-              <div class="gallery-cell"><img src="<?php echo $image->crop(100,100)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
-            <?php endforeach ?>
-          </div>
+          <?php if ($studio->count() > 1): ?>
+            <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": 3, "pageDots": false}'>
+              <?php foreach($studio as $image): ?>
+              <div class="gallery-cell"><figure><img src="<?php echo $image->resize(749, 535)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></figure></div>
+              <?php endforeach ?>
+            </div>
+            <div class="gallery gallery-nav js-flickity"
+              data-flickity-options='{ "asNavFor": ".main-gallery", "pageDots": false, "setGallerySize": true, "contain": true, "prevNextButtons": false, "imagesLoaded": true }'>
+              <?php foreach($studio as $image): ?>
+                <div class="gallery-cell"><img src="<?php echo $image->crop(100,100)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
+              <?php endforeach ?>
+            </div>
+          <?php else: ?>
+              <?php foreach($studio as $image): ?>
+              <figure><img src="<?php echo $image->resize(749, 535)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></figure>
+              <?php endforeach ?>
+          <?php endif ?>
         </div>
       </div>
 
@@ -50,7 +56,7 @@
               <?php if ($image->extension() == 'gif'): ?>
                 <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
               <?php else: ?>              
-                <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+                <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php endif ?>
             </figure>
             <?php elseif ($inuse->count() == 2): ?>
@@ -58,24 +64,24 @@
               <?php if ($image->extension() == 'gif'): ?>
                 <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
               <?php else: ?>              
-                <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(748)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+                <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php endif ?>
             </figure>
             <?php elseif ($inuse->count() == 3): ?>
             <figure class="col-xs-6 col-sm-4">
-              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php elseif ($inuse->count() == 4): ?>
             <figure class="col-xs-6 col-sm-3">
-              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php elseif ($inuse->count() == 5): ?>
             <figure class="col-xs-4 col-sm-2">
-              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php elseif ($inuse->count() >= 6): ?>
             <figure class="col-sm-2">
-              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php endif ?>
           <?php endforeach ?>
@@ -104,7 +110,7 @@
       <?php endif ?>
     </article>
     <hr>
-    <?php $Options = array('s{{tartURI' => '/adaptations', 'searchField' => 'Verbs');
+    <?php $Options = array('startURI' => '/adaptations', 'searchField' => 'Verbs');
     $relpages = relatedpages($Options); ?>
     <?php if($relpages->count() > 0): ?>
       <div class="row" id="related">
@@ -137,7 +143,7 @@
         <h2 class="col-xs-12">More Adaptations</h2>
         <div class="grid">
           <?php foreach(page('adaptations')->children()->shuffle()->limit(3) as $adaptation):?>
-          <div class="col-xs-6 col-sm-4 col-md-3 element-item <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
+          <div class="col-xs-6 col-md-3 element-item <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
             <a href="<?php echo $adaptation->url() ?>">
               <?php if($adaptation->images()->find('thumbnail.gif')): ?>
               <img src="<?php echo $adaptation->images()->find('thumbnail.gif')->url() ?>" class="<?php echo $adaptation->slug() ?> gif" alt="<?php echo $adaptation->title()->html() ?>">
@@ -150,7 +156,7 @@
             </a>
           </div>
           <?php endforeach ?>
-          <div class="col-xs-6 col-sm-4 col-md-3 element-item">
+          <div class="col-xs-6 col-md-3 element-item">
             <a href="/adaptations" class="back-button">
               <img src="/assets/spacer.png">
               <h2>Browse all Adaptations</h2>
@@ -162,7 +168,6 @@
   </main>
 </div>
 <link type="text/css" href="/node_modules/fluidbox/dist/css/fluidbox.min.css" media="all" rel="stylesheet" />
-<script type="text/javascript" src="/assets/jquery.ba-throttle-debounce.min.js"></script>
 <script src="/node_modules/fluidbox/dist/js/jquery.fluidbox.min.js"></script>
 <script>
 $('.grid a').hover(

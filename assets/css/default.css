@@ -6333,8 +6333,7 @@ body#adaptations .grid {
 
 .grid {
   margin: 0 !important;
-  padding: 0 !important;
-  overflow: hidden; }
+  padding: 0 !important; }
   .grid a {
     display: block;
     margin-bottom: 30px;
@@ -6498,7 +6497,7 @@ body#manifesto {
       margin-top: 40px; } }
 
 body#home {
-  background-color: #b8b840; }
+  background-color: #B3a999; }
   body#home .navbar {
     margin-bottom: 0;
     background-color: #B3a999; }
