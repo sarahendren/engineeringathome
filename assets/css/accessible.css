@@ -5809,7 +5809,8 @@ button.close {
   .navbar {
     position: absolute;
     right: 20px;
-    max-width: 600px; }
+    max-width: 600px;
+    background-color: transparent !important; }
     .navbar .container {
       max-width: 100%; } }
 .responsive-sprites {
@@ -6274,8 +6275,10 @@ body#adaptations, body.adaptation {
   body#adaptations hr, body.adaptation hr {
     border-color: #404040;
     border-top-width: 1px; }
-  body#adaptations h1, body.adaptation h1 {
-    color: #000; }
+  body#adaptations h1, body#adaptations h2, body.adaptation h1, body.adaptation h2 {
+    color: #ff0; }
+  body#adaptations .navbar, body.adaptation .navbar {
+    background-color: #ff0; }
 
 @media (min-width: 992px) {
   body#adaptations .container header {
@@ -6450,6 +6453,8 @@ body.adaptation .fluidbox__overlay {
 body#manifesto {
   background: #ff0;
   color: #000; }
+  body#manifesto .navbar {
+    background-color: #ff0; }
   @media (min-width: 768px) {
     body#manifesto header.row {
       padding: 60px 0 30px 0; }
@@ -6495,9 +6500,8 @@ body#manifesto {
 body#home {
   background-color: #ff0; }
   body#home .navbar {
-    margin-bottom: 0; }
-    body#home .navbar a:link, body#home .navbar a:visited {
-      background-color: #ff0; }
+    margin-bottom: 0;
+    background-color: #000; }
   body#home section {
     background-position: center;
     background-repeat: no-repeat;
@@ -6557,9 +6561,9 @@ body#home {
       background-position: -100% 50%;
       background-image: url(/content/home/adhesive-wall-hooks.png); }
       body#home section#unlikelyobjects h1 strong {
-        color: #3c7e43; }
+        color: #ff0; }
       body#home section#unlikelyobjects a.readmore:link, body#home section#unlikelyobjects a.readmore:visited {
-        color: #3c7e43; }
+        color: #ff0; }
       body#home section#unlikelyobjects .conveyor {
         display: none; }
       body#home section#unlikelyobjects div div div {
@@ -6607,6 +6611,8 @@ html.skrollr body#home section#unlikelyobjects {
 body#about {
   background: #ff0;
   color: #000; }
+  body#about .navbar {
+    background-color: #ff0; }
   @media (min-width: 768px) {
     body#about header.row {
       padding: 60px 0 30px 0; } }

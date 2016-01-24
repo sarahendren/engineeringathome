@@ -1,6 +1,9 @@
 body#manifesto {
 	background: $pink-background;
 	color: $blue;
+	.navbar {
+		background-color: $pink;
+	}
 	@media (min-width: $screen-sm-min) {
 		header.row {
 			padding: 60px 0 30px 0;

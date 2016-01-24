@@ -1,6 +1,9 @@
 body#about {
 	background: $blue-background;
 	color: $blue;
+	.navbar {
+		background-color: $sky;
+	}
 	@media (min-width: $screen-sm-min) {
 		header.row {
 			padding: 60px 0 30px 0;

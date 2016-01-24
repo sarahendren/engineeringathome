@@ -2,9 +2,7 @@ body#home {
 	background-color: $chartreuse;
 	.navbar {
 		margin-bottom: 0;
-		a:link, a:visited {
-			background-color: $chartreuse;
-		}
+		background-color: $taupe;
 	}
 	section {
 		background-position: center;
@@ -74,8 +72,8 @@ body#home {
 			background-color: $olive;	
 			background-position: -100% 50%;
 			background-image:url(/content/home/adhesive-wall-hooks.png);
-			h1 strong {color: #3c7e43}
-			a.readmore:link, a.readmore:visited {color: #3c7e43}
+			h1 strong {color: $lime}
+			a.readmore:link, a.readmore:visited {color: $lime}
 			.conveyor {
 				display: none;
 			}

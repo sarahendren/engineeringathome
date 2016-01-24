@@ -5,8 +5,11 @@ body#adaptations, body.adaptation {
 		border-color: lighten($olive, 25%);
 		border-top-width: 1px;
 	}
-	h1 {
-		color: $olive;
+	h1, h2 {
+		color: $lime;
+	}
+	.navbar {
+		background-color: $lime;
 	}
 }
 body#adaptations {
