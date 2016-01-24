@@ -6282,7 +6282,7 @@ body#adaptations, body.adaptation {
     margin-top: 60px; } }
 body#adaptations #filters .lead, body#adaptations #filters .filter-button-group h2 {
   padding: 30px 0; }
-body#adaptations #filters div {
+body#adaptations #filters .filters div {
   padding: 0 !important; }
 body#adaptations #filters button {
   text-indent: -5000em;
@@ -6314,6 +6314,16 @@ body#adaptations #filters button {
     /* IE6-9 fallback on horizontal gradient */ }
 body#adaptations #filters button:focus {
   outline: 0; }
+
+#filter-select, .select2 {
+  display: block;
+  width: 100%;
+  margin: auto; }
+  @media (min-width: 768px) {
+    #filter-select, .select2 {
+      display: none !important; } }
+  #filter-select .select2-selection, .select2 .select2-selection {
+    height: auto !important; }
 
 .grid {
   margin: 0 !important;

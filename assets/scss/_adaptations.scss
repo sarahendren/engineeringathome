@@ -19,7 +19,7 @@ body#adaptations {
 		.lead, .filter-button-group h2 {
 			padding: 30px 0;
 		}
-		div {
+		.filters div {
 			padding: 0!important;
 		}
 		button {
@@ -48,6 +48,18 @@ body#adaptations {
 		button:focus {
 			outline: 0;
 		}
+	}
+}
+
+#filter-select, .select2 {
+	display: block;
+	width: 100%;
+	margin: auto;
+	@media (min-width: $screen-sm-min) {
+		& {display:none!important}
+	}
+	.select2-selection {
+		height: auto!important;
 	}
 }
 

@@ -10,10 +10,18 @@
 		    <div class="row">
 			    <div class="col-xs-12"><p class="text-center lead"><em>Filter adaptations by selecting an action&nbsp;below.</em></p></div>
 			</div>
-			<div class="row">
-				<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
+			<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
+ 			<div class="row">
+				<div class="col-xs-12">
+					<select id="filter-select" class="form-control">
+							<option value="*">All actions</option>
+						<?php foreach($tagcloud as $tag): ?>
+							<option value=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?></option>
+						<?php endforeach ?>
+					</select>
+				</div>
 				<div class="filter-button-group">
-					<div class="filters">
+					<div class="filters hidden-xs">
 						<?php foreach($tagcloud as $tag): ?>
 							<div class="col-xs-3 col-sm-3 col-md-2">
 								<button class="<?php echo $tag->name() ?>" data-filter=".<?php echo $tag->name() ?>"><?php echo $tag->name() ?>
@@ -66,6 +74,8 @@
 	  var $filters = $('.filters');
 
 	  var $filterButtonGroup = $('.filter-button-group');
+	  var $filterSelect = $('#filter-select');
+
 	  $filterButtonGroup.on( 'mouseenter', 'button', function() {
 		$('.filter-status').text('adaptations to ' + $( this ).attr('data-filter').substr(1));
 		$grid.find('.element-item').removeClass('col-md-6');
@@ -101,6 +111,11 @@
 		}
 	  });
 
+	  $filterSelect.on( 'change', function(e) {
+	    var filterAttr = $("option:selected", this).attr('value');
+	    location.hash = 'filter=' + encodeURIComponent( filterAttr );
+	  });
+
 	  var isIsotopeInit = false;
 
 	  function onHashchange() {
@@ -114,13 +129,15 @@
 			$grid.find('.element-item').addClass('col-xs-6 col-md-4');
 		    $filterButtonGroup.find('.active').removeClass('active');
 		    $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
+			$filterSelect.val(hashFilter);
 			$('.filter-status').text('adaptations to ' + hashFilter.substr(1));
 			$('.clear-button').show();	
 	    }
 	    if (hashFilter == '*') {
 			$grid.find('.element-item').removeClass('col-xs-6 col-md-4');
 			$('.filter-status').text('');	
-			$('.clear-button').hide();	
+			$('.clear-button').hide();
+			$filterSelect.val('*');
 	    }
 	    $grid.isotope({
 	      itemSelector: '.element-item',
@@ -140,7 +157,14 @@
 			onHashchange();
 		});
 	});
-
 	</script>
-
+<script type="text/javascript">
+function formatAction (action) {
+  if (!action.id) { return action.text; }
+  var $action = $(
+	'<div class="responsive-sprites"><img src="/assets/handwriting-sprite-min.png" class="' + action.element.value + '"></div>'
+  );
+  return $action;
+};
+</script>
 <?php snippet('footer') ?>
