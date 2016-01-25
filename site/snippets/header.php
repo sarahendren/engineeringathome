@@ -11,6 +11,8 @@
   <meta property="og:site_name" content="<?php echo $site->title() ?>" />
   <meta property="og:url" content="<?php echo $page->url() ?>" />
   <meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
+  <meta property="og:image:width" content="<?php echo $page->images()->first()->width() ?>" />
+  <meta property="og:image:height" content="<?php echo $page->images()->first()->height() ?>" />
   <script>document.documentElement.className += ' wf-loading';</script>
   <?php echo css('/assets/css/default.css') ?>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
