@@ -49,7 +49,7 @@
 					    	<img src="/assets/adaptations-sprite-min.png" class="<?php echo $adaptation->slug() ?>" alt="<?php echo $adaptation->title()->html() ?>">
 					    </div>
 					<?php endif ?>
-			    	<h2><?php echo $adaptation->title()->widont() ?></h2>
+			    	<h2><?php echo $adaptation->title() ?></h2>
 			    </a>
 			  </div>
 		  <?php endforeach ?>

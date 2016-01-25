@@ -14,15 +14,16 @@
         <div class="col-sm-6 col-md-4">
           <h1><?php echo $page->title()->html() ?></h1>
           <div class="lead"><?php echo $page->intro()->kirbytext() ?></div>
-          <hr>
-          <h2>Page Contents</h2>
-          <ul>
-            <li><?php echo $studio->count() . ' × Studio Photo' . plural( $studio->count() ); ?> <span class="visible-sm-inline visible-md-inline visible-lg-inline visible-xl-inline">(Right)</span><span class="visible-xs-inline">(Below)</span></li>
-            <?php if ($inuse->count() > 0): ?><li><a href="#inuse"><?php echo $inuse->count() . ' × In Situ Photo' . plural( $inuse->count() ); ?></a></li><?php endif ?>
-            <li><a href="#description">Description</a></li>
-            <?php if ($diagram->count() > 0): ?><li><a href="#diagram"><?php echo $diagram->count() . ' × Schematic' . plural( $diagram->count() ); ?></a></li><?php endif ?>
-            <li><a href="#related">Related adaptations</a></li>
-          </ul>
+          <nav>
+            <h2>contents</h2>
+            <ul>
+              <li><?php echo $studio->count() . ' × Studio Photo' . plural( $studio->count() ); ?> <span class="visible-sm-inline visible-md-inline visible-lg-inline visible-xl-inline">(Right)</span><span class="visible-xs-inline">(Below)</span></li>
+              <?php if ($inuse->count() > 0): ?><li><a href="#inuse"><?php echo $inuse->count() . ' × In Situ Photo' . plural( $inuse->count() ); ?></a></li><?php endif ?>
+              <li><a href="#description">Description</a></li>
+              <?php if ($diagram->count() > 0): ?><li><a href="#diagram"><?php echo $diagram->count() . ' × Schematic' . plural( $diagram->count() ); ?></a></li><?php endif ?>
+              <li><a href="#related">Related adaptations</a></li>
+            </ul>
+          </nav>
         </div>
         <div class="col-sm-6 col-md-8">
           <?php if ($studio->count() > 1): ?>
@@ -34,7 +35,7 @@
             <div class="gallery gallery-nav js-flickity"
               data-flickity-options='{ "asNavFor": ".main-gallery", "pageDots": false, "setGallerySize": true, "contain": true, "prevNextButtons": false, "imagesLoaded": true }'>
               <?php foreach($studio as $image): ?>
-                <div class="gallery-cell"><img src="<?php echo $image->crop(100,100)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
+                <div class="gallery-cell"><img src="<?php echo $image->resize(100)->url() ?>" alt="<?php echo $page->title()->html() ?>"></div>
               <?php endforeach ?>
             </div>
           <?php else: ?>
@@ -100,7 +101,7 @@
       <?php if ($diagram->count() > 0): ?>
       <hr>
       <div class="row" id="diagram">
-        <h2 class="col-xs-12">Schematic</h2>
+        <h2 class="col-xs-12">Schematics</h2>
             <?php foreach($diagram as $image): ?>
               <figure class="col-sm-6">
                 <a href="<?php echo $image->url() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
