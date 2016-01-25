@@ -68,7 +68,7 @@
 	<div class="container">
 		<div class="row hidden-sm hidden-md hidden-lg">
 			<div class="col-xs-12">
-				<figure><img src="/content/home/web/adhesive-wall-hooks.png" alt="Adhesive Wall Hooks"></figure>
+				<figure><img src="/assets/adaptations/web/adhesive-wall-hooks.png" alt="Adhesive Wall Hooks"></figure>
 			</div>
 		</div>
 		<div class="row">

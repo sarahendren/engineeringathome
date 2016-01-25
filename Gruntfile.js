@@ -18,19 +18,20 @@ module.exports = function(grunt) {
     },
     sprite:{
       adaptations: {
-        src: 'content/home/web/*.png',
+        src: 'assets/adaptations/web/*.png',
         dest: 'assets/adaptations-sprite.png',
         destCss: 'assets/scss/sprites-adaptations.scss',
         padding: 2,
         cssTemplate: "assets/sprites.css.handlebars"
      },
       actions: {
-        src: 'content/1-adaptations/handwriting/*.png',
+        src: 'assets/handwriting/*.png',
         dest: 'assets/handwriting-sprite.png',
         destCss: 'assets/scss/sprites-actions.scss',
         padding: 2,
         cssTemplate: "assets/sprites.css.handlebars"
      }
+
     },
     image: {
       static: {
