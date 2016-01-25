@@ -6570,7 +6570,11 @@ body#home {
       margin-top: -385px;
       margin-left: 25px;
       color: #ff0;
-      font-weight: 400; }
+      font-weight: 400;
+      text-align: right; }
+      @media (min-width: 768px) {
+        body#home section#whatcounts h2 {
+          text-align: left; } }
       body#home section#whatcounts h2 a:link, body#home section#whatcounts h2 a:visited {
         color: #ff0;
         text-decoration: underline; }

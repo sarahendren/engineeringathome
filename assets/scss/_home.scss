@@ -71,6 +71,10 @@ body#home {
 				margin-left: 25px;
 				color: $yellow;
 				font-weight: 400;
+				text-align: right;
+				@media (min-width: $screen-sm-min) {
+					text-align: left;
+				}
 				a:link, a:visited {
 					color: $yellow;
 					text-decoration: underline;
