@@ -6289,7 +6289,9 @@ body#adaptations .grid {
 
 .grid {
   margin: 0 !important;
-  padding: 0 !important; }
+  padding: 0 !important;
+  width: 100%;
+  overflow: hidden; }
   .grid a {
     display: block;
     margin-bottom: 30px;

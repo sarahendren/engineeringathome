@@ -67,6 +67,8 @@ body#adaptations {
 }
 body#adaptations .grid {
 	min-height: 790px;
+	width: 100%;
+	overflow: hidden;
 	@media (min-width: $screen-xs-min) {
 		min-height: 1170px;
 	}
