@@ -13,7 +13,7 @@
 						<?php echo $page->cindy()->kirbytext() ?>		
 					</section>
 				</section>
-				<figure class="col-sm-4">
+				<figure class="col-sm-4 col-md-3 col-md-offset-1">
 					<img src="<?php echo $page->images()->first()->resize(360,540)->url() ?>" alt="Cindy">				
 				</figure>
 			</div>
@@ -22,7 +22,7 @@
 				<section class="content col-sm-6">
 					<?php echo $page->about()->kirbytext() ?>		
 				</section>
-				<section class="col-sm-4 right-col">
+				<section class="col-sm-4 col-md-3 col-md-offset-1 right-col">
 					<h2>Creators</h2>
 					<section class="content">
 						<?php echo $page->creators()->kirbytext() ?>

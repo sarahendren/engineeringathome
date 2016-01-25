@@ -4,19 +4,36 @@ body#home {
 		margin-bottom: 0;
 		background-color: $taupe;
 	}
-	section {
-		background-position: center;
-		background-repeat: no-repeat;
-		overflow: hidden;
-		position: relative;
-		div div div {
-			height: 66vh;
+	section{
+		&#unlikelypeopleexpansiveview {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
+			background: rgb(98,182,196); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 49%, rgba(255,140,146,1) 51%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=0 ); /* IE6-9 */
+			@media (min-width: $screen-md-min) {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
+				background: rgb(98,182,196); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 49%, rgba(255,140,146,1) 51%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=1 ); /* IE6-9 */
+			}
+		}
+		#whatcounts, #unlikelypeople, #expansiveview, &#unlikelyengineering {
+			background-position: center right;
+			background-size: contain;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			position: relative;
+			height: 44vh;
 			position: relative;
 		}
 		a.readmore {
 			position: absolute;
 				bottom: 0;
-				left: 0;
+				left: 25%;
 			border-radius: 50%;
 			padding: 20px;
 			background: #fff;
@@ -32,32 +49,60 @@ body#home {
 		h1 a:hover, h1 a:active {
 			text-decoration: none;
 		}
-		&#unlikelyengineering {
-			background-color: $chartreuse;
-			background-position: center;
-			background-image:url(/assets/collage.png);
-			background-size: fit;
-			@media (min-width: $screen-md-min) {
-				&{background-size: 100%;}
-				h1 {
-				position: absolute;
-					top: 55%!important;
-					left: 0;
-				transform: translateY(-55%!important);
+		&#whatcounts {
+			background: $taupe url('/assets/what-counts.jpg');
+			background-size: cover;
+			h1, h2 {
+				line-height: 150px;
+			}
+			h1 {
+				font-weight: 100;
+				font-size: 3.5em;
+			}
+			h2 {
+				font-size: 2em;
+				font-style: italic;
+				margin-top: -385px;
+				margin-left: 25px;
+				color: $yellow;
+				font-weight: 400;
+				a:link, a:visited {
+					color: $yellow;
+					text-decoration: underline;
 				}
 			}
+			figure img {margin:165px 0;opacity:0;}
+			@keyframes bounce {
+		        from {-webkit-transform: translateY(0);}
+		        50% {-webkit-transform: translateY(25px);}
+		        to {-webkit-transform: translateY(0);}    
+			}
+			#down-arrow {
+				display: block;
+				width: 72px;
+				animation-name: bounce;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+				animation-delay: 1s;
+				animation-timing-function: ease-in-out;
+			}
+		}
+		&#unlikelyengineering {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3a999+0,b8b840+100 */
+			background: url(/assets/collage.png), rgb(179,169,153); /* Old browsers */
+			background: url(/assets/collage.png), -moz-linear-gradient(top,  rgba(179,169,153,1) 0%, rgba(184,184,64,1) 100%); /* FF3.6-15 */
+			background: url(/assets/collage.png), -webkit-linear-gradient(top,  rgba(179,169,153,1) 0%,rgba(184,184,64,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: url(/assets/collage.png), linear-gradient(to bottom,  rgba(179,169,153,1) 0%,rgba(184,184,64,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a999', endColorstr='#b8b840',GradientType=0 ); /* IE6-9 */
+			background-position: top center;
+			background-size: contain;
 			h1 {
 				color: #fff;
 				display: block;
 				position: absolute;
-					top: 50%;
-					left: 0;
-				transform: translateY(-50%);
 				text-align: center;
 				width: 100%;
-				@media (min-width: $screen-sm-min) {
-					font-size: 5em;
-				}
+				top:50%;
 			}
 			h1 strong {
 				color: lighten($chartreuse, 25%);
@@ -73,6 +118,12 @@ body#home {
 			background-position: -100% 50%;
 			background-image:url(/content/home/adhesive-wall-hooks.png);
 			h1 strong {color: $lime}
+			a.readmore {
+				position: absolute;
+					bottom: 0;
+					left: 42%;
+			}
+
 			a.readmore:link, a.readmore:visited {color: $lime}
 			.conveyor {
 				display: none;
@@ -81,14 +132,13 @@ body#home {
 				height: 33vh;
 			}
 		}
-		&#unlikelypeople {
+		div#unlikelypeople {
 			background-color: $sky;		
 			h1 strong {color: $teal}	
 			a.readmore:link, a.readmore:visited {color: $teal}	
 			background-image: url(/content/2-about/cindy.jpg);
-//			background-size: 75%;
 		}
-		&#expansiveview {
+		div#expansiveview {
 			background-color: $pink;		
 			background-image: url(/content/3-manifesto/manifesto.jpg);
 			h1 strong {color: $red}	
@@ -133,9 +183,6 @@ html.skrollr {
 						background-color: darken($olive, 15%);
 					}
 				}
-			}
-			&#unlikelypeople, &#expansiveview {
-//				background-size: 100%;
 			}
 		}
 	}	

@@ -1086,7 +1086,7 @@ a {
   color: #000;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #387d95;
+    color: #fff;
     text-decoration: underline; }
   a:focus {
     outline: thin dotted;
@@ -3094,7 +3094,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
   .btn-link, .btn-link:hover, .btn-link:focus, .btn-link:active {
     border-color: transparent; }
   .btn-link:hover, .btn-link:focus {
-    color: #387d95;
+    color: #fff;
     text-decoration: underline;
     background-color: transparent; }
   .btn-link[disabled]:hover, .btn-link[disabled]:focus, fieldset[disabled] .btn-link:hover, fieldset[disabled] .btn-link:focus {
@@ -4110,7 +4110,7 @@ tbody.collapse.in {
   .pagination > li > span:hover,
   .pagination > li > span:focus {
     z-index: 3;
-    color: #387d95;
+    color: #fff;
     background-color: #eeeeee;
     border-color: #ddd; }
   .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus,
@@ -6501,86 +6501,147 @@ body#home {
   body#home .navbar {
     margin-bottom: 0;
     background-color: #000; }
-  body#home section {
-    background-position: center;
+  body#home section#unlikelypeopleexpansiveview {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
+    background: #62b6c4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #62b6c4 0%, #62b6c4 49%, #ff8c92 51%, #ff8c92 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #62b6c4 0%, #62b6c4 49%, #ff8c92 51%, #ff8c92 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #62b6c4 0%, #62b6c4 49%, #ff8c92 51%, #ff8c92 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=0 );
+    /* IE6-9 */ }
+    @media (min-width: 992px) {
+      body#home section#unlikelypeopleexpansiveview {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
+        background: #62b6c4;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #62b6c4 0%, #62b6c4 49%, #ff8c92 51%, #ff8c92 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #62b6c4 0%, #62b6c4 49%, #ff8c92 51%, #ff8c92 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #62b6c4 0%, #62b6c4 49%, #ff8c92 51%, #ff8c92 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=1 );
+        /* IE6-9 */ } }
+  body#home section #whatcounts, body#home section #unlikelypeople, body#home section #expansiveview, body#home section#unlikelyengineering {
+    background-position: center right;
+    background-size: contain;
     background-repeat: no-repeat;
     overflow: hidden;
+    position: relative;
+    height: 44vh;
     position: relative; }
-    body#home section div div div {
-      height: 66vh;
-      position: relative; }
-    body#home section a.readmore {
+  body#home section a.readmore {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    border-radius: 50%;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 50px 50px #fff;
+    font-family: "acumin-pro-extra-condensed", sans-serif;
+    text-transform: lowercase;
+    font-size: 1.5em;
+    text-decoration: underline; }
+  body#home section h1, body#home section h1 a:link, body#home section h1 a:visited {
+    color: #fff; }
+  body#home section h1 a:hover, body#home section h1 a:active {
+    text-decoration: none; }
+  body#home section#whatcounts {
+    background: #000 url("/assets/what-counts.jpg");
+    background-size: cover; }
+    body#home section#whatcounts h1, body#home section#whatcounts h2 {
+      line-height: 150px; }
+    body#home section#whatcounts h1 {
+      font-weight: 100;
+      font-size: 3.5em; }
+    body#home section#whatcounts h2 {
+      font-size: 2em;
+      font-style: italic;
+      margin-top: -385px;
+      margin-left: 25px;
+      color: #ff0;
+      font-weight: 400; }
+      body#home section#whatcounts h2 a:link, body#home section#whatcounts h2 a:visited {
+        color: #ff0;
+        text-decoration: underline; }
+    body#home section#whatcounts figure img {
+      margin: 165px 0;
+      opacity: 0; }
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(25px); }
+  to {
+    -webkit-transform: translateY(0); } }
+    body#home section#whatcounts #down-arrow {
+      display: block;
+      width: 72px;
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-delay: 1s;
+      animation-timing-function: ease-in-out; }
+  body#home section#unlikelyengineering {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3a999+0,b8b840+100 */
+    background: url(/assets/collage.png), #b3a999;
+    /* Old browsers */
+    background: url(/assets/collage.png), -moz-linear-gradient(top, #b3a999 0%, #b8b840 100%);
+    /* FF3.6-15 */
+    background: url(/assets/collage.png), -webkit-linear-gradient(top, #b3a999 0%, #b8b840 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: url(/assets/collage.png), linear-gradient(to bottom, #b3a999 0%, #b8b840 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a999', endColorstr='#b8b840',GradientType=0 );
+    /* IE6-9 */
+    background-position: top center;
+    background-size: contain; }
+    body#home section#unlikelyengineering h1 {
+      color: #fff;
+      display: block;
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      top: 50%; }
+    body#home section#unlikelyengineering h1 strong {
+      color: #ffff80;
+      display: inline; }
+    body#home section#unlikelyengineering div div div {
+      height: 90vh; }
+  body#home section#unlikelyobjects {
+    background-color: #000;
+    background-position: -100% 50%;
+    background-image: url(/content/home/adhesive-wall-hooks.png); }
+    body#home section#unlikelyobjects h1 strong {
+      color: #ff0; }
+    body#home section#unlikelyobjects a.readmore {
       position: absolute;
       bottom: 0;
-      left: 0;
-      border-radius: 50%;
-      padding: 20px;
-      background: #fff;
-      box-shadow: 0 0 50px 50px #fff;
-      font-family: "acumin-pro-extra-condensed", sans-serif;
-      text-transform: lowercase;
-      font-size: 1.5em;
-      text-decoration: underline; }
-    body#home section h1, body#home section h1 a:link, body#home section h1 a:visited {
-      color: #fff; }
-    body#home section h1 a:hover, body#home section h1 a:active {
-      text-decoration: none; }
-    body#home section#unlikelyengineering {
-      background-color: #ff0;
-      background-position: center;
-      background-image: url(/assets/collage.png);
-      background-size: fit; }
-      @media (min-width: 992px) {
-        body#home section#unlikelyengineering {
-          background-size: 100%; }
-        body#home section#unlikelyengineering h1 {
-          position: absolute;
-          top: 55% !important;
-          left: 0;
-          transform: translateY(-55% !important); } }
-      body#home section#unlikelyengineering h1 {
-        color: #fff;
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 0;
-        transform: translateY(-50%);
-        text-align: center;
-        width: 100%; }
-        @media (min-width: 768px) {
-          body#home section#unlikelyengineering h1 {
-            font-size: 5em; } }
-      body#home section#unlikelyengineering h1 strong {
-        color: #ffff80;
-        display: inline; }
-      body#home section#unlikelyengineering div div div {
-        height: 90vh; }
-    body#home section#unlikelyobjects {
-      background-color: #000;
-      background-position: -100% 50%;
-      background-image: url(/content/home/adhesive-wall-hooks.png); }
-      body#home section#unlikelyobjects h1 strong {
-        color: #ff0; }
-      body#home section#unlikelyobjects a.readmore:link, body#home section#unlikelyobjects a.readmore:visited {
-        color: #ff0; }
-      body#home section#unlikelyobjects .conveyor {
-        display: none; }
-      body#home section#unlikelyobjects div div div {
-        height: 33vh; }
-    body#home section#unlikelypeople {
-      background-color: #ff0;
-      background-image: url(/content/2-about/cindy.jpg); }
-      body#home section#unlikelypeople h1 strong {
-        color: #ff0; }
-      body#home section#unlikelypeople a.readmore:link, body#home section#unlikelypeople a.readmore:visited {
-        color: #ff0; }
-    body#home section#expansiveview {
-      background-color: #ff0;
-      background-image: url(/content/3-manifesto/manifesto.jpg); }
-      body#home section#expansiveview h1 strong {
-        color: #000; }
-      body#home section#expansiveview a.readmore:link, body#home section#expansiveview a.readmore:visited {
-        color: #000; }
+      left: 42%; }
+    body#home section#unlikelyobjects a.readmore:link, body#home section#unlikelyobjects a.readmore:visited {
+      color: #ff0; }
+    body#home section#unlikelyobjects .conveyor {
+      display: none; }
+    body#home section#unlikelyobjects div div div {
+      height: 33vh; }
+  body#home section div#unlikelypeople {
+    background-color: #ff0;
+    background-image: url(/content/2-about/cindy.jpg); }
+    body#home section div#unlikelypeople h1 strong {
+      color: #ff0; }
+    body#home section div#unlikelypeople a.readmore:link, body#home section div#unlikelypeople a.readmore:visited {
+      color: #ff0; }
+  body#home section div#expansiveview {
+    background-color: #ff0;
+    background-image: url(/content/3-manifesto/manifesto.jpg); }
+    body#home section div#expansiveview h1 strong {
+      color: #000; }
+    body#home section div#expansiveview a.readmore:link, body#home section div#expansiveview a.readmore:visited {
+      color: #000; }
   body#home footer {
     margin-top: 0; }
 
