@@ -6627,21 +6627,6 @@ body#home {
       @media (min-width: 992px) {
         body#home section#whatcounts #down-arrow {
           margin: auto; } }
-  body#home section#unlikelyengineering {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3a999+0,b8b840+100 */
-    background: url(/assets/collage.png), #b3a999;
-    /* Old browsers */
-    background: url(/assets/collage.png), -moz-linear-gradient(top, #b3a999 0%, #b8b840 100%);
-    /* FF3.6-15 */
-    background: url(/assets/collage.png), -webkit-linear-gradient(top, #b3a999 0%, #b8b840 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: url(/assets/collage.png), linear-gradient(to bottom, #b3a999 0%, #b8b840 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a999', endColorstr='#b8b840',GradientType=0 );
-    /* IE6-9 */
-    background-position: bottom center;
-    background-size: contain;
-    background-repeat: repeat-x; }
   body#home section#unlikelyobjects {
     background-color: #465235; }
     body#home section#unlikelyobjects h1 strong {
@@ -6674,6 +6659,23 @@ body#home {
       color: #D84348; }
     body#home section div#expansiveview a.readmore:link, body#home section div#expansiveview a.readmore:visited {
       color: #D84348; }
+  body#home section#unlikelyengineering {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3a999+0,b8b840+100 */
+    background: #b3a999;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #b3a999 0%, #b8b840 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b3a999 0%, #b8b840 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #b3a999 0%, #b8b840 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a999', endColorstr='#b8b840',GradientType=0 );
+    /* IE6-9 */
+    background-position: bottom center;
+    background-size: contain;
+    background-repeat: repeat-x; }
+    body#home section#unlikelyengineering img {
+      width: 100% !important; }
   body#home footer {
     margin-top: 0; }
 
@@ -7014,7 +7016,10 @@ footer {
   footer a:link, footer a:visited {
     color: #343534 !important; }
   footer .container {
-    padding: 40px 0; }
+    padding: 0; }
+    @media (min-width: 768px) {
+      footer .container {
+        padding: 40px 0; } }
   footer hr {
     border-top-color: #343534 !important;
     border-style: dashed; }

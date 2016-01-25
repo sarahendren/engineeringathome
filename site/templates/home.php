@@ -138,7 +138,7 @@ $(function() {
 			</div>
 		</div>
 	</footer>
-	<section id="unlikelyengineering" data-bottom-top="background-position: center -10vh" data-top-bottom="background-position: center 10vh"></section>
+	<section id="unlikelyengineering" data-bottom-top="background-position: center -10vh" data-top-bottom="background-position: center 10vh"><img src="/assets/collage.png" alt=""></section>
 	<script>
 	  (function(d) {
 	    var config = {
