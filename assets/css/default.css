@@ -6562,7 +6562,8 @@ body#home {
       line-height: 150px; }
     body#home section#whatcounts h1 {
       font-weight: 100;
-      font-size: 3.5em; }
+      font-size: 3.5em;
+      margin-top: 0; }
     body#home section#whatcounts h2 {
       font-size: 2em;
       font-style: italic;
@@ -6590,7 +6591,8 @@ body#home {
       animation-duration: 2s;
       animation-iteration-count: infinite;
       animation-delay: 1s;
-      animation-timing-function: ease-in-out; }
+      animation-timing-function: ease-in-out;
+      margin-bottom: 50px; }
   body#home section#unlikelyengineering {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3a999+0,b8b840+100 */
     background: url(/assets/collage.png), #b3a999;
