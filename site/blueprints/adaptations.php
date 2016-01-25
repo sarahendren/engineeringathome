@@ -10,3 +10,6 @@ fields:
   title:
     label: Title
     type:  text
+  intro:
+    label: Social media excerpt
+    type: textarea

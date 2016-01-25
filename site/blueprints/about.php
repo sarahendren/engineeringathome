@@ -20,3 +20,6 @@ fields:
   acknowledgments:
     label: Acknowledgments
     type:  markdown
+  intro:
+    label: Social media excerpt
+    type: textarea

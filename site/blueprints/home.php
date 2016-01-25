@@ -10,3 +10,6 @@ fields:
     label: Text
     type:  textarea
     size:  large
+  intro:
+    label: Social media excerpt
+    type: textarea

@@ -23,3 +23,6 @@ fields:
   thiscountstoo:
     label: This counts too
     type:  markdown
+  intro:
+    label: Social media excerpt
+    type: textarea
