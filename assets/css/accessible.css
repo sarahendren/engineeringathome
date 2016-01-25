@@ -6354,33 +6354,35 @@ body.adaptation main nav {
     body.adaptation main nav ul a:link, body.adaptation main nav ul a:visited {
       text-decoration: underline;
       margin-bottom: 3px; }
-body.adaptation .main-gallery .gallery-cell {
-  width: 100%;
-  /* fade in image when loaded */ }
-  body.adaptation .main-gallery .gallery-cell img {
-    display: block;
-    margin: auto;
-    max-height: 100%;
-    max-width: 100%;
-    position: relative; }
-  body.adaptation .main-gallery .gallery-cell .gallery-cell-image {
-    transition: opacity 0.4s;
-    opacity: 0; }
-  body.adaptation .main-gallery .gallery-cell .gallery-cell-image.flickity-lazyloaded,
-  body.adaptation .main-gallery .gallery-cell .gallery-cell-image.flickity-lazyerror {
-    opacity: 1; }
-body.adaptation .main-gallery .flickity-page-dots {
-  position: relative;
-  bottom: 0;
-  margin: 20px auto; }
-  body.adaptation .main-gallery .flickity-page-dots .dot {
-    background: #000; }
-body.adaptation .main-gallery .flickity-prev-next-button {
-  top: 50%;
-  bottom: auto;
-  background: transparent !important; }
-  body.adaptation .main-gallery .flickity-prev-next-button .arrow {
-    fill: #ff0; }
+body.adaptation .main-gallery {
+  width: 100%; }
+  body.adaptation .main-gallery .gallery-cell {
+    width: 100%;
+    /* fade in image when loaded */ }
+    body.adaptation .main-gallery .gallery-cell img {
+      display: block;
+      margin: auto;
+      max-height: 100%;
+      max-width: 100%;
+      position: relative; }
+    body.adaptation .main-gallery .gallery-cell .gallery-cell-image {
+      transition: opacity 0.4s;
+      opacity: 0; }
+    body.adaptation .main-gallery .gallery-cell .gallery-cell-image.flickity-lazyloaded,
+    body.adaptation .main-gallery .gallery-cell .gallery-cell-image.flickity-lazyerror {
+      opacity: 1; }
+  body.adaptation .main-gallery .flickity-page-dots {
+    position: relative;
+    bottom: 0;
+    margin: 20px auto; }
+    body.adaptation .main-gallery .flickity-page-dots .dot {
+      background: #000; }
+  body.adaptation .main-gallery .flickity-prev-next-button {
+    top: 50%;
+    bottom: auto;
+    background: transparent !important; }
+    body.adaptation .main-gallery .flickity-prev-next-button .arrow {
+      fill: #ff0; }
 body.adaptation .gallery-nav {
   margin-top: 15px; }
   body.adaptation .gallery-nav .gallery-cell {
@@ -6396,10 +6398,13 @@ body.adaptation .gallery-nav {
       cursor: pointer; }
 body.adaptation #description h2 {
   margin-top: 0; }
-body.adaptation #inuse .row {
-  display: table;
-  margin-bottom: 20px; }
-  body.adaptation #inuse .row figure {
+body.adaptation #inuse.row {
+  margin-bottom: 20px;
+  display: table; }
+  body.adaptation #inuse.row figure, body.adaptation #inuse.row .fluidbox__wrap {
+    margin-bottom: 20px; }
+  body.adaptation #inuse.row .fluidbox__wrap:before {
+    content: '';
     display: table-cell;
     text-align: center;
     vertical-align: middle; }

@@ -27,7 +27,7 @@
         </div>
         <div class="col-sm-6 col-md-8">
           <?php if ($studio->count() > 1): ?>
-            <div class="main-gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "lazyLoad": 3, "pageDots": false}'>
+            <div class="main-gallery gallery js-flickity" data-flickity-options='{ "imagesLoaded": true, "pageDots": false}'>
               <?php foreach($studio as $image): ?>
               <div class="gallery-cell"><figure><img src="<?php echo $image->resize(749, 535)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></figure></div>
               <?php endforeach ?>

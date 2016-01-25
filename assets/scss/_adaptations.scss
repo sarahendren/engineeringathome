@@ -163,6 +163,7 @@ body.adaptation {
 		}
 	}
 	.main-gallery {
+		width: 100%;
 		.gallery-cell {
 			width: 100%;
 			img {
@@ -220,10 +221,14 @@ body.adaptation {
 	#description h2 {
 		margin-top: 0;
 	}
-	#inuse .row {
-		display: table;
+	#inuse.row {
 		margin-bottom: 20px;
-		figure {
+		display: table;
+		figure, .fluidbox__wrap {
+			margin-bottom: 20px;
+		}
+		.fluidbox__wrap:before {
+			content: '';
 			display: table-cell;
 			text-align: center;
 			vertical-align: middle;
