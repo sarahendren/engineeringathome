@@ -101,9 +101,11 @@ body#adaptations .grid {
 			text-align: center;
 			width: 100%;
 			transition: opacity .5s;
-			font-size: 18px;
+			font-size: 16px;
+			line-height: 16px;
 			@media (min-width: $screen-xs-min) {
 				font-size: 24px;
+				line-height: 26px;
 			}
 		}
 		&:hover {

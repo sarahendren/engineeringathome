@@ -6282,16 +6282,16 @@ body#adaptations #filters button:focus {
     height: auto !important; }
 
 body#adaptations .grid {
-  min-height: 790px; }
+  min-height: 790px;
+  width: 100%;
+  overflow: hidden; }
   @media (min-width: 480px) {
     body#adaptations .grid {
       min-height: 1170px; } }
 
 .grid {
   margin: 0 !important;
-  padding: 0 !important;
-  width: 100%;
-  overflow: hidden; }
+  padding: 0 !important; }
   .grid a {
     display: block;
     margin-bottom: 30px;
@@ -6315,10 +6315,12 @@ body#adaptations .grid {
       text-align: center;
       width: 100%;
       transition: opacity .5s;
-      font-size: 18px; }
+      font-size: 16px;
+      line-height: 16px; }
       @media (min-width: 480px) {
         .grid a h2 {
-          font-size: 24px; } }
+          font-size: 24px;
+          line-height: 26px; } }
     .grid a:hover h2 {
       opacity: 1; }
     .grid a:hover img {
