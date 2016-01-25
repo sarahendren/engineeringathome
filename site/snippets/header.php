@@ -13,6 +13,11 @@
   <meta property="og:image" content="<?php echo $page->images()->first()->url() ?>" />
   <meta property="og:image:width" content="<?php echo $page->images()->first()->width() ?>" />
   <meta property="og:image:height" content="<?php echo $page->images()->first()->height() ?>" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@unlikelyengineering" />
+  <meta name="twitter:title" content="<?php if($page->slug() != 'home'): ?><?php echo $page->title()->html() ?> | <?php endif ?><?php echo $site->title()->html() ?>" />
+  <meta name="twitter:description" content="<?php echo $page->intro() ?>" />
+  <meta name="twitter:image" content="<?php echo $page->images()->first()->url() ?>" />
   <script>document.documentElement.className += ' wf-loading';</script>
   <?php echo css('/assets/css/default.css') ?>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
