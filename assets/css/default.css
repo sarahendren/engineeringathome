@@ -5801,9 +5801,10 @@ button.close {
   text-transform: lowercase;
   border: none;
   z-index: 5; }
-  .navbar a.active:link, .navbar a.active:visited, .navbar a.active:hover, .navbar a.active:active {
-    color: #fff !important;
-    background: rgba(0, 0, 0, 0.5) !important; }
+  @media (min-width: 480px) {
+    .navbar a.active:link, .navbar a.active:visited, .navbar a.active:hover, .navbar a.active:active {
+      color: #fff !important;
+      background: rgba(0, 0, 0, 0.5) !important; } }
 
 @media (min-width: 992px) {
   .navbar {
@@ -6498,10 +6499,10 @@ body#manifesto {
       margin-top: 40px; } }
 
 body#home {
-  background-color: #B3a999; }
+  background-color: #b8b840; }
   body#home .navbar {
     margin-bottom: 0;
-    background-color: #B3a999; }
+    background-color: #b8b840; }
   body#home section#unlikelypeopleexpansiveview {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
     background: #62b6c4;
@@ -6616,6 +6617,7 @@ body#home {
     body#home section#whatcounts #down-arrow {
       display: block;
       width: 72px;
+      margin: auto;
       animation-name: bounce;
       animation-duration: 2s;
       animation-iteration-count: infinite;

@@ -1,8 +1,8 @@
 body#home {
-	background-color: $taupe;
+	background-color: $chartreuse;
 	.navbar {
 		margin-bottom: 0;
-		background-color: $taupe;
+		background-color: $chartreuse;
 	}
 	section{
 		&#unlikelypeopleexpansiveview {
@@ -118,6 +118,7 @@ body#home {
 			#down-arrow {
 				display: block;
 				width: 72px;
+				margin: auto;
 				animation-name: bounce;
 				animation-duration: 2s;
 				animation-iteration-count: infinite;

@@ -4,9 +4,11 @@
 	text-transform: lowercase;
 	border: none;
 	z-index: 5;
-	a.active:link, a.active:visited, a.active:hover, a.active:active {
-		color: #fff !important;
-		background: rgba(0,0,0,.5)!important;
+	@media (min-width: $screen-xs-min) {
+		a.active:link, a.active:visited, a.active:hover, a.active:active {
+			color: #fff !important;
+			background: rgba(0,0,0,.5)!important;
+		}
 	}
 }
 @media (min-width: $screen-md-min) {
