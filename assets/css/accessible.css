@@ -6337,7 +6337,8 @@ body#adaptations .grid {
   .grid a {
     display: block;
     margin-bottom: 30px;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .grid a img {
       max-width: none !important;
       transition: background-color .5s; }
@@ -6552,7 +6553,11 @@ body#home {
     text-decoration: none; }
   body#home section#whatcounts {
     background: #000 url("/assets/what-counts.jpg");
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
+    @media (min-width: 1200px) {
+      body#home section#whatcounts {
+        overflow: visible; } }
     body#home section#whatcounts h1, body#home section#whatcounts h2 {
       line-height: 150px; }
     body#home section#whatcounts h1 {
@@ -6646,7 +6651,8 @@ body#home {
     margin-top: 0; }
 
 html.skrollr body#home section#unlikelyobjects {
-  background: #000; }
+  background: #000;
+  overflow: hidden; }
   html.skrollr body#home section#unlikelyobjects div div div {
     height: auto !important; }
   html.skrollr body#home section#unlikelyobjects .conveyor {

@@ -75,6 +75,7 @@ body#adaptations .grid {
 		display: block;
 		margin-bottom: 30px;
 		position: relative;
+		overflow: hidden;
 		img {
 			max-width: none!important;
 			transition: background-color .5s;

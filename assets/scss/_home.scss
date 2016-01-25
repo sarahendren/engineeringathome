@@ -52,6 +52,10 @@ body#home {
 		&#whatcounts {
 			background: $taupe url('/assets/what-counts.jpg');
 			background-size: cover;
+			overflow: hidden;
+			@media (min-width: $screen-lg-min) {
+				overflow: visible;
+			}
 			h1, h2 {
 				line-height: 150px;
 			}
@@ -155,6 +159,7 @@ html.skrollr {
 		section {
 			&#unlikelyobjects {
 				background: $olive;	
+				overflow: hidden;
 				div div div {
 					height: auto!important;
 				}
