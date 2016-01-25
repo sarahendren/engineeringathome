@@ -1,5 +1,5 @@
 body#home {
-	background-color: $chartreuse;
+	background-color: $taupe;
 	.navbar {
 		margin-bottom: 0;
 		background-color: $chartreuse;
@@ -8,27 +8,28 @@ body#home {
 		&#unlikelypeopleexpansiveview {
 			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
 			background: rgb(98,182,196); /* Old browsers */
-			background: -moz-linear-gradient(top,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 49%, rgba(255,140,146,1) 51%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			background: -moz-linear-gradient(top,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 50%, rgba(255,140,146,1) 50%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=0 ); /* IE6-9 */
-			@media (min-width: $screen-md-min) {
+			@media (min-width: $screen-sm-min) {
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
 				background: rgb(98,182,196); /* Old browsers */
-				background: -moz-linear-gradient(left,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 49%, rgba(255,140,146,1) 51%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(left,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to right,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 49%,rgba(255,140,146,1) 51%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				background: -moz-linear-gradient(left,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 50%, rgba(255,140,146,1) 50%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=1 ); /* IE6-9 */
 			}
 		}
-		#whatcounts, #unlikelypeople, #expansiveview, &#unlikelyengineering {
+		#unlikelypeople, #expansiveview {
 			background-position: center right;
 			background-size: contain;
 			background-repeat: no-repeat;
-			overflow: hidden;
 			position: relative;
-			height: 44vh;
-			position: relative;
+			height: 54vh;
+			@media (min-width: $screen-sm-min) {
+				height: 43vh;
+			}
 		}
 		a.readmore {
 			position: absolute;
@@ -118,13 +119,15 @@ body#home {
 			#down-arrow {
 				display: block;
 				width: 72px;
-				margin: auto;
 				animation-name: bounce;
-				animation-duration: 2s;
+				animation-duration: 3s;
 				animation-iteration-count: infinite;
 				animation-delay: 1s;
 				animation-timing-function: ease-in-out;
 				margin-bottom:50px;
+				@media (min-width: $screen-md-min) {
+					margin: auto;
+				}
 			}
 		}
 		&#unlikelyengineering {
@@ -134,36 +137,23 @@ body#home {
 			background: url(/assets/collage.png), -webkit-linear-gradient(top,  rgba(179,169,153,1) 0%,rgba(184,184,64,1) 100%); /* Chrome10-25,Safari5.1-6 */
 			background: url(/assets/collage.png), linear-gradient(to bottom,  rgba(179,169,153,1) 0%,rgba(184,184,64,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a999', endColorstr='#b8b840',GradientType=0 ); /* IE6-9 */
-			background-position: top center;
+			background-position: bottom center;
 			background-size: contain;
-			h1 {
-				color: #fff;
-				display: block;
-				position: absolute;
-				text-align: center;
-				width: 100%;
-				top:50%;
-			}
-			h1 strong {
-				color: lighten($chartreuse, 25%);
-				display: inline;
-			}
-			div div div {
-				height: 90vh;
-			}
+			background-repeat: repeat-x;
 		}
 		
 		&#unlikelyobjects {
 			background-color: $olive;	
-			background-position: -100% 50%;
-			background-image:url(/content/home/adhesive-wall-hooks.png);
 			h1 strong {color: $lime}
 			a.readmore:link, a.readmore:visited {color: $lime}
+			a:hover img {
+				background-color: darken($olive, 15%);
+			}
 			.conveyor {
 				display: none;
 			}
-			div div div {
-				height: 33vh;
+			figure img {
+				margin-bottom:50px!important;
 			}
 		}
 		div#unlikelypeople {
@@ -171,11 +161,17 @@ body#home {
 			h1 strong {color: $teal}	
 			a.readmore:link, a.readmore:visited {color: $teal}	
 			background-image: url(/content/2-about/cindy.jpg);
+		    background-position: 125% 0;
 		}
 		div#expansiveview {
 			background-color: $pink;		
 			background-image: url(/content/3-manifesto/manifesto.jpg);
-			h1 strong {color: $red}	
+		    background-position: 100% 70%;
+		    background-size: 80%;
+			@media (min-width: $screen-md-min) {
+			    background-size: 100%;
+			}
+   			h1 strong {color: $red}	
 			a.readmore:link, a.readmore:visited {color: $red}	
 		}
 	}

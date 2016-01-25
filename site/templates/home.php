@@ -66,6 +66,11 @@
 	  <?php endforeach ?>
 	</div>
 	<div class="container">
+		<div class="row hidden-sm hidden-md hidden-lg">
+			<div class="col-xs-12">
+				<figure><img src="/content/home/adhesive-wall-hooks.png" alt="Adhesive Wall Hooks"></figure>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-xs-12">
 				<a class="readmore" href="/adaptations">Browse all <strong>adaptations</strong></a>
@@ -76,11 +81,11 @@
 <section id="unlikelypeopleexpansiveview">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-6" id="unlikelypeople">
+			<div class="col-xs-12 col-sm-6" id="unlikelypeople">
 				<h1><a href="/about"><strong>Engineering With</strong> Unlikely People</a></h1>
 				<a class="readmore" href="/about">Read <strong>about</strong> the project and Cindy's story</a>
 			</div>
-			<div class="col-xs-12 col-md-6" id="expansiveview">
+			<div class="col-xs-12 col-sm-6" id="expansiveview">
 				<h1><a href="/manifesto"><strong>Engineering With</strong> An Expansive View</a></h1>
 				<a class="readmore" href="/manifesto">Read the unlikely engineering <strong>manifesto</strong></a>
 			</div>
@@ -133,15 +138,7 @@ $(function() {
 			</div>
 		</div>
 	</footer>
-	<section id="unlikelyengineering" data-bottom-top="background-position: center -10vh" data-top-bottom="background-position: center 10vh">
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12" data-anchor-target="#unlikelyengineering" data-bottom-top="top:40vh" data-top-bottom="top:50vh">
-					<h1>unlikely<strong>.engineering</strong></h1>
-				</div>
-			</div>
-		</div>
-	</section>
+	<section id="unlikelyengineering" data-bottom-top="background-position: center -10vh" data-top-bottom="background-position: center 10vh"></section>
 	<script>
 	  (function(d) {
 	    var config = {

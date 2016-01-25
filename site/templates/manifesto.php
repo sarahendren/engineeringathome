@@ -7,7 +7,7 @@
 				<?php echo $page->header()->kirbytext() ?>
 			</div>
 			<figure class="col-sm-8">
-	          <img src="<?php echo $page->images()->first()->resize(1170, 780)->url() ?>" srcset="<?php echo kirby_get_srcset($page->images()->first()) ?>" sizes="<?php echo kirby_get_sizes($page->images()->first()) ?>" alt="<?php echo $page->images()->first()->caption() ?>">
+	          <img src="<?php echo $page->images()->first()->resize(750, 536)->url() ?>" srcset="<?php echo kirby_get_srcset($page->images()->first()) ?>" sizes="<?php echo kirby_get_sizes($page->images()->first()) ?>" alt="<?php echo $page->images()->first()->caption() ?>">
 			</figure>
 		</div>
 		<main class="main" role="main">
