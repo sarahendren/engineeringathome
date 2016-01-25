@@ -33,11 +33,9 @@ body#home {
 		a.readmore {
 			position: absolute;
 				bottom: 0;
-				left: 25%;
+				left: 0;
 			border-radius: 50%;
 			padding: 20px;
-			background: #fff;
-			box-shadow: 0 0 50px 50px #fff;
 			font-family: $font-family-sans-serif;
 			text-transform: lowercase;
 			font-size: 1.5em;
@@ -50,37 +48,68 @@ body#home {
 			text-decoration: none;
 		}
 		&#whatcounts {
-			background: $taupe url('/assets/what-counts.jpg');
+			background: $taupe url('/assets/what-counts-gray.jpg');
 			background-size: cover;
 			overflow: hidden;
 			@media (min-width: $screen-lg-min) {
 				overflow: visible;
 			}
 			h1, h2 {
-				line-height: 150px;
+				line-height: 115px;
+				@media (min-width: $screen-sm-min) {
+					line-height: 150px;
+				}
 			}
 			h1 {
 				font-weight: 100;
 				font-size: 3.5em;
 				margin-top: 0;
+				@media (min-width: $screen-md-min) {
+					margin-top: 60px;
+				}
 			}
 			h2 {
 				font-size: 2em;
 				font-style: italic;
-				margin-top: -385px;
-				margin-left: 25px;
-				color: $yellow;
+				margin-top: -300px;
+				margin-left: 35px;
+				color: $chartreuse;
 				font-weight: 400;
 				text-align: right;
 				@media (min-width: $screen-sm-min) {
 					text-align: left;
+					margin-top: -385px;
 				}
 				a:link, a:visited {
-					color: $yellow;
+					color: $chartreuse;
 					text-decoration: underline;
 				}
 			}
-			figure img {margin:165px 0;opacity:0;}
+			figure img {margin:185px 0;}
+			.st0{
+				fill:none;
+				stroke:#b8b840;
+				stroke-width:2;
+				stroke-miterlimit:10;
+			} 
+			svg#cosmetic-sponge {
+				margin-top:-315px;
+				margin-bottom:30px;
+				margin-left:-100px;
+				margin-right:150px;
+				max-width:100%;
+			}
+			svg#leg {
+				height: 800px;
+				position:absolute;
+					top:-100px;
+					right: -100px;
+				@media (min-width: $screen-md-min) {
+					top:-25px;
+					right: -150px;
+				}
+				max-width:100%;
+			}
 			@keyframes bounce {
 		        from {-webkit-transform: translateY(0);}
 		        50% {-webkit-transform: translateY(25px);}
@@ -128,12 +157,6 @@ body#home {
 			background-position: -100% 50%;
 			background-image:url(/content/home/adhesive-wall-hooks.png);
 			h1 strong {color: $lime}
-			a.readmore {
-				position: absolute;
-					bottom: 0;
-					left: 42%;
-			}
-
 			a.readmore:link, a.readmore:visited {color: $lime}
 			.conveyor {
 				display: none;
@@ -173,9 +196,6 @@ html.skrollr {
 					width: 4000px;
 					height: 286px;
 					display:block;
-					&.last {
-						margin-bottom:75px;
-					}
 					.adaptation {
 						width: 400px;
 						height: 286px;
@@ -193,6 +213,9 @@ html.skrollr {
 					a:hover img {
 						background-color: darken($olive, 15%);
 					}
+				}
+				.conveyor.last {
+					margin-bottom:50px!important;
 				}
 			}
 		}

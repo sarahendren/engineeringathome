@@ -6351,9 +6351,9 @@ body#adaptations .grid {
       margin: 0;
       display: block;
       position: absolute;
-      top: 40%;
+      top: 50%;
       left: 0;
-      transform: translateY(-40%);
+      transform: translateY(-50%);
       text-align: center;
       width: 100%;
       transition: opacity .5s; }
@@ -6538,11 +6538,9 @@ body#home {
   body#home section a.readmore {
     position: absolute;
     bottom: 0;
-    left: 25%;
+    left: 0;
     border-radius: 50%;
     padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 50px 50px #fff;
     font-family: "acumin-pro-extra-condensed", sans-serif;
     text-transform: lowercase;
     font-size: 1.5em;
@@ -6552,35 +6550,62 @@ body#home {
   body#home section h1 a:hover, body#home section h1 a:active {
     text-decoration: none; }
   body#home section#whatcounts {
-    background: #000 url("/assets/what-counts.jpg");
+    background: #000 url("/assets/what-counts-gray.jpg");
     background-size: cover;
     overflow: hidden; }
     @media (min-width: 1200px) {
       body#home section#whatcounts {
         overflow: visible; } }
     body#home section#whatcounts h1, body#home section#whatcounts h2 {
-      line-height: 150px; }
+      line-height: 115px; }
+      @media (min-width: 768px) {
+        body#home section#whatcounts h1, body#home section#whatcounts h2 {
+          line-height: 150px; } }
     body#home section#whatcounts h1 {
       font-weight: 100;
       font-size: 3.5em;
       margin-top: 0; }
+      @media (min-width: 992px) {
+        body#home section#whatcounts h1 {
+          margin-top: 60px; } }
     body#home section#whatcounts h2 {
       font-size: 2em;
       font-style: italic;
-      margin-top: -385px;
-      margin-left: 25px;
+      margin-top: -300px;
+      margin-left: 35px;
       color: #ff0;
       font-weight: 400;
       text-align: right; }
       @media (min-width: 768px) {
         body#home section#whatcounts h2 {
-          text-align: left; } }
+          text-align: left;
+          margin-top: -385px; } }
       body#home section#whatcounts h2 a:link, body#home section#whatcounts h2 a:visited {
         color: #ff0;
         text-decoration: underline; }
     body#home section#whatcounts figure img {
-      margin: 165px 0;
-      opacity: 0; }
+      margin: 185px 0; }
+    body#home section#whatcounts .st0 {
+      fill: none;
+      stroke: #b8b840;
+      stroke-width: 2;
+      stroke-miterlimit: 10; }
+    body#home section#whatcounts svg#cosmetic-sponge {
+      margin-top: -315px;
+      margin-bottom: 30px;
+      margin-left: -100px;
+      margin-right: 150px;
+      max-width: 100%; }
+    body#home section#whatcounts svg#leg {
+      height: 800px;
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      max-width: 100%; }
+      @media (min-width: 992px) {
+        body#home section#whatcounts svg#leg {
+          top: -25px;
+          right: -150px; } }
 @keyframes bounce {
   from {
     -webkit-transform: translateY(0); }
@@ -6629,10 +6654,6 @@ body#home {
     background-image: url(/content/home/adhesive-wall-hooks.png); }
     body#home section#unlikelyobjects h1 strong {
       color: #ff0; }
-    body#home section#unlikelyobjects a.readmore {
-      position: absolute;
-      bottom: 0;
-      left: 42%; }
     body#home section#unlikelyobjects a.readmore:link, body#home section#unlikelyobjects a.readmore:visited {
       color: #ff0; }
     body#home section#unlikelyobjects .conveyor {
@@ -6665,8 +6686,6 @@ html.skrollr body#home section#unlikelyobjects {
     width: 4000px;
     height: 286px;
     display: block; }
-    html.skrollr body#home section#unlikelyobjects .conveyor.last {
-      margin-bottom: 75px; }
     html.skrollr body#home section#unlikelyobjects .conveyor .adaptation {
       width: 400px;
       height: 286px;
@@ -6679,6 +6698,8 @@ html.skrollr body#home section#unlikelyobjects {
         width: 100%; }
     html.skrollr body#home section#unlikelyobjects .conveyor a:hover img {
       background-color: black; }
+  html.skrollr body#home section#unlikelyobjects .conveyor.last {
+    margin-bottom: 50px !important; }
 
 body#about {
   background: #ff0;
