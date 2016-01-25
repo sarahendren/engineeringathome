@@ -25,7 +25,7 @@ module.exports = function(grunt) {
         cssTemplate: "assets/sprites.css.handlebars"
      },
       actions: {
-        src: 'content/1-adaptations/*.png',
+        src: 'content/1-adaptations/handwriting/*.png',
         dest: 'assets/handwriting-sprite.png',
         destCss: 'assets/scss/sprites-actions.scss',
         padding: 2,
