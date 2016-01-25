@@ -6,7 +6,7 @@
   <title><?php echo $site->title()->html() ?> | <?php echo $page->title()->html() ?></title>
   <meta name="description" content="<?php echo $site->intro() ?>">
   <meta name="keywords" content="<?php echo $site->keywords() ?>">
-  <meta property="og:title" content="<?php echo $page->title() ?>" />
+  <meta property="og:title" content="<?php if($page->slug() != 'home'): ?><?php echo $page->title()->html() ?> | <?php endif ?><?php echo $site->title()->html() ?>" />
   <meta property="og:description" content="<?php echo $page->intro() ?>" />
   <meta property="og:site_name" content="<?php echo $site->title() ?>" />
   <meta property="og:url" content="<?php echo $page->url() ?>" />

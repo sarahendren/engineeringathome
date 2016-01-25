@@ -18,7 +18,7 @@ module.exports = function(grunt) {
     },
     sprite:{
       adaptations: {
-        src: 'content/home/*.png',
+        src: 'content/home/web/*.png',
         dest: 'assets/adaptations-sprite.png',
         destCss: 'assets/scss/sprites-adaptations.scss',
         padding: 2,
