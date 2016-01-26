@@ -6335,6 +6335,8 @@ body#adaptations .grid {
   max-width: none !important;
   transition: background-color .5s; }
 
+body.adaptation .pswp__bg {
+  background-color: #ff0 !important; }
 @media (min-width: 768px) {
   body.adaptation main {
     margin-top: 85px; }
@@ -6361,19 +6363,12 @@ body.adaptation .carousel button {
 body.adaptation #description h2 {
   margin-top: 0; }
 body.adaptation #inuse.row {
-  margin-bottom: 20px;
-  display: table; }
-  body.adaptation #inuse.row figure, body.adaptation #inuse.row .fluidbox__wrap {
+  margin-bottom: 20px; }
+  body.adaptation #inuse.row figure {
     margin-bottom: 20px; }
-  body.adaptation #inuse.row .fluidbox__wrap:before {
-    content: '';
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle; }
-body.adaptation #diagram img, body.adaptation #diagram .fluidbox__ghost {
-  background-color: #ff0; }
-body.adaptation .fluidbox__overlay {
-  background-color: #ff0; }
+body.adaptation #diagram img {
+  background-color: #ff0;
+  margin-bottom: 20px; }
 
 body#manifesto {
   background: #ff0;

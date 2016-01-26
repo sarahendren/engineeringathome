@@ -62,6 +62,7 @@
 		function(myClass){ $(this).find('img').addClass('silhouette') },
 		function(myClass){ $(this).find('img').removeClass('silhouette') }
 	);
+
 	function getHashFilter() {
 	  var matches = location.hash.match( /filter=([^&]+)/i );
 	  var hashFilter = matches && matches[1];

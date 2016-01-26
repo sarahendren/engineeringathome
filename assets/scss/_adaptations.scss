@@ -136,6 +136,9 @@ body#adaptations .grid {
 }
 
 body.adaptation {
+	.pswp__bg {
+		background-color: $green-background!important;
+	}
 	@media (min-width: $screen-sm-min) {
 		main {
 			margin-top: 85px;
@@ -174,21 +177,12 @@ body.adaptation {
 	}
 	#inuse.row {
 		margin-bottom: 20px;
-		display: table;
-		figure, .fluidbox__wrap {
+		figure {
 			margin-bottom: 20px;
 		}
-		.fluidbox__wrap:before {
-			content: '';
-			display: table-cell;
-			text-align: center;
-			vertical-align: middle;
-		}
 	}
-	#diagram img, #diagram .fluidbox__ghost {
+	#diagram img {
 		background-color: $pink;
-	}
-	.fluidbox__overlay {
-		background-color: $green-background;
+		margin-bottom: 20px;
 	}
 }
