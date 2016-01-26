@@ -6582,48 +6582,10 @@ body.adaptation main nav {
     body.adaptation main nav ul a:link, body.adaptation main nav ul a:visited {
       text-decoration: underline;
       margin-bottom: 3px; }
-body.adaptation .main-gallery {
-  width: 100%; }
-  body.adaptation .main-gallery .gallery-cell {
-    width: 100%;
-    /* fade in image when loaded */ }
-    body.adaptation .main-gallery .gallery-cell img {
-      display: block;
-      margin: auto;
-      max-height: 100%;
-      max-width: 100%;
-      position: relative; }
-    body.adaptation .main-gallery .gallery-cell .gallery-cell-image {
-      transition: opacity 0.4s;
-      opacity: 0; }
-    body.adaptation .main-gallery .gallery-cell .gallery-cell-image.flickity-lazyloaded,
-    body.adaptation .main-gallery .gallery-cell .gallery-cell-image.flickity-lazyerror {
-      opacity: 1; }
-  body.adaptation .main-gallery .flickity-page-dots {
-    position: relative;
-    bottom: 0;
-    margin: 20px auto; }
-    body.adaptation .main-gallery .flickity-page-dots .dot {
-      background: #B3a999; }
-  body.adaptation .main-gallery .flickity-prev-next-button {
-    top: 50%;
-    bottom: auto;
-    background: transparent !important; }
-    body.adaptation .main-gallery .flickity-prev-next-button .arrow {
-      fill: #CFD7CB; }
-body.adaptation .gallery-nav {
-  margin-top: 15px; }
-  body.adaptation .gallery-nav .gallery-cell {
-    height: 100px;
-    width: 100px;
-    margin-right: 15px;
-    opacity: .5; }
-    body.adaptation .gallery-nav .gallery-cell.is-selected, body.adaptation .gallery-nav .gallery-cell:hover {
-      opacity: 1; }
-    body.adaptation .gallery-nav .gallery-cell img {
-      max-width: none !important;
-      max-height: none !important;
-      cursor: pointer; }
+body.adaptation .carousel button {
+  background-color: transparent;
+  border: none;
+  outline: none; }
 body.adaptation #description h2 {
   margin-top: 0; }
 body.adaptation #inuse.row {
