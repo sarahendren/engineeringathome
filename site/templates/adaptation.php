@@ -25,11 +25,11 @@
             </ul>
           </nav>
         </div>
-        <div class="col-sm-6 col-md-8 photoswipe">
+        <div class="col-sm-6 col-md-8">
           <?php if ($studio->count() > 1): ?>
 
             <div id="carousel-example-generic" class="carousel slide">
-              <div class="carousel-inner" role="listbox">
+              <div class="carousel-inner photoswipe" role="listbox">
                 <?php foreach($studio as $image): $first = $studio->first(); ?>
                 <figure class="item<?php if($image == $first) echo ' active' ?>">
                   <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(749, 535)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></a>
@@ -58,8 +58,9 @@
       <?php if ($inuse->count() > 0): ?>
         <hr>
 
-        <div class="row photoswipe" id="inuse">
+        <div class="row" id="inuse">
           <h2 class="col-xs-12">In Situ</h2>
+          <div class="photoswipe">
           <?php foreach($inuse as $image): ?>
             <?php if ($inuse->count() == 1): ?>
             <figure class="col-sm-6 col-sm-offset-3">
@@ -95,7 +96,7 @@
             </figure>
             <?php endif ?>
           <?php endforeach ?>
-        </div>
+          </div>
       <?php endif ?>
 
       <hr>
@@ -109,13 +110,15 @@
 
       <?php if ($diagram->count() > 0): ?>
       <hr>
-      <div class="row photoswipe" id="diagram">
+      <div class="row" id="diagram">
         <h2 class="col-xs-12">Schematics</h2>
+          <div class="photoswipe">
             <?php foreach($diagram as $image): ?>
               <figure class="col-sm-6">
-                <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+                <a href="<?php echo $image->url() ?>" data-pswp-uid="3" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(600)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
               </figure>
             <?php endforeach ?>
+          </div>
       </div>
       <?php endif ?>
     </article>
@@ -194,7 +197,6 @@
 <!-- UI JS file -->
 <script src="/assets/js/photoswipe-ui-default.min.js"></script> 
 <script>
-
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements 
