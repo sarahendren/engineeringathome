@@ -6362,10 +6362,18 @@ body.adaptation .carousel button {
   outline: none; }
 body.adaptation #description h2 {
   margin-top: 0; }
-body.adaptation #inuse.row {
+body.adaptation #inuse {
   margin-bottom: 20px; }
-  body.adaptation #inuse.row figure {
+  body.adaptation #inuse figure {
     margin-bottom: 20px; }
+    body.adaptation #inuse figure a {
+      display: block; }
+      body.adaptation #inuse figure a img {
+        margin: auto;
+        display: block;
+        height: auto; }
+        body.adaptation #inuse figure a img.landscape {
+          margin-top: 30%; }
 body.adaptation #diagram img {
   background-color: #ff0;
   margin-bottom: 20px; }

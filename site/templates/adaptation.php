@@ -37,7 +37,7 @@
               <div class="carousel-inner photoswipe" role="listbox">
                 <?php foreach($studio as $image): $first = $studio->first(); ?>
                 <figure class="item<?php if($image == $first) echo ' active' ?>">
-                  <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(749, 535)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></a>
+                  <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(749, 535)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
                 </figure>
                 <?php endforeach ?>
               </div>
@@ -53,9 +53,11 @@
               </a>
             </div>
           <?php else: ?>
+            <div class="photoswipe">
               <?php foreach($studio as $image): ?>
-              <figure><img src="<?php echo $image->resize(749, 535)->url() ?>" srcset="<?php echo kirby_get_srcset($image) ?>" sizes="<?php echo kirby_get_sizes($image) ?>" alt="<?php echo $image->caption() ?>"></figure>
+              <figure><a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(750, 536)->url() ?>" alt="<?php echo $image->caption() ?>"></a></figure>
               <?php endforeach ?>
+            </div>
           <?php endif ?>
         </div>
       </div>
@@ -70,34 +72,34 @@
             <?php if ($inuse->count() == 1): ?>
             <figure class="col-sm-6 col-sm-offset-3">
               <?php if ($image->extension() == 'gif'): ?>
-                <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
+                <img src="<?php echo $image->url() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>" alt="<?php echo $image->caption() ?>">
               <?php else: ?>              
-                <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+                <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555,777)->url() ?>" width="<?php echo $image->resize(555,777)->width() ?>" height="<?php echo $image->resize(555,777)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php endif ?>
             </figure>
             <?php elseif ($inuse->count() == 2): ?>
             <figure class="col-xs-6">
               <?php if ($image->extension() == 'gif'): ?>
-                <img src="<?php echo $image->url() ?>" alt="<?php echo $image->caption() ?>">
+                <img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->url() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>" alt="<?php echo $image->caption() ?>">
               <?php else: ?>              
-                <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+                <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->resize(555,777)->url() ?>" width="<?php echo $image->resize(555,777)->width() ?>" height="<?php echo $image->resize(555,777)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php endif ?>
             </figure>
             <?php elseif ($inuse->count() == 3): ?>
             <figure class="col-xs-6 col-sm-4">
-              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->resize(360,503)->url() ?>" width="<?php echo $image->resize(360,503)->width() ?>" height="<?php echo $image->resize(360,503)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php elseif ($inuse->count() == 4): ?>
             <figure class="col-xs-6 col-sm-3">
-              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->resize(263,368)->url() ?>" width="<?php echo $image->resize(263,368)->width() ?>" height="<?php echo $image->resize(263,368)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php elseif ($inuse->count() == 5): ?>
             <figure class="col-xs-4 col-sm-2">
-              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->resize(165,231)->url() ?>" width="<?php echo $image->resize(165,231)->width() ?>" height="<?php echo $image->resize(165,231)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php elseif ($inuse->count() >= 6): ?>
             <figure class="col-sm-2">
-              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555)->url() ?>" alt="<?php echo $image->caption() ?>"></a>
+              <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->resize(165,231)->url() ?>" width="<?php echo $image->resize(165,231)->width() ?>" height="<?php echo $image->resize(165,231)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
             </figure>
             <?php endif ?>
           <?php endforeach ?>

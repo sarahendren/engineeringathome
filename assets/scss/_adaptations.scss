@@ -175,10 +175,21 @@ body.adaptation {
 	#description h2 {
 		margin-top: 0;
 	}
-	#inuse.row {
+	#inuse {
 		margin-bottom: 20px;
 		figure {
 			margin-bottom: 20px;
+			a {
+				display: block;
+				img {
+					margin: auto;
+					display: block;
+					height: auto;
+					&.landscape {
+						margin-top:30%;
+					}
+				}
+			}
 		}
 	}
 	#diagram img {
