@@ -12,7 +12,7 @@ module.exports = function(grunt) {
     uglify: {
       dist: {
         files: {
-          'assets/js/app.min.js': ['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/flickity/dist/flickity.pkgd.min.js', 'node_modules/isotope-layout/dist/isotope.pkgd.min.js', 'assets/js/skrollr.min.js', 'assets/js/jquery.sidenotes.min.js', 'assets/js/jquery.ba-throttle-debounce.min.js', 'node_modules/fluidbox/dist/js/jquery.fluidbox.min.js', 'node_modules/fastclick/lib/fastclick.js', 'assets/js/carousel-swipe.js', 'node_modules/bootstrap-touch-carousel/dist/js/bootstrap-touch-carousel.js', 'assets/js/photoswipe-ui-default.min.js']
+          'assets/js/app.min.js': ['node_modules/jquery/dist/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/flickity/dist/flickity.pkgd.min.js', 'node_modules/isotope-layout/dist/isotope.pkgd.min.js', 'assets/js/skrollr.min.js', 'assets/js/jquery.sidenotes.min.js', 'assets/js/jquery.ba-throttle-debounce.min.js', 'node_modules/fluidbox/dist/js/jquery.fluidbox.min.js', 'node_modules/fastclick/lib/fastclick.js', 'node_modules/bootstrap-touch-carousel/dist/js/bootstrap-touch-carousel.js', 'assets/js/photoswipe.min.js', 'assets/js/photoswipe-ui-default.min.js']
         }
       }
     },
