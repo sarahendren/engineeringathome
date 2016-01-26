@@ -97,6 +97,7 @@
             <?php endif ?>
           <?php endforeach ?>
           </div>
+        </div>
       <?php endif ?>
 
       <hr>
