@@ -8,11 +8,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  -webkit-touch-callout: none; }
 
 .touch-carousel .carousel-control {
   display: none !important; }
@@ -39,11 +35,7 @@
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
+  -webkit-touch-callout: none; }
 
 .touch-carousel .carousel-inner > .item {
   position: relative;
