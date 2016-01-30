@@ -5,7 +5,6 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'assets/css/default.css' : 'assets/scss/default.scss',
-          'assets/css/accessible.css' : 'assets/scss/accessible.scss'
         }
       }
     },
