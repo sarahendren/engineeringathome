@@ -5861,7 +5861,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 .navbar {
-  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", "Arial Narrow", sans-serif;
   font-size: 20px;
   text-transform: lowercase;
   border: none;
@@ -6408,7 +6408,7 @@ body.adaptation .pswp__bg {
   body.adaptation h1 {
     margin-top: 45px; } }
 body.adaptation main nav {
-  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", "Arial Narrow", sans-serif;
   text-transform: lowercase;
   font-weight: 400;
   font-size: 18px; }
@@ -6537,7 +6537,7 @@ body#home {
     left: 0;
     border-radius: 50%;
     padding: 20px;
-    font-family: "acumin-pro-extra-condensed", sans-serif;
+    font-family: "acumin-pro-extra-condensed", "Arial Narrow", sans-serif;
     text-transform: lowercase;
     font-size: 1.5em;
     text-decoration: underline; }
@@ -6690,7 +6690,7 @@ p a:link, p a:visited {
   text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "acumin-pro-extra-condensed", sans-serif;
+  font-family: "acumin-pro-extra-condensed", "Arial Narrow", sans-serif;
   text-transform: lowercase;
   font-weight: 900; }
 
