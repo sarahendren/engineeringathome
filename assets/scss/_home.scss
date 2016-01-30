@@ -19,7 +19,7 @@ body#home {
 			background: -webkit-linear-gradient(top,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
 			background: linear-gradient(to bottom,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=0 ); /* IE6-9 */
-			@media (min-width: $screen-sm-min) {
+			@media (min-width: $screen-lg-min) {
 				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
 				background: rgb(98,182,196); /* Old browsers */
 				background: -moz-linear-gradient(left,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 50%, rgba(255,140,146,1) 50%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
@@ -34,9 +34,6 @@ body#home {
 			background-repeat: no-repeat;
 			position: relative;
 			height: 54vh;
-			@media (min-width: $screen-sm-min) {
-				height: 43vh;
-			}
 		}
 		a.readmore {
 			position: absolute;

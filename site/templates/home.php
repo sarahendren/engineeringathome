@@ -68,11 +68,11 @@
 <section id="unlikelypeopleexpansiveview">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-6" id="unlikelypeople">
+			<div class="col-xs-12 col-lg-6" id="unlikelypeople">
 				<h1><a href="/about"><strong>Engineering With</strong> Unlikely People</a></h1>
 				<a class="readmore" href="/about">Read <strong>about</strong> the project and Cindy's story</a>
 			</div>
-			<div class="col-xs-12 col-sm-6" id="expansiveview">
+			<div class="col-xs-12 col-lg-6" id="expansiveview">
 				<h1><a href="/manifesto"><strong>Engineering With</strong> An Expansive View</a></h1>
 				<a class="readmore" href="/manifesto">Read the unlikely engineering <strong>manifesto</strong></a>
 			</div>

@@ -6516,7 +6516,7 @@ body#home {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=0 );
     /* IE6-9 */ }
-    @media (min-width: 768px) {
+    @media (min-width: 1200px) {
       body#home section#unlikelypeopleexpansiveview {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
         background: #62b6c4;
@@ -6535,9 +6535,6 @@ body#home {
     background-repeat: no-repeat;
     position: relative;
     height: 54vh; }
-    @media (min-width: 768px) {
-      body#home section #unlikelypeople, body#home section #expansiveview {
-        height: 43vh; } }
   body#home section a.readmore {
     position: absolute;
     bottom: 0;
