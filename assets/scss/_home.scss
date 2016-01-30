@@ -106,6 +106,43 @@ body#home {
 			figure img {
 				margin-bottom:50px!important;
 			}
+			@media (min-width: $screen-sm-min) {
+				& {
+					background: $olive;	
+					min-height: 746px;
+					overflow: hidden;
+					div div div {
+						height: auto!important;
+					}
+					.conveyor {
+						width: 4000px;
+						height: 286px;
+						display:block;
+						.adaptation {
+							width: 400px;
+							height: 286px;
+							overflow: hidden;
+							float: left;
+							img {
+								max-width: none!important;
+								transition: background-color .5s;
+							}
+							img.gif {
+								width: 100%;
+							}
+
+						}
+						a:hover img {
+							background-color: darken($olive, 15%);
+						}
+					}
+					.conveyor.last {
+						margin-bottom:50px!important;
+					}
+				}
+			}
+
+
 		}
 		div#unlikelypeople {
 			background-color: $sky;		
@@ -123,43 +160,4 @@ body#home {
 	footer {
 		margin-top: 0;
 	}
-}
-
-html.skrollr {
-	body#home {
-		section {
-			&#unlikelyobjects {
-				background: $olive;	
-				overflow: hidden;
-				div div div {
-					height: auto!important;
-				}
-				.conveyor {
-					width: 4000px;
-					height: 286px;
-					display:block;
-					.adaptation {
-						width: 400px;
-						height: 286px;
-						overflow: hidden;
-						float: left;
-						img {
-							max-width: none!important;
-							transition: background-color .5s;
-						}
-						img.gif {
-							width: 100%;
-						}
-
-					}
-					a:hover img {
-						background-color: darken($olive, 15%);
-					}
-				}
-				.conveyor.last {
-					margin-bottom:50px!important;
-				}
-			}
-		}
-	}	
 }

@@ -6588,6 +6588,31 @@ body#home {
       display: none; }
     body#home section#unlikelyobjects figure img {
       margin-bottom: 50px !important; }
+    @media (min-width: 768px) {
+      body#home section#unlikelyobjects {
+        background: #465235;
+        min-height: 746px;
+        overflow: hidden; }
+        body#home section#unlikelyobjects div div div {
+          height: auto !important; }
+        body#home section#unlikelyobjects .conveyor {
+          width: 4000px;
+          height: 286px;
+          display: block; }
+          body#home section#unlikelyobjects .conveyor .adaptation {
+            width: 400px;
+            height: 286px;
+            overflow: hidden;
+            float: left; }
+            body#home section#unlikelyobjects .conveyor .adaptation img {
+              max-width: none !important;
+              transition: background-color .5s; }
+            body#home section#unlikelyobjects .conveyor .adaptation img.gif {
+              width: 100%; }
+          body#home section#unlikelyobjects .conveyor a:hover img {
+            background-color: #1e2417; }
+        body#home section#unlikelyobjects .conveyor.last {
+          margin-bottom: 50px !important; } }
   body#home section div#unlikelypeople {
     background-color: #62b6c4;
     background-image: url(/content/2-about/cindy.jpg); }
@@ -6604,30 +6629,6 @@ body#home {
       color: #D84348; }
   body#home footer {
     margin-top: 0; }
-
-html.skrollr body#home section#unlikelyobjects {
-  background: #465235;
-  overflow: hidden; }
-  html.skrollr body#home section#unlikelyobjects div div div {
-    height: auto !important; }
-  html.skrollr body#home section#unlikelyobjects .conveyor {
-    width: 4000px;
-    height: 286px;
-    display: block; }
-    html.skrollr body#home section#unlikelyobjects .conveyor .adaptation {
-      width: 400px;
-      height: 286px;
-      overflow: hidden;
-      float: left; }
-      html.skrollr body#home section#unlikelyobjects .conveyor .adaptation img {
-        max-width: none !important;
-        transition: background-color .5s; }
-      html.skrollr body#home section#unlikelyobjects .conveyor .adaptation img.gif {
-        width: 100%; }
-    html.skrollr body#home section#unlikelyobjects .conveyor a:hover img {
-      background-color: #1e2417; }
-  html.skrollr body#home section#unlikelyobjects .conveyor.last {
-    margin-bottom: 50px !important; }
 
 body#about {
   background: #e0e5e6;
