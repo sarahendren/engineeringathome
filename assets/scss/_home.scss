@@ -109,35 +109,15 @@ body#home {
 		}
 		div#unlikelypeople {
 			background-color: $sky;		
+			background-image: url(/content/2-about/cindy.jpg);
 			h1 strong {color: $teal}	
 			a.readmore:link, a.readmore:visited {color: $teal}	
-			background-image: url(/content/2-about/cindy.jpg);
-		    background-position: 125% 0;
 		}
 		div#expansiveview {
 			background-color: $pink;		
 			background-image: url(/content/3-manifesto/manifesto.jpg);
-		    background-position: 100% 70%;
-		    background-size: 80%;
-			@media (min-width: $screen-md-min) {
-			    background-size: 100%;
-			}
    			h1 strong {color: $red}	
 			a.readmore:link, a.readmore:visited {color: $red}	
-		}
-		&#unlikelyengineering {
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3a999+0,b8b840+100 */
-			background: rgb(179,169,153); /* Old browsers */
-			background: -moz-linear-gradient(top,  rgba(179,169,153,1) 0%, rgba(184,184,64,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top,  rgba(179,169,153,1) 0%,rgba(184,184,64,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom,  rgba(179,169,153,1) 0%,rgba(184,184,64,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3a999', endColorstr='#b8b840',GradientType=0 ); /* IE6-9 */
-			background-position: bottom center;
-			background-size: contain;
-			background-repeat: repeat-x;
-			img {
-				width: 100%;
-			}
 		}
 	}
 	footer {
