@@ -6498,7 +6498,12 @@ body#home {
   background-color: #B3a999; }
   body#home .navbar {
     margin-bottom: 0;
-    background-color: #b8b840; }
+    background-color: #b8b840;
+    border: 8px solid #fff;
+    border-bottom: none; }
+    @media (min-width: 992px) {
+      body#home .navbar {
+        border: none; } }
   body#home section#unlikelypeopleexpansiveview {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
     background: #62b6c4;
@@ -6548,81 +6553,33 @@ body#home {
   body#home section h1 a:hover, body#home section h1 a:active {
     text-decoration: none; }
   body#home section#whatcounts {
-    background: #B3a999 url("/assets/what-counts-gray.jpg");
-    background-size: cover;
+    border: 8px solid #fff;
+    border-top: none;
+    background: #b8b840;
+    position: relative;
     overflow: hidden; }
-    @media (min-width: 1200px) {
-      body#home section#whatcounts {
-        overflow: visible; } }
-    body#home section#whatcounts h1, body#home section#whatcounts h2 {
-      line-height: 115px; }
-      @media (min-width: 768px) {
-        body#home section#whatcounts h1, body#home section#whatcounts h2 {
-          line-height: 150px; } }
+    body#home section#whatcounts img {
+      width: 100%;
+      height: auto;
+      z-index: 0 !important; }
     body#home section#whatcounts h1 {
-      font-weight: 100;
-      font-size: 3.5em;
-      margin-top: 0; }
-      @media (min-width: 992px) {
-        body#home section#whatcounts h1 {
-          margin-top: 60px; } }
-    body#home section#whatcounts h2 {
-      font-size: 2em;
-      font-style: italic;
-      margin-top: -300px;
-      margin-left: 35px;
-      color: #b8b840;
-      font-weight: 400;
-      text-align: right; }
-      @media (min-width: 768px) {
-        body#home section#whatcounts h2 {
-          text-align: left;
-          margin-top: -385px; } }
-      body#home section#whatcounts h2 a:link, body#home section#whatcounts h2 a:visited {
-        color: #b8b840;
-        text-decoration: underline; }
-    body#home section#whatcounts figure img {
-      margin: 185px 0; }
-    body#home section#whatcounts .st0 {
-      fill: none;
-      stroke: #b8b840;
-      stroke-width: 2;
-      stroke-miterlimit: 10; }
-    body#home section#whatcounts svg#cosmetic-sponge {
-      margin-top: -315px;
-      margin-bottom: 30px;
-      margin-left: -100px;
-      margin-right: 150px;
-      max-width: 100%; }
-    body#home section#whatcounts svg#leg {
-      height: 800px;
-      position: absolute;
-      top: -100px;
-      right: -100px;
-      max-width: 100%; }
-      @media (min-width: 992px) {
-        body#home section#whatcounts svg#leg {
-          top: -25px;
-          right: -150px; } }
-@keyframes bounce {
-  from {
-    -webkit-transform: translateY(0); }
-  50% {
-    -webkit-transform: translateY(25px); }
-  to {
-    -webkit-transform: translateY(0); } }
-    body#home section#whatcounts #down-arrow {
-      display: block;
-      width: 72px;
-      animation-name: bounce;
-      animation-duration: 3s;
-      animation-iteration-count: infinite;
-      animation-delay: 1s;
-      animation-timing-function: ease-in-out;
-      margin-bottom: 50px; }
-      @media (min-width: 992px) {
-        body#home section#whatcounts #down-arrow {
-          margin: auto; } }
+      line-height: 1; }
+    body#home section#whatcounts h2, body#home section#whatcounts h2 a:link, body#home section#whatcounts h2 a:visited {
+      color: #464619;
+      font-weight: 600; }
+    @media (min-width: 992px) {
+      body#home section#whatcounts {
+        border: none; }
+      body#home section#whatcounts .wrapper {
+        width: 100%;
+        position: absolute;
+        bottom: 60px;
+        right: 0; }
+        body#home section#whatcounts .wrapper div div div {
+          background: #b8b840;
+          border: 8px solid #fff;
+          padding-bottom: 15px;
+          z-index: 10 !important; } }
   body#home section#unlikelyobjects {
     background-color: #465235; }
     body#home section#unlikelyobjects h1 strong {
