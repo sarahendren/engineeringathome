@@ -3,7 +3,7 @@
 	<div class="wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-6 col-md-5 col-md-offset-7 col-lg-4 col-lg-offset-8">
+				<div class="col-sm-6 col-md-5 col-md-offset-7 col-lg-4 col-lg-offset-7">
 					<h1>What Counts<br> as  Engineering?</h1>
 					<h2>Things you do with <a href="/adaptations/cable-ties">cable ties</a>? <a href="/adaptations/cosmetic-sponges">Cosmetic sponges</a>? How about <a href="/adaptations/adhesive-wall-hooks">peel-and-stick hooks</a>?</h2>
 				</div>
@@ -55,7 +55,7 @@
 	<div class="container">
 		<div class="row hidden-sm hidden-md hidden-lg">
 			<div class="col-xs-12">
-				<figure><img src="/assets/adaptations/web/adhesive-wall-hooks.png" alt="Adhesive Wall Hooks"></figure>
+				<figure><img src="/assets/adaptations/web/fork-holder.png" alt="Fork Holder"></figure>
 			</div>
 		</div>
 		<div class="row">
