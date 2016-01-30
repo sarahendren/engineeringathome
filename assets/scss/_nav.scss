@@ -4,21 +4,25 @@
 	text-transform: lowercase;
 	border: none;
 	z-index: 5;
-	@media (min-width: $screen-xs-min) {
+	@media (min-width: $screen-sm-min) {
+		& {
+			position: absolute;
+			right: 20px;
+			max-width: 450px;
+			background-color: transparent!important;			
+		}
+		.container {
+			max-width: 100%;
+		}
 		a.active:link, a.active:visited, a.active:hover, a.active:active {
 			color: #fff !important;
 			background: rgba(0,0,0,.5)!important;
 		}
+
 	}
-}
-@media (min-width: $screen-md-min) {
-	.navbar {
-		position: absolute;
-		right: 20px;
-		max-width: 600px;
-		background-color: transparent!important;
-		.container {
-			max-width: 100%;
+	@media (min-width: $screen-md-min) {
+		& {
+			max-width: 600px;
 		}
 	}
 }
