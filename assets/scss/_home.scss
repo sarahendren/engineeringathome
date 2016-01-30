@@ -90,6 +90,11 @@ body#home {
 					}
 				}
 			}
+			@media (min-width: $screen-lg-min) {
+				.wrapper {
+					bottom: 90px;
+				}
+			}
 		}		
 		&#unlikelyobjects {
 			background-color: $olive;	
