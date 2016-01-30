@@ -57,7 +57,7 @@
 	</div>
   </main>
 </div>
-	<script type="text/javascript">
+<script type="text/javascript">
 	$('.grid a').hover(
 		function(myClass){ $(this).find('img').addClass('silhouette') },
 		function(myClass){ $(this).find('img').removeClass('silhouette') }
@@ -71,11 +71,11 @@
 
 	$( function() {
 
-	  var $grid = $('.grid');
-	  var $filters = $('.filters');
+		var $grid = $('.grid');
+		var $filters = $('.filters');
 
-	  var $filterButtonGroup = $('.filter-button-group');
-	  var $filterSelect = $('#filter-select');
+		var $filterButtonGroup = $('.filter-button-group');
+		var $filterSelect = $('#filter-select');
 
 	  $filterButtonGroup.on( 'mouseenter', 'button', function() {
 		$('.filter-status').text('adaptations to ' + $( this ).attr('data-filter').substr(1));
@@ -159,14 +159,12 @@
 		});
 	});
 
-	</script>
-<script type="text/javascript">
-function formatAction (action) {
-  if (!action.id) { return action.text; }
-  var $action = $(
-	'<div class="responsive-sprites"><img src="/assets/handwriting-sprite-min.png" class="' + action.element.value + '"></div>'
-  );
-  return $action;
-};
+	function formatAction (action) {
+	  if (!action.id) { return action.text; }
+	  var $action = $(
+		'<div class="responsive-sprites"><img src="/assets/handwriting-sprite-min.png" class="' + action.element.value + '"></div>'
+	  );
+	  return $action;
+	};
 </script>
 <?php snippet('footer') ?>
