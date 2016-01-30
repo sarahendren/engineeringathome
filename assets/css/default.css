@@ -6496,9 +6496,7 @@ body#home {
   background-color: #B3a999; }
   body#home .navbar {
     margin-bottom: 0;
-    background-color: #b8b840;
-    border: 8px solid #fff;
-    border-bottom: none; }
+    background-color: #b8b840; }
     @media (min-width: 768px) {
       body#home .navbar {
         border: none; } }
@@ -6548,8 +6546,6 @@ body#home {
   body#home section h1 a:hover, body#home section h1 a:active {
     text-decoration: none; }
   body#home section#whatcounts {
-    border: 8px solid #fff;
-    border-top: none;
     background: #b8b840;
     position: relative;
     overflow: hidden; }
@@ -6563,8 +6559,6 @@ body#home {
       color: #464619;
       font-weight: 600; }
     @media (min-width: 992px) {
-      body#home section#whatcounts {
-        border: none; }
       body#home section#whatcounts .wrapper {
         width: 100%;
         position: absolute;

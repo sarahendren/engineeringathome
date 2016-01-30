@@ -3,8 +3,6 @@ body#home {
 	.navbar {
 		margin-bottom: 0;
 		background-color: $chartreuse;
-		border: 8px solid #fff;
-		border-bottom: none;
 		@media (min-width: $screen-sm-min) {
 			& {
 				border: none;
@@ -53,8 +51,6 @@ body#home {
 			text-decoration: none;
 		}
 		&#whatcounts {
-			border: 8px solid #fff;
-			border-top: none;
 			background: $chartreuse;
 			position: relative;
 			overflow: hidden;
@@ -70,10 +66,9 @@ body#home {
 				color: darken($chartreuse, 30%);
 				font-weight: 600;
 			}
+
 			@media (min-width: $screen-md-min) {
-				& {
-					border: none;
-				}
+
 				.wrapper {
 					width: 100%;
 					position: absolute;
