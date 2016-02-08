@@ -1,4 +1,4 @@
-Title: Unlikely Engineering
+Title: Engineering at Home
 
 ----
 
@@ -14,4 +14,4 @@ Contact: We'd love to hear from you via the (link: /contact text: contact page).
 
 ----
 
-Social: Connect with us via our (link: http://facebook.com/unlikely.engineering text: Facebook page).
+Social: Connect with us via our (link: http://facebook.com/engineeringathome text: Facebook page).

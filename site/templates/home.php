@@ -5,7 +5,7 @@
 			<div class="row">
 				<div class="col-sm-6 col-md-5 col-md-offset-7 col-lg-4 col-lg-offset-7">
 					<h1>What Counts<br> as  Engineering?</h1>
-					<h2>Things you do with <a href="/adaptations/cable-ties">cable ties</a>? <a href="/adaptations/cosmetic-sponges">Cosmetic sponges</a>? How about <a href="/adaptations/adhesive-wall-hooks">peel-and-stick hooks</a>?</h2>
+					<h2><a href="/about">When Cindy woke up from a coma in a hospital room in September 2009, her body was profoundly altered. Complications from a... &raquo;</a></h2>
 				</div>
 			</div>
 		</div>

@@ -13,7 +13,6 @@
   <?php if ($page->images()->count() > 0): ?><meta property="og:image:width" content="<?php echo $page->images()->first()->width() ?>" /><?php endif ?>
   <?php if ($page->images()->count() > 0): ?><meta property="og:image:height" content="<?php echo $page->images()->first()->height() ?>" /><?php endif ?>
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@unlikelyengineering" />
   <meta name="twitter:title" content="<?php if($page->slug() != 'home'): ?><?php echo $page->title()->html() ?> | <?php endif ?><?php echo $site->title()->html() ?>" />
   <?php if ($page->description()): ?><meta name="twitter:description" content="<?php echo $page->intro() ?>" /><?php endif ?>
   <?php if ($page->images()->count() > 0): ?><meta name="twitter:image" content="<?php echo $page->images()->first()->url() ?>" /><?php endif ?>
