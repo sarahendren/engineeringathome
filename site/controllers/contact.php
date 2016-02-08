@@ -9,8 +9,8 @@ return function($site, $pages, $page) {
         'actions' => [
             [
                 '_action' => 'email',
-                'to'      => 'engineeringathome@gmail.com',
-                'sender'  => 'engineeringathome@gmail.com',
+                'to'      => 'engineering.at.home.cindy@gmail.com',
+                'sender'  => 'engineering.at.home.cindy@gmail.com',
                 'subject' => '[engineeringathome] New message from {name}'
             ]
         ]
