@@ -31,16 +31,14 @@ body#home {
 			background-size: contain;
 			background-repeat: no-repeat;
 			position: relative;
-			height: 54vh;
+			height: 500px;
 		}
 		a.readmore {
 			position: absolute;
 				bottom: 0;
 				left: 0;
-			border-radius: 50%;
 			padding: 20px;
 			font-family: $font-family-sans-serif;
-			text-transform: lowercase;
 			font-size: 1.5em;
 			text-decoration: underline;
 		}
@@ -66,7 +64,19 @@ body#home {
 				color: darken($chartreuse, 30%);
 				font-weight: 600;
 			}
-
+			span {
+				color: #fff;
+				font-weight: 300;
+				padding-left: 10px;
+			}
+			div div a {
+				&:hover {
+					background: darken($chartreuse, 5%);
+					span {
+						text-decoration: underline;
+					}
+				}
+			}
 			@media (min-width: $screen-md-min) {
 
 				.wrapper {
@@ -74,11 +84,13 @@ body#home {
 					position: absolute;
 						bottom: 60px;
 						right: 0;
-					div div div {
+					div div a {
+						display: block;
 						background: $chartreuse;
 						border: 8px solid #fff;
 						padding-bottom: 15px;
 						z-index: 10!important;
+						text-decoration: none;
 					}
 				}
 			}

@@ -6530,15 +6530,13 @@ body#home {
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
-    height: 54vh; }
+    height: 500px; }
   body#home section a.readmore {
     position: absolute;
     bottom: 0;
     left: 0;
-    border-radius: 50%;
     padding: 20px;
     font-family: "acumin-pro-extra-condensed", "Arial Narrow", sans-serif;
-    text-transform: lowercase;
     font-size: 1.5em;
     text-decoration: underline; }
   body#home section h1, body#home section h1 a:link, body#home section h1 a:visited {
@@ -6558,17 +6556,27 @@ body#home {
     body#home section#whatcounts h2, body#home section#whatcounts h2 a:link, body#home section#whatcounts h2 a:visited {
       color: #464619;
       font-weight: 600; }
+    body#home section#whatcounts span {
+      color: #fff;
+      font-weight: 300;
+      padding-left: 10px; }
+    body#home section#whatcounts div div a:hover {
+      background: #a5a539; }
+      body#home section#whatcounts div div a:hover span {
+        text-decoration: underline; }
     @media (min-width: 992px) {
       body#home section#whatcounts .wrapper {
         width: 100%;
         position: absolute;
         bottom: 60px;
         right: 0; }
-        body#home section#whatcounts .wrapper div div div {
+        body#home section#whatcounts .wrapper div div a {
+          display: block;
           background: #b8b840;
           border: 8px solid #fff;
           padding-bottom: 15px;
-          z-index: 10 !important; } }
+          z-index: 10 !important;
+          text-decoration: none; } }
     @media (min-width: 1200px) {
       body#home section#whatcounts .wrapper {
         bottom: 90px; } }

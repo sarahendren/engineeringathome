@@ -8,8 +8,7 @@ fields:
     type:  text
   text:
     label: Text
-    type:  textarea
-    size:  large
+    type:  markdown
   intro:
     label: Social media excerpt
     type: textarea
