@@ -72,7 +72,7 @@
             <?php if ($inuse->count() == 1): ?>
             <figure class="col-sm-6 col-sm-offset-3">
               <?php if ($image->extension() == 'gif'): ?>
-                <img src="<?php echo $image->url() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>" alt="<?php echo $image->caption() ?>">
+                <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->url() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php else: ?>              
                 <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img src="<?php echo $image->resize(555,777)->url() ?>" width="<?php echo $image->resize(555,777)->width() ?>" height="<?php echo $image->resize(555,777)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php endif ?>
@@ -80,7 +80,7 @@
             <?php elseif ($inuse->count() == 2): ?>
             <figure class="col-xs-6">
               <?php if ($image->extension() == 'gif'): ?>
-                <img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->url() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>" alt="<?php echo $image->caption() ?>">
+                <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->url() ?>" width="<?php echo $image->width() ?>" height="<?php echo $image->height() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php else: ?>              
                 <a href="<?php echo $image->url() ?>" data-size="<?php echo $image->width() ?>x<?php echo $image->height() ?>"><img class="<?php echo $image->orientation(); ?>" src="<?php echo $image->resize(555,777)->url() ?>" width="<?php echo $image->resize(555,777)->width() ?>" height="<?php echo $image->resize(555,777)->height() ?>" alt="<?php echo $image->caption() ?>"></a>
               <?php endif ?>
