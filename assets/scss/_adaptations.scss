@@ -181,14 +181,11 @@ body.adaptation {
 			margin-bottom: 20px;
 			a {
 				display: block;
-				img {
-					margin: auto;
-					display: block;
-					height: auto;
-					&.landscape {
-						margin-top:30%;
-					}
-				}
+			}
+			img {
+				margin: auto;
+				display: block;
+				height: auto;
 			}
 		}
 	}

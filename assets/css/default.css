@@ -6435,12 +6435,10 @@ body.adaptation #inuse {
     margin-bottom: 20px; }
     body.adaptation #inuse figure a {
       display: block; }
-      body.adaptation #inuse figure a img {
-        margin: auto;
-        display: block;
-        height: auto; }
-        body.adaptation #inuse figure a img.landscape {
-          margin-top: 30%; }
+    body.adaptation #inuse figure img {
+      margin: auto;
+      display: block;
+      height: auto; }
 body.adaptation #diagram img {
   background-color: #FF8C92;
   margin-bottom: 20px; }
