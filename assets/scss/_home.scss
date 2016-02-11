@@ -10,37 +10,19 @@ body#home {
 		}
 	}
 	section{
-		&#unlikelypeopleexpansiveview {
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
-			background: rgb(98,182,196); /* Old browsers */
-			background: -moz-linear-gradient(top,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 50%, rgba(255,140,146,1) 50%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
-			background: -webkit-linear-gradient(top,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
-			background: linear-gradient(to bottom,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=0 ); /* IE6-9 */
-			@media (min-width: $screen-lg-min) {
-				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
-				background: rgb(98,182,196); /* Old browsers */
-				background: -moz-linear-gradient(left,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 50%, rgba(255,140,146,1) 50%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(left,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to right,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=1 ); /* IE6-9 */
-			}
+		&>a:link, &>a:visited, &>a:hover, &>a:active {
+			text-decoration: none;
 		}
-		#unlikelypeople, #expansiveview {
-			background-position: center right;
-			background-size: contain;
-			background-repeat: no-repeat;
-			position: relative;
-			height: 500px;
+		&>a:hover .readmore {
+			text-decoration: underline;
 		}
-		a.readmore {
+		.readmore {
 			position: absolute;
 				bottom: 0;
 				left: 0;
 			padding: 20px;
 			font-family: $font-family-sans-serif;
 			font-size: 1.5em;
-			text-decoration: underline;
 		}
 		h1, h1 a:link, h1 a:visited {
 			color: #fff;
@@ -52,6 +34,11 @@ body#home {
 			background: $chartreuse;
 			position: relative;
 			overflow: hidden;
+			&:hover {
+				span {
+					text-decoration: underline;
+				}
+			}
 			img {
 				width: 100%;
 				height: auto;
@@ -60,22 +47,16 @@ body#home {
 			h1 {
 				line-height: 1;
 			}
-			h2, h2 a:link, h2 a:visited {
+			h2 {
+				font-weight: 400!important;
+				text-transform: none;
+			}
+			h2 {
 				color: darken($chartreuse, 30%);
 				font-weight: 600;
 			}
 			span {
 				color: #fff;
-				font-weight: 300;
-				padding-left: 10px;
-			}
-			div div a {
-				&:hover {
-					background: darken($chartreuse, 5%);
-					span {
-						text-decoration: underline;
-					}
-				}
 			}
 			@media (min-width: $screen-md-min) {
 
@@ -84,7 +65,7 @@ body#home {
 					position: absolute;
 						bottom: 60px;
 						right: 0;
-					div div a {
+					div div div {
 						display: block;
 						background: $chartreuse;
 						border: 8px solid #fff;
@@ -101,9 +82,20 @@ body#home {
 			}
 		}		
 		&#unlikelyobjects {
-			background-color: $olive;	
+			background-color: $olive;
+			&:hover {
+				.readmore {
+					text-decoration: underline;
+				}
+				.hidden-sm img {
+					background-color: transparent !important;
+				}
+			}	
 			h1 strong {color: $lime}
-			a.readmore:link, a.readmore:visited {color: $lime}
+			.readmore {
+				color: $lime;
+				width: 100%;
+			}
 			a:hover img {
 				background-color: darken($olive, 15%);
 			}
@@ -151,17 +143,47 @@ body#home {
 
 
 		}
-		div#unlikelypeople {
+		&#unlikelypeopleexpansiveview {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
+			background: rgb(98,182,196); /* Old browsers */
+			background: -moz-linear-gradient(top,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 50%, rgba(255,140,146,1) 50%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=0 ); /* IE6-9 */
+			@media (min-width: $screen-lg-min) {
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#62b6c4+0,62b6c4+49,ff8c92+51,ff8c92+100 */
+				background: rgb(98,182,196); /* Old browsers */
+				background: -moz-linear-gradient(left,  rgba(98,182,196,1) 0%, rgba(98,182,196,1) 50%, rgba(255,140,146,1) 50%, rgba(255,140,146,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(left,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to right,  rgba(98,182,196,1) 0%,rgba(98,182,196,1) 50%,rgba(255,140,146,1) 50%,rgba(255,140,146,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62b6c4', endColorstr='#ff8c92',GradientType=1 ); /* IE6-9 */
+			}
+		}
+		#unlikelypeople, #expansiveview {
+			background-position: center right;
+			background-size: contain;
+			background-repeat: no-repeat;
+			position: relative;
+			height: 500px;
+			display: block;
+			&:hover {
+				text-decoration: none!important;
+				.readmore {
+					text-decoration: underline;
+				}
+			}
+		}
+		#unlikelypeople {
 			background-color: $sky;		
 			background-image: url(/content/2-about/cindy.jpg);
 			h1 strong {color: $teal}	
-			a.readmore:link, a.readmore:visited {color: $teal}	
+			.readmore {color: $teal}	
 		}
-		div#expansiveview {
+		#expansiveview {
 			background-color: $pink;		
 			background-image: url(/content/3-manifesto/manifesto.jpg);
    			h1 strong {color: $red}	
-			a.readmore:link, a.readmore:visited {color: $red}	
+			.readmore {color: $red}	
 		}
 	}
 	footer {

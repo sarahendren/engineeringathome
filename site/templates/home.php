@@ -1,24 +1,28 @@
 <?php snippet('header') ?>
 <section id="whatcounts">
-	<div class="wrapper">
-		<div class="container">
-			<div class="row">
-				<a href="/about" class="col-sm-6 col-md-5 col-md-offset-7 col-lg-4 col-lg-offset-7">
-					<?php echo $page->text()->markdown() ?>
-				</a>
+	<a href="/about">
+		<div class="wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-5 col-md-offset-7 col-lg-4 col-lg-offset-7">
+						<?php echo $page->text()->markdown() ?>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-	<img src="/assets/collage.png" width="1170" height="704" alt="A collage of silhouetted adaptations." data-bottom-top="transform: translateY(10%)" data-top-bottom="transform: translateY(0)">
+		<img src="/assets/collage.png" width="1170" height="704" alt="A collage of silhouetted adaptations." data-bottom-top="transform: translateY(10%)" data-top-bottom="transform: translateY(0)">
+	</a>
 </section>
 <section id="unlikelyobjects">
-	<div class="container">
-		<div class="row">
-			<div class="col-xs-12">
-				<h1><a href="/adaptations"><strong>Engineering With</strong> Unlikely Objects</a></h1>
+	<a href="/adaptations">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1><strong>Engineering With</strong> Unlikely Objects</h1>
+				</div>
 			</div>
 		</div>
-	</div>
+	</a>
 	<div class="conveyor grid" data-anchor-target="#unlikelyobjects" data-bottom-top="transform:translateX(1%)" data-top-bottom="transform:translateX(-25%)">
 	  <?php foreach(page('adaptations')->children()->limit(7) as $adaptation):?>
 		  <div class="adaptation <?php foreach($adaptation->verbs()->split(',') as $verb): echo $verb . ' '; endforeach; ?>">
@@ -51,30 +55,32 @@
 		  </div>
 	  <?php endforeach ?>
 	</div>
-	<div class="container">
-		<div class="row hidden-sm hidden-md hidden-lg">
-			<div class="col-xs-12">
-				<figure><img src="/assets/adaptations/web/fork-holder.png" alt="Fork Holder"></figure>
+	<a href="/adaptations">
+		<div class="container">
+			<div class="row hidden-sm hidden-md hidden-lg">
+				<div class="col-xs-12">
+					<figure><img src="/assets/adaptations/web/fork-holder.png" alt="Fork Holder"></figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<span class="readmore">Browse all <strong>adaptations</strong> »</span>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-xs-12">
-				<a class="readmore" href="/adaptations">Browse all <strong>adaptations</strong></a>
-			</div>
-		</div>
-	</div>
+	</a>
 </section>
 <section id="unlikelypeopleexpansiveview">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-lg-6" id="unlikelypeople">
-				<h1><a href="/about"><strong>Engineering With</strong> Unlikely People</a></h1>
-				<a class="readmore" href="/about">Read <strong>about</strong> the project and Cindy's story</a>
-			</div>
-			<div class="col-xs-12 col-lg-6" id="expansiveview">
-				<h1><a href="/manifesto"><strong>Engineering With</strong> An Expansive View</a></h1>
-				<a class="readmore" href="/manifesto">Read the unlikely engineering <strong>manifesto</strong></a>
-			</div>
+			<a href="/about" class="col-xs-12 col-lg-6" id="unlikelypeople">
+				<h1><strong>Engineering With</strong> Unlikely People</h1>
+				<span class="readmore">Read <strong>cindy's story</strong> »</span>
+			</a>
+			<a href="/manifesto" class="col-xs-12 col-lg-6" id="expansiveview">
+				<h1><strong>Engineering With</strong> An Expansive View</h1>
+				<span class="readmore">Read the unlikely engineering <strong>manifesto</strong> »</span>
+			</a>
 		</div>
 	</div>
 </section>
