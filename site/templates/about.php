@@ -33,6 +33,12 @@
 					</section>
 				</section>
 			</div>
+			<div class="row">
+				<h2 class="col-sm-2 left-heading">Colophon</h2>
+				<section class="content col-sm-6">
+					<?php echo $page->colophon()->kirbytext() ?>
+				</section>
+			</div>
 		</article>
 	</main>
 </div>

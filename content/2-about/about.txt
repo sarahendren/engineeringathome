@@ -24,7 +24,7 @@ Inspiration and precedents for this project include sites like (link: http://www
 
 ----
 
-Creators: (link: http://www.olin.edu/faculty/profile/caitrin-lynch/ text: Caitrin Lynch) and (link: http://ablersite.org/ text: Sara Hendren), faculty members at Olin College of Engineering. With Olin students William Lu, Mary Martin, and Toni Saylor. With work by photographer (email: mjmcamera@gmail.com text: Michael J. Maloney), graphic designer (link: http://brettrowley.me/ text: Brett Rowley), and web designer (link: http://caseyagollan.com/ text: Casey Gollan).
+Creators: (link: http://www.olin.edu/faculty/profile/caitrin-lynch/ text: Caitrin Lynch) and (link: http://ablersite.org/ text: Sara Hendren), faculty members at Olin College of Engineering. With Olin students William Lu, Mary Martin, and Toni Saylor. With work by photographer (email: mjmcamera@gmail.com text: Michael J. Maloney), illustrator (link: http://brettrowley.me/ text: Brett Rowley), and designer (link: http://caseyagollan.com/ text: Casey Gollan).
 
 ----
 
@@ -33,3 +33,13 @@ Acknowledgments: Thanks to Tim Ferguson Sauder, Aaron Hoover, Rob Martello, and 
 ----
 
 Intro: Cindy woke up in a room at Brigham and Women’s Hospital in Boston, Massachusetts in September 2009 in a radically altered body.
+
+----
+
+Colophon: 
+
+This site's design draws inspiration from (link: https://www.flickr.com/photos/lubalincenter/albums/72157627841121346 text: 1940's-60's pharmaceutical materials), collected by the (link: http://lubalincenter.cooper.edu text: The Herb Lubalin Study Center for Design and Typography) at Cooper Union.
+
+Display text is set in (link: http://acumin.typekit.com text: Acumin) designed by Robert Slimbach, and body text is set in Century Schoolbook designed by Linn Boyd and Morris Fuller Benton. Fonts are served from (link: http://typekit.com text: Typekit).
+
+The website is powered by (link: https://getkirby.com text: Kirby), updated with (link: http://deploybot.com/ text: Deploybot), and hosted at (link: https://asmallorange.com text: A Small Orange), with source code on (link: https://github.com/caseyg/engineeringathome/ text: Github).
