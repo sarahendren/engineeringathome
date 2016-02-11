@@ -6493,7 +6493,7 @@ body#manifesto {
       margin-top: 40px; } }
 
 body#home {
-  background-color: #B3a999; }
+  background-color: #b8b840; }
   body#home .navbar {
     margin-bottom: 0;
     background-color: #b8b840; }
@@ -6721,6 +6721,9 @@ footer {
     margin-bottom: 60px; }
   footer i.fa {
     margin-left: 5px; }
+  footer .back-to-top {
+    text-decoration: none !important;
+    font-weight: bold; }
 
 .lead {
   margin-bottom: 22px;

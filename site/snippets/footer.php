@@ -1,21 +1,21 @@
 	<footer class="footer" role="contentinfo">
 		<div class="container">
 			<div class="row">
-				<div class="contact col-sm-4">
-					<h2>Contact <i class="fa fa-envelope"></i></h2>
-					<hr>
+				<div class="contact col-sm-6">
+					<h2>Contact</h2>
 					<?php echo $site->contact()->kt() ?>
-				</div>
-				<div class="social col-sm-4">
-					<h2>Connect <i class="fa fa-facebook"></i></h2>
-					<hr>
+
+					<h2>Connect</h2>
 					<?php echo $site->social()->kt() ?>
 				</div>
-				<div class="copyright col-sm-4">
-					<h2>Re-use <i class="fa fa-creative-commons"></i></h2>
-					<hr>
+				<div class="copyright col-sm-6">
+					<h2>Attribution</h2>
 					<?php echo $site->copyright()->kt() ?>
 				</div>	
+			</div>
+			<hr>
+			<div class="row text-center">
+				<a class="col-xs-12 back-to-top" href="#top"><i class="fa fa-arrow-circle-o-up"></i> Back to Top</a>
 			</div>
 		</div>
 	</footer>

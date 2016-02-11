@@ -6,12 +6,19 @@ Author: Caitrin Lynch and Sara Hendren
 
 ----
 
-Copyright: (link: /about text: This project) is the work of (link: http://ablersite.org text: Sara Hendren) and (link: http://www.olin.edu/faculty/profile/caitrin-lynch/ text: Caitrin Lynch) at (link: http://www.olin.edu text: Olin College of Engineering). This work is licensed under a (link: http://creativecommons.org/licenses/by/4.0/ text: Creative Commons Attribution 4.0 International License).
+Copyright: 
+
+(link: /about text: This project) is the work of (link: http://ablersite.org text: Sara Hendren) and (link: http://www.olin.edu/faculty/profile/caitrin-lynch/ text: Caitrin Lynch) at (link: http://www.olin.edu text: Olin College of Engineering). 
+
+<h2>reuse</h2>
+<i class="fa fa-creative-commons"></i> This work is licensed under a (link: http://creativecommons.org/licenses/by/4.0/ text: Creative Commons Attribution 4.0 International License). 
+
+<i class="fa fa-github"></i> Content, imagery, and code are open-source and [available on Github](https://github.com/caseyg/engineeringathome).
 
 ----
 
-Contact: We'd love to hear from you via the (link: /contact text: contact page).
+Contact: <i class="fa fa-envelope"></i> We'd love to hear from you via the (link: /contact text: contact page).
 
 ----
 
-Social: Connect with us via our (link: http://facebook.com/engineeringathome text: Facebook page).
+Social: <i class="fa fa-facebook"></i> Connect with us via our (link: http://facebook.com/engineeringathome text: Facebook page).
