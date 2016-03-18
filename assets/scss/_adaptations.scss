@@ -1,4 +1,4 @@
-body#adaptations, body.adaptation {
+body#adaptations, body.adaptation, body#adaptations-list {
 	background: $green-background;
 	color: $olive;
 	hr {
@@ -12,10 +12,20 @@ body#adaptations, body.adaptation {
 		background-color: $lime;
 	}
 }
-body#adaptations {
+body#adaptations, body#adaptations-list {
 	@media (min-width: $screen-md-min) {
 		.container header {
 			margin-top: 60px;
+		}
+	}
+	.list-view {
+		& > li + li {
+			margin: 0;
+		}
+		a:link, a:visited {
+			display: block;
+			vertical-align: middle;
+			border-top: 1px solid darken($green-background, 25%);
 		}
 	}
 	#filters {

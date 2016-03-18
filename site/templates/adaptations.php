@@ -8,7 +8,7 @@
 	    </div>
 	    <section id="filters">
 		    <div class="row">
-			    <div class="col-xs-12"><p class="text-center lead"><em>Filter adaptations by selecting an action&nbsp;below.</em></p></div>
+			    <div class="col-xs-12"><p class="text-center lead"><em>Filter adaptations by clicking on the action words below. Alternately, <a href="/adaptations-list">view all adaptations as a list</a>.</em></p></div>
 			</div>
 			<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
  			<div class="row">
