@@ -12,7 +12,7 @@ fields:
     type:  text
   text:
     label: Text
-    type: textarea
+    type: markdown
   intro:
     label: Social media excerpt
     type: textarea
