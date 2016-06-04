@@ -8,7 +8,7 @@
 	    </div>
 	    <section id="filters">
 		    <div class="row">
-			    <div class="col-xs-12"><p class="text-center lead"><em>Viewing all adaptations as a list. Alternately, <a href="/adaptations">dynamically filter adaptations</a>.</em></p></div>
+			    <div class="col-xs-12 text-center lead"><?php echo $page->text()->kt() ?></div>
 			</div>
 	    </section>
 	</header>

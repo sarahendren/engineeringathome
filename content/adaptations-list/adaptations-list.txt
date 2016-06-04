@@ -2,7 +2,7 @@ Title: Adaptations
 
 ----
 
-Text: 
+Text: _Viewing all adaptations as a list. Alternately, [dynamically filter adaptations](/adaptations)._
 
 ----
 

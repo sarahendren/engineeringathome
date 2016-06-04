@@ -8,7 +8,7 @@
 	    </div>
 	    <section id="filters">
 		    <div class="row">
-			    <div class="col-xs-12"><p class="text-center lead"><em>Filter adaptations by clicking on the action words below. Alternately, <a href="/adaptations-list">view all adaptations as a list</a>.</em></p></div>
+			    <div class="col-xs-12 text-center lead"><?php echo $page->text()->kt() ?></div>
 			</div>
 			<?php $tagcloud = tagcloud(page('adaptations'), array('field' => 'verbs', 'param' => 'verb')) ?>
  			<div class="row">
@@ -132,11 +132,11 @@
 		    $filterButtonGroup.find('[data-filter="' + hashFilter + '"]').addClass('active');
 			$filterSelect.val(hashFilter);
 			$('.filter-status').text('adaptations to ' + hashFilter.substr(1));
-			$('.clear-button').show();	
+			$('.clear-button').show();
 	    }
 	    if (hashFilter == '*') {
 			$grid.find('.element-item').removeClass('col-xs-6 col-md-4');
-			$('.filter-status').text('');	
+			$('.filter-status').text('');
 			$('.clear-button').hide();
 			$filterSelect.val('*');
 	    }
