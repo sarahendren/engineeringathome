@@ -1,7 +1,7 @@
 <?php if(!defined('KIRBY')) exit ?>
 
 title: Adaptations
-pages: 
+pages:
   template: adaptation
   limit: 50
   num: zero
@@ -10,6 +10,9 @@ fields:
   title:
     label: Title
     type:  text
+  text:
+    label: Text
+    type: textarea
   intro:
     label: Social media excerpt
     type: textarea
